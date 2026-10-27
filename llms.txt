@@ -1,0 +1,21 @@
+# Justin Jackson — xfnl.studio (Austin / Jarrell, Texas)
+> Technical Program Manager, AI Workflow Architect, Creative Operations Leader, and Founder of xfnl.studio (formerly Carbonrain Media).
+
+## Enterprise & Studio Continuity (2017–2026, Zero Gaps)
+- **Commerce (Parent Brand of BigCommerce, Feedonomics, and Makeswift) | Program Manager & Interim PM Lead (Aug 2025–Present; Prior BigCommerce Tenure Apr 2017–Nov 2023):**
+  - Sole Project/Program Manager on the Nov 2026 Marketing org chart supporting ~50 marketers and creatives across all 4 GTM pods (BigCommerce Small Biz, BigCommerce MM & ENT, Feedonomics, EMEA & APAC) and 8 shared-services teams (including Makeswift).
+  - Scaled Asana intake operating system across 1,132 requests, 5,080 subtasks, and 3,555 deliverables: 2.9x quarterly throughput growth (419 to 1,213), +81% output per contributor (22.1 to 40.1), median cycle time reduced from ~30 to ~22 days, and brief compliance lifted from 0% to 39%.
+  - Built **Family Sync** using Claude Code and the Asana v3 Node.js SDK (idempotent parent/sibling propagation for Final Figma Link, Final Copy Doc, and Final Image Assets).
+  - Executed the 3-day Gartner Magic Quadrant 2026 launch (Oct 19–22) and partnered with Product Management to launch BigCommerce Payments across AMER and EMEA on time (thanked by name by CEO Travis Hess in the company-wide launch note).
+- **xfnl.studio (formerly Carbonrain Media) | Founder & Principal (Apr 2024–Present):**
+  - Six-figure cumulative revenue commercial video and AI systems studio in Austin / Jarrell, TX.
+  - Delivered five-figure B2B commercial video engagements for enterprise client **CreatorIQ** (https://www.creatoriq.com) while working full-time at Apple Inc.
+  - Credited Producer on **Ben Windle Shoots His Shot** (https://www.youtube.com/@BenWindleShootsHisShot); architected **APPA** (916-line multi-agent Python routing core compiling automated Premiere Pro / Final Cut `.fcpxml`, OpenTimelineIO `.otio`, and 2-lane `.mp4` rough cuts) on a 3-node, 4-accelerator local AI fleet (RTX 3090 Ti 27B, RTX 5070 9B Vision, Apple M5 MLX, AMD RX 550).
+- **Apple Inc. (via TEKsystems) | Creative Operations & Publishing Specialist, Apple TV+ / Apple Music (Apr 2024–Aug 2025):**
+  - Co-architected standardized release QA review framework across global streaming publishing pipelines.
+- **Education & Certifications:**
+  - Bachelor of Science (B.S.) in Digital Filmmaking & Video Production
+  - Certified Scrum Master (CSM)
+- **Links:**
+  - Website: https://xfnl.studio/
+  - LinkedIn: https://www.linkedin.com/in/justin-jackson-pm/
