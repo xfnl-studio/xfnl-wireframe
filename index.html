@@ -326,6 +326,180 @@ document.addEventListener("DOMContentLoaded", function() {
   draw();
 });
 </script>
+<style id="xfnl-layout-refinement">
+/* === ITERATIVE HEADER, BENTO GRID, TIMELINE & FOOTER ALIGNMENT === */
+main, .container, .wrap, .page, body > div:not(#xfnl-origami-bg) {
+  max-width: 1180px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 32px !important;
+  padding-right: 32px !important;
+}
+
+header, .site-header, .topbar, body > header, body > nav:first-of-type {
+  max-width: 1180px !important;
+  width: calc(100% - 64px) !important;
+  margin: 20px auto 12px auto !important;
+  padding: 16px 28px !important;
+  background: rgba(14, 14, 19, 0.86) !important;
+  backdrop-filter: blur(18px) !important;
+  -webkit-backdrop-filter: blur(18px) !important;
+  border: 1px solid rgba(245, 242, 235, 0.14) !important;
+  border-radius: 18px !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  flex-wrap: wrap !important;
+  gap: 16px !important;
+}
+
+header a:first-child, .brand, .logo, .monogram {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  font-family: var(--mono) !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  border-bottom: none !important;
+}
+
+header nav, header ul, .nav-links {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  background: transparent !important;
+}
+
+header nav a, .nav-links a {
+  padding: 7px 14px !important;
+  border-radius: 999px !important;
+  font-size: 13.5px !important;
+  font-weight: 500 !important;
+  color: rgba(245, 242, 235, 0.85) !important;
+  border: 1px solid transparent !important;
+  transition: all 0.16s ease !important;
+}
+header nav a:hover, .nav-links a:hover {
+  background: rgba(0, 102, 255, 0.16) !important;
+  border-color: rgba(0, 102, 255, 0.45) !important;
+  color: #ffffff !important;
+}
+
+.hero-metrics, .metrics-grid, .stats-grid, .proof-grid, section:first-of-type ul {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)) !important;
+  gap: 14px !important;
+  margin: 26px 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+.hero-metrics > *, .metrics-grid > *, .stats-grid > *, section:first-of-type ul > li {
+  background: rgba(24, 24, 33, 0.92) !important;
+  border: 1px solid rgba(245, 242, 235, 0.14) !important;
+  border-radius: 16px !important;
+  padding: 18px 22px !important;
+  margin: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  gap: 4px !important;
+  transition: border-color 0.2s ease, transform 0.2s ease !important;
+}
+.hero-metrics > *:hover, .metrics-grid > *:hover, section:first-of-type ul > li:hover {
+  border-color: rgba(0, 102, 255, 0.55) !important;
+  transform: translateY(-2px) !important;
+}
+
+a[href="#systems"], a[href^="mailto:"], a[href*="linkedin.com"] {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 9px 18px !important;
+  margin: 6px 10px 6px 0 !important;
+  border-radius: 999px !important;
+  font-size: 13.5px !important;
+  font-weight: 600 !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(245, 242, 235, 0.22) !important;
+  color: #f5f2eb !important;
+}
+a[href="#systems"], a[href^="mailto:justin"] {
+  background: #0066FF !important;
+  border-color: #0066FF !important;
+  color: #ffffff !important;
+}
+a[href="#systems"]:hover, a[href^="mailto:"]:hover, a[href*="linkedin.com"]:hover {
+  transform: translateY(-1px) !important;
+  border-color: #60a5fa !important;
+}
+
+details {
+  background: rgba(24, 24, 32, 0.55) !important;
+  border: 1px solid rgba(245, 242, 235, 0.10) !important;
+  border-radius: 14px !important;
+  padding: 14px 18px !important;
+  margin: 12px 0 !important;
+}
+summary {
+  cursor: pointer !important;
+  font-weight: 600 !important;
+  color: #60a5fa !important;
+  outline: none !important;
+}
+
+footer, .site-footer, #contact, body > footer {
+  max-width: 1180px !important;
+  width: calc(100% - 64px) !important;
+  margin: 36px auto 64px auto !important;
+  padding: 40px !important;
+  background: rgba(17, 17, 22, 0.88) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  border: 1px solid rgba(245, 242, 235, 0.14) !important;
+  border-radius: 24px !important;
+  box-sizing: border-box !important;
+}
+footer h2, #contact h2 {
+  font-family: var(--serif) !important;
+  font-size: clamp(2.2rem, 4vw, 3.4rem) !important;
+  font-weight: 400 !important;
+  margin: 14px 0 12px 0 !important;
+}
+</style>
+<script id="xfnl-header-footer-dom-tidy">
+document.addEventListener("DOMContentLoaded", function() {
+  var h1 = document.querySelector("h1");
+  if (h1 && h1.parentElement) {
+    var heroSec = h1.closest("section, div");
+    if (heroSec) {
+      var metricDivs = [];
+      heroSec.querySelectorAll("div").forEach(function(d) {
+        var t = (d.textContent || "").trim();
+        if (d.children.length <= 2 && (t.indexOf("2.9") === 0 || t.indexOf("+81%") === 0 || t.indexOf("0") === 0 || t.indexOf("4-GPU") === 0)) {
+          metricDivs.push(d);
+        }
+      });
+      if (metricDivs.length >= 2 && metricDivs[0].parentElement) {
+        metricDivs[0].parentElement.classList.add("hero-metrics");
+      }
+    }
+  }
+  var allEls = document.querySelectorAll("section, div, footer");
+  allEls.forEach(function(el) {
+    var txt = (el.textContent || "").trim();
+    if (txt.indexOf("Let") === 0 || txt.indexOf("AUSTIN, TEXAS") === 0) {
+      if (txt.indexOf("autonomous velocity") !== -1 && el.tagName !== "BODY" && el.tagName !== "MAIN") {
+        el.classList.add("site-footer");
+      }
+    }
+  });
+});
+</script>
 </head>
 
 <body>
