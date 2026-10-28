@@ -169,3 +169,170 @@ pre {
   padding: 20px !important;
   overflow-x: auto;
 }
+
+
+
+/* === 1. KILL NEON YELLOW <MARK> HIGHLIGHTS -> SIGNAL BLUE ITALIC ACCENT === */
+mark, .highlight, h1 mark, h2 mark, h3 mark {
+  background: transparent !important;
+  background-color: transparent !important;
+  color: #60a5fa !important;
+  font-family: var(--serif) !important;
+  font-style: italic !important;
+  font-weight: 400 !important;
+  padding: 0 2px !important;
+  box-shadow: none !important;
+}
+
+/* === 2. MAIN CONTAINER & SECTION BREATHING ROOM === */
+main, .container, .wrap, .page, body > div:not(#xfnl-origami-bg) {
+  max-width: 1180px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 32px !important;
+  padding-right: 32px !important;
+}
+
+/* === 3. CLEAN HORIZONTAL HEADER (SINGLE-LINE XFNL MONOGRAM BADGE LEFT, NAV RIGHT) === */
+header, .site-header, .topbar, body > header {
+  max-width: 1180px !important;
+  width: calc(100% - 64px) !important;
+  margin: 20px auto 16px auto !important;
+  padding: 14px 26px !important;
+  background: rgba(13, 13, 18, 0.88) !important;
+  backdrop-filter: blur(18px) !important;
+  -webkit-backdrop-filter: blur(18px) !important;
+  border: 1px solid rgba(245, 242, 235, 0.14) !important;
+  border-radius: 18px !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 20px !important;
+}
+.xfnl-header-brand {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+  text-decoration: none !important;
+  border: none !important;
+}
+.xfnl-monogram-pill {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 38px !important;
+  height: 38px !important;
+  border-radius: 10px !important;
+  background: #0066FF !important;
+  color: #ffffff !important;
+  font-family: var(--mono) !important;
+  font-size: 12px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.04em !important;
+  line-height: 1 !important;
+  flex-shrink: 0 !important;
+}
+.xfnl-header-title-text {
+  font-family: var(--mono) !important;
+  font-size: 13px !important;
+  color: rgba(245, 242, 235, 0.90) !important;
+  white-space: nowrap !important;
+}
+header nav, .nav-links {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  margin-left: auto !important;
+  padding: 0 !important;
+  border: none !important;
+  background: transparent !important;
+}
+header nav a, .nav-links a {
+  padding: 7px 15px !important;
+  border-radius: 999px !important;
+  font-size: 13.5px !important;
+  font-weight: 500 !important;
+  color: rgba(245, 242, 235, 0.85) !important;
+  border: 1px solid transparent !important;
+}
+header nav a:hover, .nav-links a:hover {
+  background: rgba(0, 102, 255, 0.18) !important;
+  border-color: rgba(0, 102, 255, 0.48) !important;
+  color: #ffffff !important;
+}
+
+/* === 4. HERO 2X2 BENTO METRICS & PILL CTAS === */
+.hero-metrics {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 14px !important;
+  margin: 26px 0 !important;
+}
+@media (max-width: 720px) {
+  .hero-metrics { grid-template-columns: 1fr !important; }
+}
+.hero-metrics > * {
+  background: rgba(24, 24, 33, 0.92) !important;
+  border: 1px solid rgba(245, 242, 235, 0.14) !important;
+  border-radius: 16px !important;
+  padding: 18px 22px !important;
+  margin: 0 !important;
+}
+
+/* === 5. SPACED TECH TAG PILLS (FIX RUN-TOGETHER SPAN TAGS) === */
+.xfnl-tag-row, .tags, .tech-tags, .pill-row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  gap: 10px !important;
+  margin: 18px 0 10px 0 !important;
+}
+.xfnl-tag-pill, .tags > span, .tech-tags > span, .pill-row > span {
+  display: inline-flex !important;
+  align-items: center !important;
+  padding: 6px 13px !important;
+  border-radius: 999px !important;
+  font-family: var(--mono) !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  background: rgba(0, 102, 255, 0.12) !important;
+  border: 1px solid rgba(0, 102, 255, 0.34) !important;
+  color: #93c5fd !important;
+  margin: 3px 6px 3px 0 !important;
+}
+
+/* === 6. UN-JAM TIMELINE 4-COLUMN CRAMPED GRID -> SPACIOUS 2X2 BENTO GRID === */
+.xfnl-timeline-2x2, details div[style*="grid"], .timeline-grid, .role-highlights {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(280px, 1fr)) !important;
+  gap: 16px !important;
+  margin-top: 18px !important;
+}
+@media (max-width: 780px) {
+  .xfnl-timeline-2x2, details div[style*="grid"], .timeline-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+.xfnl-timeline-2x2 > div, .timeline-grid > div {
+  background: rgba(18, 18, 25, 0.85) !important;
+  border: 1px solid rgba(245, 242, 235, 0.11) !important;
+  border-radius: 14px !important;
+  padding: 18px 20px !important;
+  font-size: 14.5px !important;
+  line-height: 1.6 !important;
+}
+
+/* === 7. CENTERED FOOTER GLASS CARD === */
+footer, .site-footer, #contact, body > footer {
+  max-width: 1180px !important;
+  width: calc(100% - 64px) !important;
+  margin: 36px auto 64px auto !important;
+  padding: 40px !important;
+  background: rgba(17, 17, 22, 0.88) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  border: 1px solid rgba(245, 242, 235, 0.14) !important;
+  border-radius: 24px !important;
+  box-sizing: border-box !important;
+}
