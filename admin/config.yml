@@ -6,14 +6,97 @@ media_folder: "assets"
 public_folder: "/assets"
 collections:
   - name: "portfolio"
-    label: "Portfolio Content"
+    label: "Portfolio Content (All 4 Pages)"
     files:
-      - label: "Homepage Copy & Metrics"
-        name: "home"
+      - label: "Full Site Content (Home, Systems, Experiments, About)"
+        name: "content"
         file: "content.json"
         fields:
-          - { label: "Eyebrow", name: "eyebrow", widget: "string" }
-          - { label: "Name", name: "name", widget: "string" }
-          - { label: "Tagline", name: "tagline", widget: "text" }
-          - { label: "Email", name: "email", widget: "string" }
-          - { label: "LinkedIn", name: "linkedin", widget: "string" }
+          - label: "Site Settings"
+            name: "site"
+            widget: "object"
+            fields:
+              - { label: "Brand Text", name: "brand_text", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "LinkedIn", name: "linkedin", widget: "string" }
+              - { label: "Footer Heading", name: "footer_heading", widget: "string" }
+              - { label: "Footer Subtitle", name: "footer_sub", widget: "text" }
+              - { label: "Copyright", name: "copyright", widget: "string" }
+          - label: "Homepage"
+            name: "home"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Lead Paragraph (HTML allowed)", name: "lead_html", widget: "text" }
+              - label: "Results Cards (4)"
+                name: "results"
+                widget: "list"
+                fields:
+                  - { label: "Metric", name: "metric", widget: "string" }
+                  - { label: "Detail", name: "detail", widget: "string" }
+              - label: "Featured Systems Rows"
+                name: "featured_systems"
+                widget: "list"
+                fields:
+                  - { label: "Tag", name: "tag", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Subtitle", name: "subtitle", widget: "string" }
+                  - { label: "Link Path", name: "href", widget: "string" }
+              - label: "Experiments Cards"
+                name: "experiments"
+                widget: "list"
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Badge", name: "badge", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Link Path", name: "href", widget: "string" }
+          - label: "Systems Page (/systems/)"
+            name: "systems_page"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Hero Title (HTML allowed)", name: "title_html", widget: "string" }
+              - { label: "Hero Lead", name: "lead", widget: "text" }
+              - label: "Case Studies"
+                name: "cases"
+                widget: "list"
+                fields:
+                  - { label: "Anchor ID", name: "id", widget: "string" }
+                  - { label: "Left Meta Lines", name: "meta", widget: "list" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Paragraph 1 (HTML allowed)", name: "p1_html", widget: "text" }
+                  - { label: "Paragraph 2 (HTML allowed)", name: "p2_html", widget: "text", required: false }
+                  - { label: "Tech Pills", name: "pills", widget: "list" }
+          - label: "Experiments Page (/experiments/)"
+            name: "experiments_page"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Hero Title (HTML allowed)", name: "title_html", widget: "string" }
+              - { label: "Hero Lead", name: "lead", widget: "text" }
+              - label: "Experiment Deep Dives"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Anchor ID", name: "id", widget: "string" }
+                  - { label: "Left Meta Lines", name: "meta", widget: "list" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Paragraph 1 (HTML allowed)", name: "p1_html", widget: "text" }
+                  - { label: "Paragraph 2 (HTML allowed)", name: "p2_html", widget: "text", required: false }
+                  - { label: "Tech Pills", name: "pills", widget: "list" }
+          - label: "About Page (/about/)"
+            name: "about_page"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Hero Title (HTML allowed)", name: "title_html", widget: "string" }
+              - { label: "Hero Lead", name: "lead", widget: "text" }
+              - label: "Timeline Roles"
+                name: "roles"
+                widget: "list"
+                fields:
+                  - { label: "Dates", name: "dates", widget: "string" }
+                  - { label: "Company", name: "company", widget: "string" }
+                  - { label: "Role & Summary", name: "role", widget: "text" }
+                  - { label: "Location", name: "location", widget: "string" }

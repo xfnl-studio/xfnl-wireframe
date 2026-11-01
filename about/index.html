@@ -1,82 +1,89 @@
 <!doctype html>
-<html lang="en" data-mode="dark">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About & Timeline · Justin Jackson</title>
-  <meta name="description" content="Justin Jackson — AI Systems & Marketing Operations Architect at Commerce (BigCommerce, Feedonomics, Makeswift), Apple, and CreatorIQ.">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta name="description" content="Justin Jackson: AI Systems and Marketing Operations Architect at Commerce (BigCommerce, Feedonomics, Makeswift), Apple, and CreatorIQ.">
+  <link rel="icon" href="/favicon.svg?v=1793558083" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap">
-  <link rel="stylesheet" href="/obsession.css?v=1793552087">
-  <script src="/portfolio.js?v=1793552087" defer></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="/obsession.css?v=1793558083">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Justin Jackson", "url": "https://xfnl.studio", "jobTitle": "Program Manager, Marketing Operations & AI Systems", "worksFor": {"@type": "Organization", "name": "Commerce", "description": "Parent organization of BigCommerce, Feedonomics, and Makeswift"}, "sameAs": ["https://www.linkedin.com/in/justin-jackson-pm/", "https://www.youtube.com/@BenWindleShootsHisShot"]}</script>
+  <script src="/portfolio.js?v=1793558083" defer></script>
 </head>
-<body>
+<body data-page="about">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
   <canvas id="geo-canvas" class="geo-canvas" aria-hidden="true"></canvas>
   <header class="masthead">
     <div class="masthead-inner">
       <a href="/" class="brand" aria-label="xfnl.studio home">
-        <img src="/favicon.svg" alt="" class="brand-icon">
         <span>xfnl<span class="brand-dot">.</span>studio</span>
       </a>
-      <nav class="nav-bar" aria-label="Primary">
+      <button type="button" id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <line x1="4" y1="7" x2="20" y2="7"></line>
+          <line x1="4" y1="12" x2="20" y2="12"></line>
+          <line x1="4" y1="17" x2="20" y2="17"></line>
+        </svg>
+      </button>
+      <nav id="primary-nav" class="nav-bar" aria-label="Primary">
         <a href="/systems/" class="nav-link">Systems</a>
         <a href="/experiments/" class="nav-link">Experiments</a>
         <a href="/about/" class="nav-link active">About</a>
         <a href="#contact" class="nav-link">Contact</a>
-        <button type="button" id="mode-toggle" class="mode-btn">Light mode</button>
       </nav>
     </div>
   </header>
-  <main class="shell">
+  <main id="main-content" class="shell">
 
     <section class="hero">
-      <div class="eyebrow"><span class="eyebrow-dot"></span><span>/ About &amp; Track Record</span></div>
-      <h1 class="hero-title">Operator, producer, and systems builder.</h1>
-      <p class="hero-lead">With a B.S. in Digital Filmmaking &amp; Video Production, a Certified Scrum Master (CSM) credential, and 9+ years inside high-growth tech and media organizations, I bridge creative storytelling with deterministic engineering.</p>
+      <div class="eyebrow"><span class="eyebrow-dot"></span><span id="cms-eyebrow">/ About &amp; track record</span></div>
+      <h1 id="cms-title" class="hero-title">Operator, producer, and <em>systems builder.</em></h1>
+      <p id="cms-lead" class="hero-lead">With a B.S. in Digital Filmmaking &amp; Video Production, a Certified Scrum Master (CSM) credential, and 9+ years inside high-growth tech and media organizations, I bridge creative storytelling with deterministic engineering.</p>
     </section>
 
     <section class="sec">
-      <div class="sec-head"><span class="sec-kicker">/ Experience timeline</span></div>
-      <div class="row-list">
+      <div class="sec-head"><h2 class="sec-kicker">/ Experience timeline</h2></div>
+      <div id="cms-about-roles" class="row-list">
         <div class="row-item">
-          <span class="row-tag">2025 — Now</span>
+          <span class="row-tag">2025 to Present</span>
           <div>
-            <div class="row-title">Commerce (BigCommerce · Feedonomics · Makeswift)</div>
-            <div class="row-sub">Program Manager, Marketing Operations &amp; Systems (Interim PM Lead, Aug 2026) · Supporting ~50 marketers across 4 GTM pods and 8 shared-services teams.</div>
+            <h3 class="row-title">Commerce (BigCommerce · Feedonomics · Makeswift)</h3>
+            <p class="row-sub">Program Manager, Marketing Operations &amp; Systems (Interim PM Lead, Aug 2026) · Supporting ~50 marketers across 4 GTM pods and 8 shared-services teams.</p>
           </div>
           <span class="row-arrow">Austin, TX</span>
         </div>
         <div class="row-item">
-          <span class="row-tag">2024 — Now</span>
+          <span class="row-tag">2024 to Present</span>
           <div>
-            <div class="row-title">xfnl.studio (formerly Carbonrain Media)</div>
-            <div class="row-sub">Founder &amp; Principal AI Systems Architect · Six-figure cumulative revenue commercial video and AI automation studio; Producer on @BenWindleShootsHisShot.</div>
+            <h3 class="row-title">xfnl.studio (formerly Carbonrain Media)</h3>
+            <p class="row-sub">Founder &amp; Principal | Commercial Video Production &amp; AI Workflow Systems · Six-figure cumulative revenue studio; Producer on @BenWindleShootsHisShot.</p>
           </div>
           <span class="row-arrow">Austin, TX</span>
         </div>
         <div class="row-item">
-          <span class="row-tag">2024 — 2025</span>
+          <span class="row-tag">2024 to 2025</span>
           <div>
-            <div class="row-title">Apple (via TEKsystems)</div>
-            <div class="row-sub">Creative Operations &amp; Publishing Specialist · Co-architected standardized release QA frameworks for Apple TV+ and Apple Music.</div>
+            <h3 class="row-title">Apple (via TEKsystems)</h3>
+            <p class="row-sub">Creative Operations &amp; Publishing Specialist · Co-architected standardized release QA frameworks for Apple TV+ and Apple Music.</p>
           </div>
           <span class="row-arrow">Austin, TX</span>
         </div>
         <div class="row-item">
-          <span class="row-tag">2024 — 2025</span>
+          <span class="row-tag">2024 to 2025</span>
           <div>
-            <div class="row-title">CreatorIQ</div>
-            <div class="row-sub">Commercial Video Producer &amp; Post-Production Systems Lead (Contract) · Delivered five-figure enterprise B2B commercial video engagements.</div>
+            <h3 class="row-title">CreatorIQ</h3>
+            <p class="row-sub">Commercial Video Producer &amp; Post-Production Systems Lead (Contract) · Delivered five-figure enterprise B2B commercial video engagements.</p>
           </div>
           <span class="row-arrow">Remote</span>
         </div>
         <div class="row-item">
-          <span class="row-tag">2017 — 2023</span>
+          <span class="row-tag">2017 to 2023</span>
           <div>
-            <div class="row-title">BigCommerce</div>
-            <div class="row-sub">Marketing Project Manager (2023) · Video Producer (2018–2023) · Tech Support (2017–2018, 99% CSAT) · Cut sprint overload 60% and case-study intake time 85%.</div>
+            <h3 class="row-title">BigCommerce</h3>
+            <p class="row-sub">Marketing Project Manager (2023) · Video Producer (2018 to 2023) · Tech Support (2017 to 2018, 99% CSAT) · Cut sprint overload 60% and case-study intake time 85%.</p>
           </div>
           <span class="row-arrow">Austin, TX</span>
         </div>
@@ -84,7 +91,7 @@
     </section>
 
     <footer id="contact" class="footer">
-      <h2 class="footer-title">Building the next chapter of operations?</h2>
+      <h2 class="footer-title">Building the next chapter of <em>operations?</em></h2>
       <p class="footer-sub">Collaborations and leadership roles in AI operations, technical program management, and workflow architecture welcome.</p>
       <div class="cta-row">
         <a href="mailto:justin@xfnl.studio" class="btn-primary">Email Justin</a>
@@ -92,7 +99,7 @@
       </div>
       <div class="footer-meta">
         <span>© 2026 Justin Jackson · Austin, TX</span>
-        <a href="/admin/">CMS Admin</a>
+        <a href="/systems/">View systems →</a>
       </div>
     </footer>
   </main>
