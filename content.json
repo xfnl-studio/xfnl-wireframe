@@ -1,0 +1,25 @@
+{
+  "eyebrow": "Marketing Operations & AI Systems \u00b7 Commerce (BigCommerce \u00b7 Feedonomics \u00b7 Makeswift)",
+  "name": "Justin Jackson",
+  "tagline": "I untangle enterprise chaos and build the AI and workflow systems to fix it.",
+  "email": "justin@xfnl.studio",
+  "linkedin": "https://www.linkedin.com/in/justin-jackson-pm/",
+  "results": [
+    {
+      "metric": "2.9x deliverable throughput",
+      "detail": "Scaled Asana intake OS across 50 marketers (419 to 1,213/qtr)"
+    },
+    {
+      "metric": "+81% output per person",
+      "detail": "Lifted quarterly output from 22.1 to 40.1 with flat headcount"
+    },
+    {
+      "metric": "0% to 39% brief compliance",
+      "detail": "Built Family Sync in Claude Code + Asana v3 SDK in 30 days"
+    },
+    {
+      "metric": "3-day Gartner MQ launch",
+      "detail": "Pre-staged contingency system when Gartner dropped 2 weeks early"
+    }
+  ]
+}

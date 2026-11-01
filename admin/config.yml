@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: xfnl-studio/xfnl-wireframe
+  branch: main
+media_folder: "assets"
+public_folder: "/assets"
+collections:
+  - name: "portfolio"
+    label: "Portfolio Content"
+    files:
+      - label: "Homepage Copy & Metrics"
+        name: "home"
+        file: "content.json"
+        fields:
+          - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Tagline", name: "tagline", widget: "text" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "LinkedIn", name: "linkedin", widget: "string" }
