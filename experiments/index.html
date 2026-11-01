@@ -3,15 +3,33 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Experiments & 3-Body AI OS · Justin Jackson</title>
-  <meta name="description" content="Justin Jackson: AI Systems and Marketing Operations Architect at Commerce (BigCommerce, Feedonomics, Makeswift), Apple, and CreatorIQ.">
+  <title>Experiments: Local AI &amp; Post-Production Pipelines · Justin Jackson</title>
+  <meta name="description" content="Local AI systems and an automated multi-camera post-production pipeline, built to stay current with frontier AI.">
+  <meta name="author" content="Justin Jackson">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://xfnl.studio/experiments/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="xfnl.studio">
+  <meta property="og:title" content="Experiments: Local AI &amp; Post-Production Pipelines · Justin Jackson">
+  <meta property="og:description" content="Local AI systems and an automated multi-camera post-production pipeline, built to stay current with frontier AI.">
+  <meta property="og:url" content="https://xfnl.studio/experiments/">
+  <meta property="og:image" content="https://xfnl.studio/img/og-default.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Justin Jackson: I sit where art meets technology.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Experiments: Local AI &amp; Post-Production Pipelines · Justin Jackson">
+  <meta name="twitter:description" content="Local AI systems and an automated multi-camera post-production pipeline, built to stay current with frontier AI.">
+  <meta name="twitter:image" content="https://xfnl.studio/img/og-default.png">
   <link rel="icon" href="/favicon.svg?v=1793558083" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap">
   <link rel="stylesheet" href="/obsession.css?v=1793558083">
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Justin Jackson", "url": "https://xfnl.studio", "jobTitle": "Program Manager, Marketing Operations & AI Systems", "worksFor": {"@type": "Organization", "name": "Commerce", "description": "Parent organization of BigCommerce, Feedonomics, and Makeswift"}, "sameAs": ["https://www.linkedin.com/in/justin-jackson-pm/", "https://www.youtube.com/@BenWindleShootsHisShot"]}</script>
-  <script src="/portfolio.js?v=1793558083" defer></script>
+  <link rel="stylesheet" href="/css/xfnl-v2.css?v=20261101">
+  
+  <script src="/portfolio.js?v=20261101" defer></script>
+  <script src="/js/xfnl-v2.js?v=20261101" defer></script>
 </head>
 <body data-page="experiments">
   <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -29,8 +47,9 @@
         </svg>
       </button>
       <nav id="primary-nav" class="nav-bar" aria-label="Primary">
+        <a href="/work/" class="nav-link">Work</a>
         <a href="/systems/" class="nav-link">Systems</a>
-        <a href="/experiments/" class="nav-link active">Experiments</a>
+        <a href="/experiments/" class="nav-link active" aria-current="page">Experiments</a>
         <a href="/about/" class="nav-link">About</a>
         <a href="#contact" class="nav-link">Contact</a>
       </nav>
@@ -39,73 +58,295 @@
   <main id="main-content" class="shell">
 
     <section class="hero">
-      <div class="eyebrow"><span class="eyebrow-dot"></span><span id="cms-eyebrow">/ Experiments &amp; local AI fleet</span></div>
-      <h1 id="cms-title" class="hero-title">Self-hosted 3-Body <em>AI architecture.</em></h1>
-      <p id="cms-lead" class="hero-lead">I run a zero-API-cost, 4-accelerator local AI operating system across three physical machines (64 GB pooled VRAM and unified memory, 150 GB system RAM, and 1.13M+ indexed documents).</p>
+      <div class="eyebrow"><span class="eyebrow-dot"></span><span id="cms-eyebrow">Experiments and lab notes</span></div>
+      <h1 id="cms-title" class="hero-title">A lab for staying <em>curious.</em></h1>
+      <p id="cms-lead" class="hero-lead">I tinker with local AI to stay current with frontier models and to learn by building. Some of it turns into production tools. Most of it teaches me something, and a few things teach me loudly.</p>
     </section>
 
-    <section id="cms-experiments-list" class="sec">
-      <article id="groupthink" class="case-block">
-        <div class="case-meta">
-          <span>Body 1, 2 &amp; 3</span>
-          <span>64 GB pooled memory</span>
-          <span>~180ms TTFT</span>
-          <span>Neurons to Cortex</span>
-        </div>
+    <!-- Static by design: this page embeds diagrams, so it is not hydrated from content.json. -->
+    <section class="sec">
+      <article id="waves" class="case-block">
+        <div class="case-meta"><span>01 / System</span><span>Runs on local hardware</span><span>No per-token fees</span></div>
         <div>
-          <h2 class="case-title">GroupThink: The 3-Body Neurobiological OS</h2>
-          <p class="case-body">Instead of burning cloud tokens on polling loops, three peer nodes share one Git codebase with edge <strong>Neurons</strong> (zero-LLM collectors), a hash-filtered <strong>Synapse</strong> delta ledger, and a 3-stage <strong>Council</strong> synthesis engine.</p>
-          <p class="case-body"><strong>Body 1 (ARTROCK Studio Forge):</strong> Left Hemisphere runs a KV-pinned 27B reasoning model on an RTX 3090 Ti (24 GB) for analytical synthesis; Right Hemisphere runs a 9B vision model on an RTX 5070 eGPU (12 GB) for 5-candidate photography grading.<br><strong>Body 2 (Starlight Edit Bay):</strong> Apple M5 MacBook Air (24 GB unified) running MLX 9B for iMessage subtext and two-way Apple Reminders sync, automatically yielding when Premiere or DaVinci Resolve launches.<br><strong>Body 3 (Midnight Watchdog):</strong> Linux server + RX 550 running 1.7B + Nomic embeddings, Home Assistant VM, and cloud telemetry pollers.</p>
-          <div class="pill-row">
-            <span class="pill">Qwen 27B + 9B Vision</span><span class="pill">Prefix KV-cache pinning</span><span class="pill">Custom MCP servers</span><span class="pill">Meilisearch (1.13M docs)</span>
+          <h2 class="case-title">Waves</h2>
+          <p class="case-body"><strong>In plain English:</strong> Waves is the AI system I run on my own hardware. Four compute lanes work together, a searchable index covers my own notes and files, and nothing needs a cloud model to keep running.</p>
+          <p class="case-body"><strong>How it fits:</strong> small collectors watch for changes, rules react instantly, a filter drops anything unchanged, and a council of models cross-checks before one writes the summary.</p>
+          <div class="pill-row"><span class="pill">27B reasoning model</span><span class="pill">9B vision model</span><span class="pill">MCP servers</span><span class="pill">Meilisearch</span></div>
+          <div class="dg-block">
+            <figure class="dg" data-dg>
+              <svg viewBox="0 0 360 632" role="img" aria-labelledby="dg-waves-t dg-waves-d" focusable="false">
+                <title id="dg-waves-t">How the Waves system is layered</title>
+                <desc id="dg-waves-d">Waves layers five stages: neurons collect, reflexes react, synapse filters, cortex briefs, and a council of models cross-checks and summarizes. Four compute lanes provide the models: a reasoning GPU, a vision GPU, a unified-memory laptop, and a small always-on edge box.</desc>
+                <rect class="nd glow g0" x="30" y="20" width="300" height="64" rx="12"/>
+                <text class="t-sans t-md f-fg ta-mid" x="180" y="41">Neurons</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="180" y="58">Small collectors that watch for changes.</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="180" y="74">No model needed.</text>
+                <line class="ln flow" x1="180" y1="84" x2="180" y2="108"/>
+                <polygon class="ar" points="175,101 185,101 180,108"/>
+                <rect class="nd glow g1" x="30" y="108" width="300" height="64" rx="12"/>
+                <text class="t-sans t-md f-fg ta-mid" x="180" y="129">Reflexes</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="180" y="146">Instant rules, like stepping aside</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="180" y="162">when I open my video editor.</text>
+                <line class="ln flow" x1="180" y1="172" x2="180" y2="196"/>
+                <polygon class="ar" points="175,189 185,189 180,196"/>
+                <rect class="nd glow g2" x="30" y="196" width="300" height="56" rx="12"/>
+                <text class="t-sans t-md f-fg ta-mid" x="180" y="221">Synapse</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="180" y="238">Filters out anything that has not changed.</text>
+                <line class="ln flow" x1="180" y1="252" x2="180" y2="276"/>
+                <polygon class="ar" points="175,269 185,269 180,276"/>
+                <rect class="nd glow g3" x="30" y="276" width="300" height="56" rx="12"/>
+                <text class="t-sans t-md f-fg ta-mid" x="180" y="301">Cortex</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="180" y="318">Turns what changed into a short brief.</text>
+                <line class="ln flow" x1="180" y1="332" x2="180" y2="356"/>
+                <polygon class="ar" points="175,349 185,349 180,356"/>
+                <rect class="nd-accent glow-accent g4" x="30" y="356" width="300" height="64" rx="12"/>
+                <text class="t-sans t-md f-fg ta-mid" x="180" y="377">Council</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="180" y="394">Models cross-check each other.</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="180" y="410">One writes the summary.</text>
+                <text class="t-mono t-xs f-muted ta-start" x="30" y="446">Four compute lanes feed the council</text>
+                <rect class="nd" x="30" y="456" width="144" height="72" rx="12"/>
+                <text class="t-sans t-sm f-fg ta-mid" x="102" y="481">Reasoning lane</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="102" y="498">RTX 3090 Ti</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="102" y="514">24 GB GPU</text>
+                <rect class="nd" x="186" y="456" width="144" height="72" rx="12"/>
+                <text class="t-sans t-sm f-fg ta-mid" x="258" y="481">Vision lane</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="258" y="498">RTX 5070 eGPU</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="258" y="514">12 GB GPU</text>
+                <rect class="nd" x="30" y="540" width="144" height="72" rx="12"/>
+                <text class="t-sans t-sm f-fg ta-mid" x="102" y="565">Unified-memory lane</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="102" y="582">Apple M5 laptop</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="102" y="598">24 GB shared memory</text>
+                <rect class="nd" x="186" y="540" width="144" height="72" rx="12"/>
+                <text class="t-sans t-sm f-fg ta-mid" x="258" y="565">Edge lane</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="258" y="582">Small Linux box</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="258" y="598">AMD RX 550</text>
+              </svg>
+              <figcaption class="dg-cap"><span>Waves, layer by layer, on four compute lanes.</span><button type="button" class="dg-pause" aria-pressed="false">Pause animation</button></figcaption>
+            </figure>
           </div>
+          <details class="tech"><summary>Technical details</summary>
+            <p>A 27B reasoning model on a 24 GB GPU, a 9B vision model on a 12 GB GPU, prefix KV-cache pinning for fast first responses, custom MCP servers, and Meilisearch for search. Three machines, four lanes.</p>
+          </details>
         </div>
       </article>
-
-      <article id="appa" class="case-block">
-        <div class="case-meta">
-          <span>APPA engine</span>
-          <span>916-line core</span>
-          <span>24fps .fcpxml / .otio</span>
-          <span>50:1 compression</span>
-        </div>
-        <div>
-          <h2 class="case-title">APPA: Autonomous Post-Production Pipeline</h2>
-          <p class="case-body">As credited Producer on <strong><a href="https://www.youtube.com/@BenWindleShootsHisShot" target="_blank" rel="noopener noreferrer">Ben Windle Shoots His Shot (@BenWindleShootsHisShot)</a></strong>, I built APPA to eliminate a 15-to-20-hour weekly manual logging and rough-cut bottleneck. APPA ingests raw multi-camera field footage, runs WhisperX speaker-verified transcription and computer-vision scene grading, and compiles frame-accurate 24fps <strong>.fcpxml</strong>, <strong>.otio</strong>, and burnt-in 2-lane review proxies for Premiere Pro and DaVinci Resolve.</p>
-          <div class="pill-row">
-            <span class="pill">OpenTimelineIO</span><span class="pill">FCPXML compiler</span><span class="pill">WhisperX</span><span class="pill">PySceneDetect</span>
-          </div>
-        </div>
-      </article>
-
       <article id="clarity" class="case-block">
-        <div class="case-meta">
-          <span>Clarity voice</span>
-          <span>562ms hot KV hit</span>
-          <span>4-way persistence</span>
-        </div>
+        <div class="case-meta"><span>02 / Agent</span><span>Runs on Waves</span><span>Swappable model underneath</span></div>
         <div>
-          <h2 class="case-title">Clarity: Zero-Assumption Socratic Voice Partner</h2>
-          <p class="case-body">Triggered straight from the iPhone Action Button, Clarity pairs 4-tier semantic word-weighting with dynamic retrieval across SQLite, Meilisearch, and BookStack, responding in sub-second local Kokoro TTS while logging every verified turn into a QLoRA golden training dataset.</p>
-          <div class="pill-row">
-            <span class="pill">FastAPI</span><span class="pill">Kokoro TTS</span><span class="pill">SQLite + Meilisearch</span>
+          <h2 class="case-title">Clarity</h2>
+          <p class="case-body"><strong>In plain English:</strong> Clarity is the friendly, curious agent on top of Waves. She asks good questions before she gives answers, and she runs on whichever local model I have swapped in. Move your cursor, or tap, and watch her eyes.</p>
+          <div class="cl-hero">
+            <svg class="cl-rig " data-state="idle" viewBox="0 0 400 330" role="img" aria-label="Clarity, a friendly blue wave character shaped like a rounded W, with curious eyes" focusable="false">
+              <g class="cl-float">
+                <g class="cl-body">
+                  <path class="cl-ribbon" d="M44 118 C44 200 80 238 134 238 C178 238 194 206 200 176 C206 206 222 238 266 238 C320 238 356 200 356 118"/>
+                  <g class="cl-eyes">
+                    <g class="cl-eye cl-eye-l">
+                      <rect class="f-sclera" x="104" y="150" width="40" height="64" rx="20"/>
+                    </g>
+                    <g class="cl-eye cl-eye-r">
+                      <rect class="f-sclera" x="256" y="150" width="40" height="64" rx="20"/>
+                    </g>
+                    <g class="cl-look">
+                      <circle class="f-eye" cx="124" cy="184" r="13"/>
+                      <circle class="f-glint" cx="129" cy="178" r="4"/>
+                      <circle class="f-eye" cx="276" cy="184" r="13"/>
+                      <circle class="f-glint" cx="281" cy="178" r="4"/>
+                    </g>
+                  </g>
+                  <path class="cl-mouth" d="M168 288 L232 288"/>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <details class="tech"><summary>Technical details</summary>
+            <p>Reasoning on a 27B local model, speech with Kokoro, search with Meilisearch, served with FastAPI. First words arrive in about 180 ms on my hardware with a warm cache. Your results will vary.</p>
+          </details>
+        </div>
+      </article>
+    </section>
+
+    <section id="clarity-demo" class="cl-demo" data-clarity-demo aria-labelledby="cl-demo-title">
+      <a class="cl-skip" href="#credits">Skip the demo</a>
+      <div class="cl-demo-track">
+        <div class="cl-demo-stage">
+          <h3 id="cl-demo-title" class="case-title">Clarity, co-producing a short</h3>
+          <div class="cl-demo-grid">
+            <div class="cl-rigwrap">
+              <svg class="cl-rig " data-state="idle" viewBox="0 0 400 330" role="img" aria-label="Clarity, a friendly blue wave character shaped like a rounded W, with curious eyes" focusable="false">
+                <g class="cl-float">
+                  <g class="cl-body">
+                    <path class="cl-ribbon" d="M44 118 C44 200 80 238 134 238 C178 238 194 206 200 176 C206 206 222 238 266 238 C320 238 356 200 356 118"/>
+                    <g class="cl-eyes">
+                      <g class="cl-eye cl-eye-l">
+                        <rect class="f-sclera" x="104" y="150" width="40" height="64" rx="20"/>
+                      </g>
+                      <g class="cl-eye cl-eye-r">
+                        <rect class="f-sclera" x="256" y="150" width="40" height="64" rx="20"/>
+                      </g>
+                      <g class="cl-look">
+                        <circle class="f-eye" cx="124" cy="184" r="13"/>
+                        <circle class="f-glint" cx="129" cy="178" r="4"/>
+                        <circle class="f-eye" cx="276" cy="184" r="13"/>
+                        <circle class="f-glint" cx="281" cy="178" r="4"/>
+                      </g>
+                    </g>
+                    <path class="cl-mouth" d="M168 288 L232 288"/>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div>
+              <ol class="cl-chat" aria-label="Example conversation between Justin and Clarity">
+                <li class="cl-msg cl-msg-you" data-state="thinking"><span class="cl-who">Justin</span>Clarity, what do we have from the rain shoot with Ben? Is there a clean 35 second cut before the downpour?</li>
+                <li class="cl-msg cl-msg-ai" data-state="asking"><span class="cl-who">Clarity</span>I indexed every clip and found a strong cold open. Before I cut anything: what is the joke this short is built around?</li>
+                <li class="cl-msg cl-msg-you" data-state="thinking"><span class="cl-who">Justin</span>The fox outfoxing us in the rain.</li>
+                <li class="cl-msg cl-msg-ai" data-state="asking"><span class="cl-who">Clarity</span>Then the fox shot lands right on that line. Want the egret on beat two, or stay tight on the two-shot?</li>
+                <li class="cl-msg cl-msg-you" data-state="thinking"><span class="cl-who">Justin</span>Egret on beat two. Cut the wide industrial shot.</li>
+                <li class="cl-msg cl-msg-ai" data-state="speaking"><span class="cl-who">Clarity</span>Done. A 36 second rough cut and a review proxy are waiting on the edit machine. What should we automate next?</li>
+              </ol>
+              <div class="cl-lanes" aria-label="APPA stages"><span class="cl-lane" data-step="1">Transcribe</span><span class="cl-lane" data-step="2">Grade shots</span><span class="cl-lane" data-step="4">Build the story</span><span class="cl-lane" data-step="6">Compile</span></div>
+              <div class="cl-cta">
+                <p class="cl-cta-title">What would you automate first?</p>
+                <div class="cta-row">
+                  <a class="btn-primary" href="mailto:justin@xfnl.studio?subject=What%20I%27d%20automate%20first">Email me your answer</a>
+                  <a class="btn-secondary" href="#appa">See how APPA works</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="cl-demo-note">A condensed example of how I work with Clarity. Details are simplified for the page.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <article id="appa" class="case-block">
+        <div class="case-meta"><span>03 / Pipeline</span><span>A function of Waves</span><span>Runs across all four lanes</span></div>
+        <div>
+          <h2 class="case-title">APPA</h2>
+          <p class="case-body"><strong>In plain English:</strong> Software that turns raw multi-camera footage into editable timelines for Premiere Pro and DaVinci Resolve. I built it as producer of <a href="https://www.youtube.com/@BenWindleShootsHisShot" target="_blank" rel="noopener noreferrer">Ben Windle Shoots His Shot</a> to replace roughly 15 to 20 hours a week of manual logging and rough cutting. Time saved now: measuring.</p>
+          <div class="pill-row"><span class="pill">WhisperX</span><span class="pill">PySceneDetect</span><span class="pill">OpenTimelineIO</span><span class="pill">FCPXML</span></div>
+          <div class="dg-block">
+            <figure class="dg" data-dg>
+              <svg viewBox="0 0 360 560" role="img" aria-labelledby="dg-appa-t dg-appa-d" focusable="false">
+                <title id="dg-appa-t">How APPA turns raw footage into editable timelines</title>
+                <desc id="dg-appa-d">APPA ingests multi-camera footage, transcribes it, splits scenes, grades shots with a vision model, drafts the story with a reasoning model, compiles 24 frames per second timelines and a review proxy, and hands them to Premiere Pro or DaVinci Resolve.</desc>
+                <rect class="nd glow g0" x="30" y="20" width="300" height="56" rx="12"/>
+                <text class="t-sans t-md f-fg ta-mid" x="180" y="45">Raw footage</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="180" y="62">Multi-camera field shoots</text>
+                <line class="ln flow" x1="180" y1="76" x2="180" y2="96"/>
+                <polygon class="ar" points="175,89 185,89 180,96"/>
+                <rect class="nd glow g1" x="30" y="96" width="300" height="56" rx="12"/>
+                <text class="t-sans t-md f-fg ta-mid" x="180" y="121">Transcribe</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="180" y="138">WhisperX, speaker-verified</text>
+                <line class="ln flow" x1="180" y1="152" x2="180" y2="172"/>
+                <polygon class="ar" points="175,165 185,165 180,172"/>
+                <rect class="nd glow g2" x="30" y="172" width="300" height="56" rx="12"/>
+                <text class="t-sans t-md f-fg ta-mid" x="180" y="197">Find scenes</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="180" y="214">PySceneDetect splits the shoot</text>
+                <line class="ln flow" x1="180" y1="228" x2="180" y2="248"/>
+                <polygon class="ar" points="175,241 185,241 180,248"/>
+                <rect class="nd glow g3" x="30" y="248" width="300" height="56" rx="12"/>
+                <text class="t-sans t-md f-fg ta-mid" x="180" y="273">Grade shots</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="180" y="290">Vision lane picks the best candidates</text>
+                <line class="ln flow" x1="180" y1="304" x2="180" y2="324"/>
+                <polygon class="ar" points="175,317 185,317 180,324"/>
+                <rect class="nd glow g4" x="30" y="324" width="300" height="56" rx="12"/>
+                <text class="t-sans t-md f-fg ta-mid" x="180" y="349">Build the story</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="180" y="366">Reasoning lane drafts the spine</text>
+                <line class="ln flow" x1="180" y1="380" x2="180" y2="400"/>
+                <polygon class="ar" points="175,393 185,393 180,400"/>
+                <rect class="nd-accent glow-accent g5" x="30" y="400" width="300" height="64" rx="12"/>
+                <text class="t-sans t-md f-fg ta-mid" x="180" y="421">Compile</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="180" y="438">24fps .fcpxml and .otio timelines,</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="180" y="454">plus a review proxy</text>
+                <line class="ln flow" x1="180" y1="464" x2="180" y2="484"/>
+                <polygon class="ar" points="175,477 185,477 180,484"/>
+                <rect class="nd glow g6" x="30" y="484" width="300" height="56" rx="12"/>
+                <text class="t-sans t-md f-fg ta-mid" x="180" y="509">Premiere Pro or DaVinci Resolve</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="180" y="526">Ready for the editor</text>
+              </svg>
+              <figcaption class="dg-cap"><span>APPA runs across all four Waves lanes.</span><button type="button" class="dg-pause" aria-pressed="false">Pause animation</button></figcaption>
+            </figure>
+            <figure class="fpo" data-fpo>
+              <svg viewBox="0 0 640 360" role="img" aria-label="Placeholder for an APPA timeline screenshot" focusable="false">
+                <rect class="nd" x="1" y="1" width="638" height="358" rx="16"/>
+                <text class="t-mono t-sm f-accent ta-start" x="24" y="36">FPO</text>
+                <text class="t-sans t-sm f-muted ta-start" x="72" y="36">Replace with an APPA timeline screenshot</text>
+                <rect class="nd" x="60" y="70" width="190" height="26" rx="6"/>
+                <rect class="nd" x="260" y="110" width="120" height="26" rx="6"/>
+                <rect class="nd" x="60" y="150" width="90" height="26" rx="6"/>
+                <rect class="nd" x="170" y="200" width="250" height="26" rx="6"/>
+                <rect class="nd" x="60" y="240" width="300" height="26" rx="6"/>
+                <text class="t-mono t-xs f-muted ta-start" x="24" y="338">Two video tracks, one audio track, no private footage</text>
+              </svg>
+              <figcaption class="fpo-cap"><span>FPO: APPA timeline screenshot</span></figcaption>
+            </figure>
           </div>
         </div>
       </article>
+    </section>
+
+    <section id="credits" class="sec">
+      <div class="sec-head">
+        <h2 class="sec-kicker">Credits burned, lessons learned</h2>
+      </div>
+      <p class="sec-intro">I break things on my own time so I can be careful on yours.</p>
+      <div class="credits-grid">
+        <article class="credit-card">
+          <h3 class="credit-title">The agents that flooded my to-do list</h3>
+          <dl>
+            <div><dt>What I tried</dt><dd>I wired automation and overnight scripts straight into my personal task board.</dd></div>
+            <div><dt>What broke</dt><dd>They created well over a hundred tickets, most of everything on the board, and a reminder loop nagged me for hours.</dd></div>
+            <div><dt>What I do now</dt><dd>Agents get their own queue. Humans own the board.</dd></div>
+          </dl>
+        </article>
+        <article class="credit-card">
+          <h3 class="credit-title">The parallax pile-up</h3>
+          <dl>
+            <div><dt>What I tried</dt><dd>I added scroll effects on top of one giant navigation script instead of refactoring it.</dd></div>
+            <div><dt>What broke</dt><dd>Several effects fought each other, the browser froze, headers duplicated inside frames, and I broke my own live layouts.</dd></div>
+            <div><dt>What I do now</dt><dd>Refactor first, run one engine, and set a performance budget before adding motion.</dd></div>
+          </dl>
+        </article>
+        <article class="credit-card">
+          <h3 class="credit-title">Regex surgery on live HTML</h3>
+          <dl>
+            <div><dt>What I tried</dt><dd>I edited my site's HTML with blind find-and-replace scripts.</dd></div>
+            <div><dt>What broke</dt><dd>Tags broke, text doubled, and CSS vanished.</dd></div>
+            <div><dt>What I do now</dt><dd>Content lives in a CMS, and a scrub check runs before every commit.</dd></div>
+          </dl>
+        </article>
+        <article class="credit-card">
+          <h3 class="credit-title">Image slop</h3>
+          <dl>
+            <div><dt>What I tried</dt><dd>I let an image model and unranked photo queries pick the hero art for a daily digest.</dd></div>
+            <div><dt>What broke</dt><dd>I got generic AI slop, screenshots, and photos of doorframes.</dd></div>
+            <div><dt>What I do now</dt><dd>A four-step editorial hierarchy, a vision model that grades candidates, and a human veto.</dd></div>
+          </dl>
+        </article>
+      </div>
     </section>
 
     <footer id="contact" class="footer">
-      <h2 class="footer-title">Building the next chapter of <em>operations?</em></h2>
-      <p class="footer-sub">Collaborations and leadership roles in AI operations, technical program management, and workflow architecture welcome.</p>
+      <div class="footer-hello">
+        <img class="avatar" src="/img/memoji-avatar-400.webp" width="56" height="56" alt="" loading="lazy">
+        <span>Austin, TX · Hybrid or remote</span>
+      </div>
+      <h2 class="footer-title">Let's make something that <em>ships.</em></h2>
+      <p class="footer-sub">Open to creative program management and AI workflow roles, in Austin (hybrid) or remote. Or just say hello. I'm friendly.</p>
       <div class="cta-row">
-        <a href="mailto:justin@xfnl.studio" class="btn-primary">Email Justin</a>
+        <a href="mailto:justin@xfnl.studio" class="btn-primary">Email me</a>
         <a href="https://www.linkedin.com/in/justin-jackson-pm/" target="_blank" rel="noopener noreferrer" class="btn-secondary">LinkedIn ↗</a>
+        <a href="https://www.youtube.com/@BenWindleShootsHisShot" target="_blank" rel="noopener noreferrer" class="btn-secondary">YouTube ↗</a>
+        <a href="https://vimeo.com/user222444720" target="_blank" rel="noopener noreferrer" class="btn-secondary">Vimeo ↗</a>
       </div>
       <div class="footer-meta">
         <span>© 2026 Justin Jackson · Austin, TX</span>
-        <a href="/systems/">View systems →</a>
+        <a href="/about/">Next: About →</a>
       </div>
     </footer>
   </main>
+  <!-- TODO (Justin and Gemini): add the Cloudflare Web Analytics beacon here once the site token exists. -->
 </body>
 </html>

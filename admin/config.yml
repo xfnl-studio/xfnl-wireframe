@@ -2,13 +2,13 @@ backend:
   name: github
   repo: xfnl-studio/xfnl-wireframe
   branch: main
-media_folder: "assets"
-public_folder: "/assets"
+media_folder: "img"
+public_folder: "/img"
 collections:
   - name: "portfolio"
-    label: "Portfolio Content (All 4 Pages)"
+    label: "Portfolio Content"
     files:
-      - label: "Full Site Content (Home, Systems, Experiments, About)"
+      - label: "Site Content (Home, Systems, About)"
         name: "content"
         file: "content.json"
         fields:
@@ -28,14 +28,17 @@ collections:
             fields:
               - { label: "Eyebrow", name: "eyebrow", widget: "string" }
               - { label: "Title", name: "title", widget: "string" }
+              - { label: "Title HTML (with em)", name: "title_html", widget: "string" }
               - { label: "Lead Paragraph (HTML allowed)", name: "lead_html", widget: "text" }
-              - label: "Results Cards (4)"
+              - { label: "Primary CTA", name: "cta_primary", widget: "string" }
+              - { label: "Secondary CTA", name: "cta_secondary", widget: "string" }
+              - label: "Proof Cards"
                 name: "results"
                 widget: "list"
                 fields:
                   - { label: "Metric", name: "metric", widget: "string" }
                   - { label: "Detail", name: "detail", widget: "string" }
-              - label: "Featured Systems Rows"
+              - label: "Featured Work Rows"
                 name: "featured_systems"
                 widget: "list"
                 fields:
@@ -68,23 +71,6 @@ collections:
                   - { label: "Paragraph 1 (HTML allowed)", name: "p1_html", widget: "text" }
                   - { label: "Paragraph 2 (HTML allowed)", name: "p2_html", widget: "text", required: false }
                   - { label: "Tech Pills", name: "pills", widget: "list" }
-          - label: "Experiments Page (/experiments/)"
-            name: "experiments_page"
-            widget: "object"
-            fields:
-              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
-              - { label: "Hero Title (HTML allowed)", name: "title_html", widget: "string" }
-              - { label: "Hero Lead", name: "lead", widget: "text" }
-              - label: "Experiment Deep Dives"
-                name: "items"
-                widget: "list"
-                fields:
-                  - { label: "Anchor ID", name: "id", widget: "string" }
-                  - { label: "Left Meta Lines", name: "meta", widget: "list" }
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Paragraph 1 (HTML allowed)", name: "p1_html", widget: "text" }
-                  - { label: "Paragraph 2 (HTML allowed)", name: "p2_html", widget: "text", required: false }
-                  - { label: "Tech Pills", name: "pills", widget: "list" }
           - label: "About Page (/about/)"
             name: "about_page"
             widget: "object"
@@ -98,5 +84,5 @@ collections:
                 fields:
                   - { label: "Dates", name: "dates", widget: "string" }
                   - { label: "Company", name: "company", widget: "string" }
-                  - { label: "Role & Summary", name: "role", widget: "text" }
+                  - { label: "Role and Summary", name: "role", widget: "text" }
                   - { label: "Location", name: "location", widget: "string" }

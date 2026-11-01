@@ -3,227 +3,171 @@
     "brand_text": "xfnl.studio",
     "email": "justin@xfnl.studio",
     "linkedin": "https://www.linkedin.com/in/justin-jackson-pm/",
-    "footer_heading": "Building the next chapter of operations?",
-    "footer_sub": "Collaborations and leadership roles in AI operations, technical program management, and workflow architecture welcome.",
-    "copyright": "\u00a9 2026 Justin Jackson \u00b7 Austin, TX"
+    "footer_heading": "Let's make something that ships.",
+    "footer_sub": "Open to creative program management and AI workflow roles, in Austin (hybrid) or remote. Or just say hello. I'm friendly.",
+    "copyright": "© 2026 Justin Jackson · Austin, TX"
   },
   "home": {
-    "eyebrow": "Marketing Operations & AI Systems \u00b7 Commerce (BigCommerce \u00b7 Feedonomics \u00b7 Makeswift)",
-    "title": "Justin Jackson",
-    "lead_html": "I untangle enterprise chaos and build the AI and workflow systems to fix it across <strong>Commerce</strong>, <strong>Apple</strong>, and <strong><a href=\"https://www.creatoriq.com\" target=\"_blank\" rel=\"noopener noreferrer\">CreatorIQ</a></strong>.",
-    "cta_primary": "Get in touch",
-    "cta_secondary": "View results",
+    "eyebrow": "Marketing program manager · Video producer · AI systems builder · Austin, TX",
+    "title": "I sit where art meets technology.",
+    "title_html": "I sit where <em>art meets technology.</em>",
+    "lead_html": "I can't just write the song. I have to produce it and build the gear that captures it. Same with video: I can't just edit it, I have to build the pipeline that saves the hours, so I can be home with my family and still publish on a steady cadence.",
+    "cta_primary": "Watch the work",
+    "cta_secondary": "How I build",
     "results": [
       {
-        "metric": "2.9x deliverable throughput",
-        "detail": "Scaled Asana intake OS across 50 marketers (419 to 1,213 per quarter)"
+        "metric": "~3× deliverables",
+        "detail": "Quarterly marketing deliverables after I built and ran intake in Asana (internal measure)"
       },
       {
-        "metric": "+81% output per person",
-        "detail": "Lifted quarterly output from 22.1 to 40.1 deliverables with flat headcount"
+        "metric": "~25% faster",
+        "detail": "Median request-to-delivery time (internal measure)"
       },
       {
-        "metric": "0% to 39% brief compliance",
-        "detail": "Built Family Sync in Claude Code and Asana v3 SDK inside 30 days"
+        "metric": "3 days",
+        "detail": "From an early analyst-report release to a live executive landing page"
       },
       {
-        "metric": "3-day Gartner MQ launch",
-        "detail": "Pre-staged contingency system when Gartner dropped 2 weeks early"
+        "metric": "9+ years",
+        "detail": "Across support, video production, and marketing program management"
       }
     ],
     "featured_systems": [
       {
         "tag": "Case study",
-        "title": "Family Sync & The 2.9x Asana Intake OS",
-        "subtitle": "Bypassing vendor middleware limits with Claude Code and the Asana v3 SDK across 5,080 subtasks",
-        "href": "/systems/#family-sync"
+        "title": "Intake and handoffs, automated",
+        "subtitle": "Building the process, then the automation that keeps final assets from getting lost",
+        "href": "/systems/#intake-handoffs"
       },
       {
         "tag": "Case study",
-        "title": "Launching Gartner MQ in 72 Hours & BigCommerce Payments",
-        "subtitle": "Pre-staging GTM launch architecture across 4 pods and 8 shared-services teams",
-        "href": "/systems/#gartner-payments"
+        "title": "A Magic Quadrant launch in 3 days",
+        "subtitle": "Preparing in advance so an early release became a calm week",
+        "href": "/systems/#mq-launch"
       },
       {
         "tag": "Case study",
-        "title": "Global Release QA at Apple TV+ & Enterprise Video at CreatorIQ",
-        "subtitle": "Standardizing high-volume creative publishing frameworks and B2B commercial pipelines",
+        "title": "Apple Music and CreatorIQ",
+        "subtitle": "Creative operations at scale, and commercial video for a client",
         "href": "/systems/#apple-creatoriq"
       }
     ],
     "experiments": [
       {
-        "name": "GroupThink",
-        "badge": "3-Body OS",
-        "description": "Local multi-agent nervous system orchestrating 4 compute lanes across 64 GB pooled VRAM with zero API cost.",
-        "href": "/experiments/#groupthink"
-      },
-      {
-        "name": "APPA",
-        "badge": "24fps NLE",
-        "description": "916-line media engine compiling raw multi-camera shoots into frame-accurate DaVinci Resolve and Premiere timelines.",
-        "href": "/experiments/#appa"
+        "name": "Waves",
+        "badge": "System",
+        "description": "My own AI system, running on my own hardware. No per-token fees.",
+        "href": "/experiments/#waves"
       },
       {
         "name": "Clarity",
-        "badge": "27B Voice",
-        "description": "Zero-assumption Socratic voice partner running on a KV-pinned 27B local reasoning model with sub-second TTS.",
+        "badge": "Agent",
+        "description": "A curious, Socratic agent who asks good questions before she gives answers.",
         "href": "/experiments/#clarity"
+      },
+      {
+        "name": "APPA",
+        "badge": "Pipeline",
+        "description": "Turns raw multi-camera shoots into editable timelines for Premiere Pro and DaVinci Resolve.",
+        "href": "/experiments/#appa"
       }
     ]
   },
   "systems_page": {
-    "eyebrow": "/ Systems & case studies",
-    "title_html": "Enterprise systems built <em>under fire.</em>",
-    "lead": "How I pair technical API automation with progressive team enablement so complex organizations actually ship faster.",
+    "eyebrow": "Systems and case studies",
+    "title_html": "Systems that help creative teams <em>ship.</em>",
+    "lead": "How I pair program management with automation, so busy teams spend their time on the work and not the paperwork.",
     "cases": [
       {
-        "id": "family-sync",
+        "id": "intake-handoffs",
         "meta": [
-          "01 / Commerce",
-          "1,132 requests",
-          "5,080 subtasks",
-          "~30d to ~22d cycle"
+          "01 / Intake and automation",
+          "Role: program manager and builder",
+          "Tools: Asana, Asana Node.js SDK, Claude Code"
         ],
-        "title": "Family Sync & The 2.9x Asana Intake OS",
-        "p1_html": "When we migrated 50 marketers and creatives across <strong>BigCommerce, Feedonomics, and Makeswift</strong> from Jira to Asana, downstream designers and web publishers were losing Figma links and copy docs across subtasks. Vendor reps told us native cross-level asset syncing was impossible without expensive third-party middleware.",
-        "p2_html": "I sat down with <strong>Claude Code</strong> and the <strong>Asana v3 Node.js SDK</strong> and built <strong>Family Sync</strong>: an idempotent dependency engine that automatically propagates Final Figma Links, Final Copy Docs, and Final Image Assets across parent and sibling subtasks, handles clear-keyword resets, and fires blocked-status alerts. Paired with a live 33-person automation keynote and the revived mTalks series, quarterly deliverable throughput climbed <strong>2.9x (419 to 1,213)</strong>, brief compliance jumped from <strong>0% to 39% in 30 days</strong>, escalations dropped from <strong>14.5% to 9.0%</strong>, and median cycle time compressed from <strong>~30 to ~22 days</strong>.",
+        "title": "Intake and handoffs, automated",
+        "p1_html": "<strong>Problem.</strong> Creative requests arrived by too many routes, and final assets (design links, copy docs, images) got lost as work moved between related tasks. Native syncing across task levels wasn't available in our setup.",
+        "p2_html": "<strong>What I did.</strong> I built and run marketing intake and routing in Asana. Before writing any automation code, I had Claude Code interview me and test whether the platform could support the idea. Then I built Family Sync: a rule that carries final assets between related tasks, is safe to re-run, copies cleanly to other projects, and is documented. I paired it with team training so it stuck. <strong>Result.</strong> Quarterly deliverables rose roughly threefold, and median request-to-delivery time dropped by about a quarter (internal measures).",
         "pills": [
+          "Asana",
+          "Asana Node.js SDK",
           "Claude Code",
-          "Asana v3 Node.js SDK",
-          "Campaign Builder",
-          "85-90% faster LLM reporting"
+          "Automation"
         ]
       },
       {
-        "id": "gartner-payments",
+        "id": "mq-launch",
         "meta": [
-          "02 / Tier-1 GTM",
-          "72-hour turnaround",
-          "4 GTM pods",
-          "296 award entries"
+          "02 / Launches",
+          "Role: program manager",
+          "Tools: Asana, Claude"
         ],
-        "title": "Launching Gartner MQ in 72 Hours & BigCommerce Payments",
-        "p1_html": "For the 2026 <strong>Gartner Magic Quadrant</strong>, I pre-staged icebox tickets in August and architected a Claude contingency plan on September 2. When Gartner unexpectedly dropped the report two weeks early on October 19, our pre-staged system and Family Sync automation let us launch the full executive landing page in <strong>3 days</strong> with zero fire drills.",
-        "p2_html": "For <strong>BigCommerce Payments</strong> (launched on time April 3, 2026), I partnered with the Product Manager to run the AMER and EMEA marketing-moment launches across all shared-services teams, earning a thank-you by name from CEO Travis Hess in the company-wide launch note. I also drove the 2026 <strong>Commerce Awards</strong> program to 296 submissions (~99% of goal, +29% YoY).",
+        "title": "A Magic Quadrant launch in 3 days",
+        "p1_html": "<strong>Problem.</strong> An analyst firm published its Magic Quadrant earlier than expected.",
+        "p2_html": "<strong>What I did.</strong> I had prepared a contingency plan in advance, with AI help, so we were not starting from zero. <strong>Result.</strong> An executive landing page went live within 3 days. I also coordinated regional marketing for the BigCommerce Payments launch and helped grow Commerce Awards entries roughly 30% year over year.",
         "pills": [
-          "BigCommerce Payments",
           "Gartner Magic Quadrant",
-          "Commerce Awards (+29% YoY)",
-          "AI governance addenda"
+          "BigCommerce Payments",
+          "Commerce Awards"
         ]
       },
       {
         "id": "apple-creatoriq",
         "meta": [
-          "03 / Media & QA",
-          "Apple TV+ / Music",
-          "CreatorIQ B2B",
-          "B.S. Filmmaking"
+          "03 / Media",
+          "Roles: creative operations contractor, commercial video producer",
+          "Through: TEKsystems, xfnl.studio"
         ],
-        "title": "Global Release QA at Apple TV+ & Commercial Systems at CreatorIQ",
-        "p1_html": "At <strong>Apple</strong> (via TEKsystems), I directed high-volume static and motion creative pipelines and co-architected the standardized release QA review framework for <strong>Apple TV+ and Apple Music</strong> across hundreds of monthly global deliverables. Concurrently, through my studio, I scoped and delivered five-figure enterprise B2B commercial video engagements for <strong><a href=\"https://www.creatoriq.com\" target=\"_blank\" rel=\"noopener noreferrer\">CreatorIQ</a></strong>.",
-        "p2_html": "",
+        "title": "Apple Music and CreatorIQ",
+        "p1_html": "At <strong>Apple Music</strong>, through TEKsystems, I ran high-volume creative publishing and release QA.",
+        "p2_html": "Through my studio, I produced commercial video for <strong>CreatorIQ</strong>.",
         "pills": [
-          "Apple TV+ & Apple Music QA",
-          "CreatorIQ enterprise video",
-          "Certified Scrum Master (CSM)"
+          "Apple Music",
+          "CreatorIQ",
+          "Commercial video"
         ]
       }
     ]
   },
   "experiments_page": {
-    "eyebrow": "/ Experiments & local AI fleet",
-    "title_html": "Self-hosted 3-Body <em>AI architecture.</em>",
-    "lead": "I run a zero-API-cost, 4-accelerator local AI operating system across three physical machines (64 GB pooled VRAM and unified memory, 150 GB system RAM, and 1.13M+ indexed documents).",
-    "items": [
-      {
-        "id": "groupthink",
-        "meta": [
-          "Body 1, 2 & 3",
-          "64 GB pooled memory",
-          "~180ms TTFT",
-          "Neurons to Cortex"
-        ],
-        "title": "GroupThink: The 3-Body Neurobiological OS",
-        "p1_html": "Instead of burning cloud tokens on polling loops, three peer nodes share one Git codebase with edge <strong>Neurons</strong> (zero-LLM collectors), a hash-filtered <strong>Synapse</strong> delta ledger, and a 3-stage <strong>Council</strong> synthesis engine.",
-        "p2_html": "<strong>Body 1 (ARTROCK Studio Forge):</strong> Left Hemisphere runs a KV-pinned 27B reasoning model on an RTX 3090 Ti (24 GB) for analytical synthesis; Right Hemisphere runs a 9B vision model on an RTX 5070 eGPU (12 GB) for 5-candidate photography grading.<br><strong>Body 2 (Starlight Edit Bay):</strong> Apple M5 MacBook Air (24 GB unified) running MLX 9B for iMessage subtext and two-way Apple Reminders sync, automatically yielding when Premiere or DaVinci Resolve launches.<br><strong>Body 3 (Midnight Watchdog):</strong> Linux server + RX 550 running 1.7B + Nomic embeddings, Home Assistant VM, and cloud telemetry pollers.",
-        "pills": [
-          "Qwen 27B + 9B Vision",
-          "Prefix KV-cache pinning",
-          "Custom MCP servers",
-          "Meilisearch (1.13M docs)"
-        ]
-      },
-      {
-        "id": "appa",
-        "meta": [
-          "APPA engine",
-          "916-line core",
-          "24fps .fcpxml / .otio",
-          "50:1 compression"
-        ],
-        "title": "APPA: Autonomous Post-Production Pipeline",
-        "p1_html": "As credited Producer on <strong><a href=\"https://www.youtube.com/@BenWindleShootsHisShot\" target=\"_blank\" rel=\"noopener noreferrer\">Ben Windle Shoots His Shot (@BenWindleShootsHisShot)</a></strong>, I built APPA to eliminate a 15-to-20-hour weekly manual logging and rough-cut bottleneck. APPA ingests raw multi-camera field footage, runs WhisperX speaker-verified transcription and computer-vision scene grading, and compiles frame-accurate 24fps <strong>.fcpxml</strong>, <strong>.otio</strong>, and burnt-in 2-lane review proxies for Premiere Pro and DaVinci Resolve.",
-        "p2_html": "",
-        "pills": [
-          "OpenTimelineIO",
-          "FCPXML compiler",
-          "WhisperX",
-          "PySceneDetect"
-        ]
-      },
-      {
-        "id": "clarity",
-        "meta": [
-          "Clarity voice",
-          "562ms hot KV hit",
-          "4-way persistence"
-        ],
-        "title": "Clarity: Zero-Assumption Socratic Voice Partner",
-        "p1_html": "Triggered straight from the iPhone Action Button, Clarity pairs 4-tier semantic word-weighting with dynamic retrieval across SQLite, Meilisearch, and BookStack, responding in sub-second local Kokoro TTS while logging every verified turn into a QLoRA golden training dataset.",
-        "p2_html": "",
-        "pills": [
-          "FastAPI",
-          "Kokoro TTS",
-          "SQLite + Meilisearch"
-        ]
-      }
-    ]
+    "eyebrow": "Experiments and lab notes",
+    "title_html": "A lab for staying <em>curious.</em>",
+    "lead": "I tinker with local AI to stay current with frontier models and to learn by building. Some of it turns into production tools. Most of it teaches me something, and a few things teach me loudly.",
+    "items": []
   },
   "about_page": {
-    "eyebrow": "/ About & track record",
-    "title_html": "Operator, producer, and <em>systems builder.</em>",
-    "lead": "With a B.S. in Digital Filmmaking & Video Production, a Certified Scrum Master (CSM) credential, and 9+ years inside high-growth tech and media organizations, I bridge creative storytelling with deterministic engineering.",
+    "eyebrow": "About",
+    "title_html": "Started in tech support. Learned to tell stories. <em>Now I build the systems behind them.</em>",
+    "lead": "I studied digital filmmaking at the Art Institute of Philadelphia. My first job at BigCommerce was answering support tickets. Then I moved into video, producing for the marketing team, and then into program management, where I've spent my time making creative work easier to ship.",
     "roles": [
       {
         "dates": "2025 to Present",
-        "company": "Commerce (BigCommerce \u00b7 Feedonomics \u00b7 Makeswift)",
-        "role": "Program Manager, Marketing Operations & Systems (Interim PM Lead, Aug 2026) \u00b7 Supporting ~50 marketers across 4 GTM pods and 8 shared-services teams.",
+        "company": "Commerce (BigCommerce · Feedonomics · Makeswift)",
+        "role": "Marketing Program Manager · Marketing program management and intake for three brands, plus workflow automation.",
         "location": "Austin, TX"
       },
       {
         "dates": "2024 to Present",
         "company": "xfnl.studio (formerly Carbonrain Media)",
-        "role": "Founder & Principal | Commercial Video Production & AI Workflow Systems \u00b7 Six-figure cumulative revenue studio; Producer on @BenWindleShootsHisShot.",
+        "role": "Founder and Principal · Commercial video production and AI workflow systems. Producer, Ben Windle Shoots His Shot.",
         "location": "Austin, TX"
       },
       {
         "dates": "2024 to 2025",
-        "company": "Apple (via TEKsystems)",
-        "role": "Creative Operations & Publishing Specialist \u00b7 Co-architected standardized release QA frameworks for Apple TV+ and Apple Music.",
+        "company": "Apple Music (via TEKsystems)",
+        "role": "Creative Operations and Publishing Specialist · Creative publishing and release QA.",
         "location": "Austin, TX"
       },
       {
         "dates": "2024 to 2025",
         "company": "CreatorIQ",
-        "role": "Commercial Video Producer & Post-Production Systems Lead (Contract) \u00b7 Delivered five-figure enterprise B2B commercial video engagements.",
+        "role": "Commercial Video Producer (Contract) · Commercial video production and post-production.",
         "location": "Remote"
       },
       {
         "dates": "2017 to 2023",
         "company": "BigCommerce",
-        "role": "Marketing Project Manager (2023) \u00b7 Video Producer (2018 to 2023) \u00b7 Tech Support (2017 to 2018, 99% CSAT) \u00b7 Cut sprint overload 60% and case-study intake time 85%.",
+        "role": "Marketing Project Manager (2023) · Video Producer (2018 to 2023) · Tech Support (2017 to 2018)",
         "location": "Austin, TX"
       }
     ]

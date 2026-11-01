@@ -26,7 +26,7 @@
     var hl = document.getElementById("cms-lead");
     if (page === "home" && data.home) {
       if (eb && data.home.eyebrow) eb.textContent = data.home.eyebrow;
-      if (ht && data.home.title) ht.textContent = data.home.title;
+      if (ht && data.home.title_html) { ht.innerHTML = data.home.title_html; } else if (ht && data.home.title) { ht.textContent = data.home.title; }
       if (hl && data.home.lead_html) hl.innerHTML = data.home.lead_html;
       var rg = document.getElementById("cms-results");
       if (rg && data.home.results && data.home.results.length) {
@@ -173,7 +173,12 @@
       ctx.arc(proj[p][0], proj[p][1], 2.4, 0, Math.PI * 2);
       ctx.fill();
     }
-    requestAnimationFrame(tick);
+    if (!document.hidden && !reduceMotion.matches) { requestAnimationFrame(tick); } else { running = false; }
   }
+  var reduceMotion = window.matchMedia ? window.matchMedia("(prefers-reduced-motion: reduce)") : { matches: false };
+  var running = true;
   requestAnimationFrame(tick);
+  document.addEventListener("visibilitychange", function(){
+    if (!document.hidden && !running && !reduceMotion.matches) { running = true; requestAnimationFrame(tick); }
+  });
 })();

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://xfnl.studio/</loc></url>
-  <url><loc>https://xfnl.studio/systems/</loc></url>
-  <url><loc>https://xfnl.studio/experiments/</loc></url>
-  <url><loc>https://xfnl.studio/about/</loc></url>
+  <url><loc>https://xfnl.studio/</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://xfnl.studio/work/</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://xfnl.studio/systems/</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://xfnl.studio/experiments/</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://xfnl.studio/about/</loc><lastmod>2026-11-01</lastmod></url>
 </urlset>
