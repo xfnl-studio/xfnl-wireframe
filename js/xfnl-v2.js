@@ -28,7 +28,7 @@
       btn.addEventListener('click', function () {
         state.userPaused = !state.userPaused;
         btn.setAttribute('aria-pressed', state.userPaused ? 'true' : 'false');
-        btn.textContent = state.userPaused ? 'Play animation' : 'Pause animation';
+        btn.setAttribute('aria-label', state.userPaused ? 'Play animation' : 'Pause animation');
         apply();
       });
     }
@@ -287,4 +287,137 @@
     }
   }
   initReveal();
+})();
+
+
+/* ---------- v2.6: verb ticker, scroll-drawn waves ---------- */
+(function () {
+  'use strict';
+  var reduced = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : { matches: false };
+  var hasIO = 'IntersectionObserver' in window;
+
+  /* Verb ticker. Static text stays for screen readers and reduced motion. Hover, focus, tap, button, hidden tab, and off-screen all pause it. */
+  (function () {
+    var root = document.querySelector('[data-ticker]');
+    if (!root || reduced.matches) { return; }
+    var verbs = (root.getAttribute('data-verbs') || '').split(',').filter(Boolean);
+    var el = root.querySelector('.tk-verb');
+    var btn = root.querySelector('.tk-pause');
+    if (!verbs.length || !el) { return; }
+    var i = 0, timer = null, userPaused = false, hover = false, visible = !hasIO;
+
+    function show() {
+      el.classList.remove('tk-in');
+      void el.offsetWidth;
+      el.textContent = verbs[i];
+      el.classList.add('tk-in');
+    }
+    function stop() { if (timer) { clearInterval(timer); timer = null; } }
+    function sync() {
+      var run = !userPaused && !hover && visible && !document.hidden;
+      if (run && !timer) { timer = setInterval(function () { i = (i + 1) % verbs.length; show(); }, 1200); }
+      if (!run) { stop(); }
+    }
+    root.classList.add('is-live');
+    if (btn) {
+      btn.hidden = false;
+      btn.addEventListener('click', function () {
+        userPaused = !userPaused;
+        btn.setAttribute('aria-pressed', userPaused ? 'true' : 'false');
+        btn.setAttribute('aria-label', userPaused ? 'Play' : 'Pause');
+        sync();
+      });
+    }
+    root.addEventListener('mouseenter', function () { hover = true; sync(); });
+    root.addEventListener('mouseleave', function () { hover = false; sync(); });
+    root.addEventListener('focusin', function () { hover = true; sync(); });
+    root.addEventListener('focusout', function () { hover = false; sync(); });
+    var live = root.querySelector('.ticker-live');
+    if (live) { live.addEventListener('click', function () { userPaused = !userPaused; if (btn) { btn.setAttribute('aria-pressed', userPaused ? 'true' : 'false'); btn.setAttribute('aria-label', userPaused ? 'Play' : 'Pause'); } sync(); }); }
+    document.addEventListener('visibilitychange', sync);
+    if (hasIO) { new IntersectionObserver(function (en) { visible = en[0].isIntersecting; sync(); }, { threshold: 0.2 }).observe(root); }
+    show();
+    sync();
+  })();
+
+  /* Scroll-drawn waves. Moves only while scrolling, never loops, and ends as a static merged line.
+     Reduced motion and no-JS keep the fully drawn graphic. The background icosahedron dims while the graphic is on screen. */
+  (function () {
+    var secs = document.querySelectorAll('[data-waves]');
+    if (!secs.length || reduced.matches) { return; }
+    Array.prototype.forEach.call(secs, function (sec) {
+      var fig = sec.querySelector('.wv');
+      var late = fig ? fig.querySelector('.wv-both') : null;
+      var early = fig ? fig.querySelectorAll('path:not(.wv-both)') : [];
+      if (!fig || !late || !early.length) { return; }
+      var queued = false;
+      function clamp(v) { return v < 0 ? 0 : (v > 1 ? 1 : v); }
+      function paint() {
+        queued = false;
+        var r = fig.getBoundingClientRect();
+        var vh = window.innerHeight || 800;
+        var start = vh * 0.92, end = vh * 0.3;
+        var p = (start - r.top) / (start - end);
+        var e = String(1 - clamp(p / 0.8));
+        Array.prototype.forEach.call(early, function (el) { el.setAttribute('stroke-dashoffset', e); });
+        late.setAttribute('stroke-dashoffset', String(1 - clamp((p - 0.64) / 0.36)));
+      }
+      function queue() { if (!queued) { queued = true; window.requestAnimationFrame(paint); } }
+      window.addEventListener('scroll', queue, { passive: true });
+      window.addEventListener('resize', queue);
+      if (hasIO) {
+        new IntersectionObserver(function (en) {
+          document.body.classList.toggle('wv-focus', en[0].isIntersecting);
+        }, { threshold: 0.25 }).observe(fig);
+      }
+      paint();
+    });
+  })();
+})();
+
+
+/* ---------- v2.7: stat graphics (added after the count-up hydrates the cards) ---------- */
+(function () {
+  'use strict';
+  var root = document.getElementById('cms-results');
+  if (!root) { return; }
+  var reduced = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : { matches: false };
+  var hasIO = 'IntersectionObserver' in window;
+  var NS = 'http://www.w3.org/2000/svg';
+
+  function row(label, cls, wcls) {
+    return '<span class="vrow"><span>' + label + '</span><span class="vtrack"><span class="vbar ' + cls + ' ' + wcls + '"></span></span></span>';
+  }
+  function build(idx) {
+    // Order is fixed by the content: deliverables, speed, days, years.
+    if (idx === 0) { return row('1x', '', 'vw33') + row('3x', 'vbar-a', 'vw100'); }
+    if (idx === 1) { return row('Before', '', 'vw100') + row('After', 'vbar-a', 'vw75'); }
+    if (idx === 2) { return '<span class="vdots"><span class="vdot"></span><span class="vdot"></span><span class="vdot"></span><span>Days 1 to 3</span></span>'; }
+    if (idx === 3) {
+      return '<svg class="vwave" viewBox="0 0 160 28" focusable="false" aria-hidden="true">' +
+        '<path pathLength="1" d="M0 14 C 10 0, 20 0, 30 14 S 50 28, 60 14 S 80 0, 90 14 S 110 28, 120 14 S 140 4, 160 14"/>' +
+        '<path pathLength="1" d="M0 14 C 10 28, 20 28, 30 14 S 50 0, 60 14 S 80 28, 90 14 S 110 0, 120 14 S 140 4, 160 14"/></svg>';
+    }
+    return '';
+  }
+  function decorate() {
+    var cards = root.querySelectorAll('.stat-card');
+    Array.prototype.forEach.call(cards, function (card, idx) {
+      if (card.querySelector('.stat-viz')) { return; }
+      var html = build(idx);
+      if (!html) { return; }
+      var d = document.createElement('div');
+      d.className = 'stat-viz';
+      d.setAttribute('aria-hidden', 'true');
+      d.innerHTML = html;
+      card.appendChild(d);
+      if (reduced.matches || !hasIO) { card.classList.add('viz-in'); return; }
+      var io = new IntersectionObserver(function (en) {
+        if (en[0].isIntersecting) { card.classList.add('viz-in'); io.disconnect(); }
+      }, { threshold: 0.5 });
+      io.observe(card);
+    });
+  }
+  decorate();
+  if ('MutationObserver' in window) { new MutationObserver(decorate).observe(root, { childList: true }); }
 })();

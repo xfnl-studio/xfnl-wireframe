@@ -3,28 +3,28 @@
     "brand_text": "xfnl Studio",
     "email": "justin@xfnl.studio",
     "linkedin": "https://www.linkedin.com/in/justin-jackson-pm/",
-    "footer_heading": "Let's make something that ships.",
-    "footer_sub": "Open to creative program management and AI workflow roles, in Austin (hybrid) or remote. Or just say hello. I'm friendly.",
+    "footer_heading": "Let's Make Something That Ships.",
+    "footer_sub": "Open to creative program management and AI workflow opportunities, in Austin (hybrid) or remote. Or just say hello. I'm friendly.",
     "copyright": "© 2026 Justin Jackson · Austin, TX"
   },
   "home": {
-    "eyebrow": "Marketing program manager · Video producer · AI systems builder · Austin, TX",
-    "title": "I sit where art meets technology.",
-    "title_html": "I sit where <em>art meets technology.</em>",
-    "lead_html": "By day, I run marketing programs at <strong>Commerce</strong> (BigCommerce, Feedonomics, Makeswift). Through <strong>xfnl Studio</strong>, I make video and build AI tools.",
-    "cta_primary": "Watch the work",
-    "cta_secondary": "How I build",
+    "eyebrow": "Marketing Program Manager · Technologist · Creative",
+    "title": "I was trained end to end. Every role since has been a pipeline.",
+    "title_html": "I was trained end to end. <em>Every role since has been a pipeline.</em>",
+    "lead_html": "I run marketing programs at <strong>Commerce</strong> (BigCommerce, Feedonomics, Makeswift) and build the automation that helps creative teams ship. I speak creative because I am one, and I automate so creative work can flow uninterrupted.",
+    "cta_primary": "How I Run Programs",
+    "cta_secondary": "What I Build",
     "results": [
       {
-        "metric": "~3× deliverables",
+        "metric": "~3× Deliverables",
         "detail": "Quarterly marketing deliverables after I built and ran intake in Asana (internal measure)"
       },
       {
-        "metric": "~25% faster",
+        "metric": "~25% Faster",
         "detail": "Median request-to-delivery time (internal measure)"
       },
       {
-        "metric": "3 days",
+        "metric": "3 Days",
         "detail": "From an early analyst-report release to a live executive landing page"
       },
       {
@@ -34,19 +34,19 @@
     ],
     "featured_systems": [
       {
-        "tag": "Case study",
-        "title": "Intake and handoffs, automated",
+        "tag": "Case Study",
+        "title": "Intake and Handoffs, Automated",
         "subtitle": "Building the process, then the automation that keeps final assets from getting lost",
         "href": "/systems/#intake-handoffs"
       },
       {
-        "tag": "Case study",
-        "title": "A Magic Quadrant launch in 3 days",
+        "tag": "Case Study",
+        "title": "A Magic Quadrant Launch in 3 Days",
         "subtitle": "Preparing in advance so an early release became a calm week",
         "href": "/systems/#mq-launch"
       },
       {
-        "tag": "Case study",
+        "tag": "Case Study",
         "title": "Apple Music and CreatorIQ",
         "subtitle": "Creative operations at scale, and commercial video for a client",
         "href": "/systems/#apple-creatoriq"
@@ -56,7 +56,7 @@
       {
         "name": "Waves",
         "badge": "System",
-        "description": "My own AI system, running on my own hardware. No per-token fees.",
+        "description": "A local LLM inference stack I designed and built with AI-assisted development (vibe coding). Three machines, four lanes, no cloud dependency.",
         "href": "/experiments/#waves"
       },
       {
@@ -74,18 +74,18 @@
     ]
   },
   "systems_page": {
-    "eyebrow": "Systems and case studies",
-    "title_html": "Systems that help creative teams <em>ship.</em>",
+    "eyebrow": "Systems and Case Studies",
+    "title_html": "Systems That Help Creative Teams <em>Ship.</em>",
     "lead": "How I pair program management with automation, so busy teams spend their time on the work and not the paperwork.",
     "cases": [
       {
         "id": "intake-handoffs",
         "meta": [
-          "01 / Intake and automation",
-          "Role: program manager and builder",
+          "01 / Intake and Automation",
+          "Role: Program Manager and Builder",
           "Tools: Asana, Asana Node.js SDK, Claude Code"
         ],
-        "title": "Intake and handoffs, automated",
+        "title": "Intake and Handoffs, Automated",
         "p1_html": "<strong>Problem.</strong> Creative requests arrived by too many routes, and final assets (design links, copy docs, images) got lost as work moved between related tasks. Native syncing across task levels wasn't available in our setup.",
         "p2_html": "<strong>What I did.</strong> I built and run marketing intake and routing in Asana. Before writing any automation code, I had Claude Code interview me and test whether the platform could support the idea. Then I built Family Sync: a rule that carries final assets between related tasks, is safe to re-run, copies cleanly to other projects, and is documented. I paired it with team training so it stuck. <strong>Result.</strong> Quarterly deliverables rose roughly threefold, and median request-to-delivery time dropped by about a quarter (internal measures).",
         "pills": [
@@ -99,10 +99,10 @@
         "id": "mq-launch",
         "meta": [
           "02 / Launches",
-          "Role: program manager",
+          "Role: Program Manager",
           "Tools: Asana, Claude"
         ],
-        "title": "A Magic Quadrant launch in 3 days",
+        "title": "A Magic Quadrant Launch in 3 Days",
         "p1_html": "<strong>Problem.</strong> An analyst firm published its Magic Quadrant earlier than expected.",
         "p2_html": "<strong>What I did.</strong> I had prepared a contingency plan in advance, with AI help, so we were not starting from zero. <strong>Result.</strong> An executive landing page went live within 3 days. I also coordinated regional marketing for the BigCommerce Payments launch and helped grow Commerce Awards entries roughly 30% year over year.",
         "pills": [
@@ -115,7 +115,7 @@
         "id": "apple-creatoriq",
         "meta": [
           "03 / Media",
-          "Roles: creative operations contractor, commercial video producer",
+          "Roles: Creative Operations Contractor, Commercial Video Producer",
           "Through: TEKsystems, xfnl Studio"
         ],
         "title": "Apple Music and CreatorIQ",
@@ -124,21 +124,21 @@
         "pills": [
           "Apple Music",
           "CreatorIQ",
-          "Commercial video"
+          "Commercial Video"
         ]
       }
     ]
   },
   "experiments_page": {
-    "eyebrow": "Experiments and lab notes",
-    "title_html": "A lab for staying <em>curious.</em>",
-    "lead": "I tinker with local AI to stay current with frontier models and to learn by building. Some of it turns into production tools. Most of it teaches me something, and a few things teach me loudly.",
+    "eyebrow": "Experiments and Lab Notes",
+    "title_html": "A Lab for Staying <em>Curious.</em>",
+    "lead": "I tinker with local AI to stay current with frontier models and to learn by building. Some of it turns into production tools, like the Automated Post-Production Assistant (APPA). Most of it teaches me something, and a few things teach me loudly.",
     "items": []
   },
   "about_page": {
     "eyebrow": "About",
-    "title_html": "Started in tech support. Learned to tell stories. <em>Now I build the systems behind them.</em>",
-    "lead": "I studied digital filmmaking at the Art Institute of Philadelphia. My first job at BigCommerce was answering support tickets. Then I moved into video, producing for the marketing team, and then into program management, where I've spent my time making creative work easier to ship.",
+    "title_html": "Technologist and Creative, <em>On Purpose.</em>",
+    "lead": "I have always lived in two worlds at once. I am a technologist: I have tested software, run IT for a retreat center in Vermont, and answered support tickets, and I still cannot leave a repetitive task alone. I am also a creative: I write and play music, make video, and at CreatorIQ I wrote, designed, animated, recorded, and mixed the work myself. The two have run side by side the whole way. When they line up, I build things like an intake system that keeps creative work from getting lost, or a pipeline that cuts footage while I am with my family. When they do not, I am the one in the room who speaks both languages.",
     "roles": [
       {
         "dates": "2025 to Present",
@@ -148,7 +148,7 @@
       },
       {
         "dates": "2024 to Present",
-        "company": "xfnl Studio (formerly Carbonrain Media)",
+        "company": "xfnl Studio (Formerly Carbonrain Media)",
         "role": "Founder and Principal · Commercial video production and AI workflow systems. Producer, Ben Windle Shoots His Shot.",
         "location": "Austin, TX"
       },
@@ -166,8 +166,8 @@
       },
       {
         "dates": "2017 to 2023",
-        "company": "BigCommerce (now part of Commerce)",
-        "role": "Marketing Project Manager (2023) · Video Producer (2018 to 2023) · Tech Support (2017 to 2018)",
+        "company": "BigCommerce (Now Part of Commerce)",
+        "role": "Marketing Project Manager (2023) · Video Producer (2018 to 2023) · Web Content Publishing Specialist (2018 to 2019) · Tech Support (2017 to 2018)",
         "location": "Austin, TX"
       }
     ]
