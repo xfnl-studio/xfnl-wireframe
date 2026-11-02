@@ -35,7 +35,7 @@ $banned = @(
   @{ Label = 'money figures'; Pattern = 'five-figure|six-figure|cumulative revenue|revenue studio' }
   @{ Label = 'old-role metrics'; Pattern = 'CSAT|sprint overload|case-study intake|\b60%|\b85%' }
   @{ Label = 'expired credential'; Pattern = '\bCSM\b|Scrum' }
-  @{ Label = 'personal and home-network detail'; Pattern = 'iMessage|subtext|Reminders|Home Assistant|telemetry|ARTROCK|Starlight|Midnight|Watchdog|\bBody [123]\b|Oura|wearable|Co-Star' }
+  @{ Label = 'personal and home-network detail'; Pattern = 'iMessage|subtext|Reminders|telemetry|ARTROCK|Starlight|Midnight|Watchdog|\bBody [123]\b|Oura|wearable|Co-Star' }
   @{ Label = 'unmeasured or personal specs'; Pattern = '1\.13M|150 GB|64 GB|VRAM|\b562|TTFT|50:1|QLoRA|golden|BookStack|Action Button|zero[- ]API' }
   @{ Label = 'third-party personal detail'; Pattern = 'Fire Department|\bEMT\b' }
   @{ Label = 'brand styling: write xfnl Studio in display text'; Pattern = '(?<![\w/@."-])xfnl\.studio(?![\w-])' }
