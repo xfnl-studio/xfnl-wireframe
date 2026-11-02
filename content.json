@@ -1,6 +1,6 @@
 {
   "site": {
-    "brand_text": "xfnl.studio",
+    "brand_text": "xfnl Studio",
     "email": "justin@xfnl.studio",
     "linkedin": "https://www.linkedin.com/in/justin-jackson-pm/",
     "footer_heading": "Let's make something that ships.",
@@ -11,7 +11,7 @@
     "eyebrow": "Marketing program manager · Video producer · AI systems builder · Austin, TX",
     "title": "I sit where art meets technology.",
     "title_html": "I sit where <em>art meets technology.</em>",
-    "lead_html": "I can't just write the song. I have to produce it and build the gear that captures it. Same with video: I can't just edit it, I have to build the pipeline that saves the hours, so I can be home with my family and still publish on a steady cadence.",
+    "lead_html": "By day, I run marketing programs at <strong>Commerce</strong> (BigCommerce, Feedonomics, Makeswift). Through <strong>xfnl Studio</strong>, I make video and build AI tools.",
     "cta_primary": "Watch the work",
     "cta_secondary": "How I build",
     "results": [
@@ -28,7 +28,7 @@
         "detail": "From an early analyst-report release to a live executive landing page"
       },
       {
-        "metric": "9+ years",
+        "metric": "Since 2017",
         "detail": "Across support, video production, and marketing program management"
       }
     ],
@@ -116,7 +116,7 @@
         "meta": [
           "03 / Media",
           "Roles: creative operations contractor, commercial video producer",
-          "Through: TEKsystems, xfnl.studio"
+          "Through: TEKsystems, xfnl Studio"
         ],
         "title": "Apple Music and CreatorIQ",
         "p1_html": "At <strong>Apple Music</strong>, through TEKsystems, I ran high-volume creative publishing and release QA.",
@@ -143,12 +143,12 @@
       {
         "dates": "2025 to Present",
         "company": "Commerce (BigCommerce · Feedonomics · Makeswift)",
-        "role": "Marketing Program Manager · Marketing program management and intake for three brands, plus workflow automation.",
+        "role": "Marketing Project Manager · Program-level work across three brands: marketing intake and routing, launches, and workflow automation.",
         "location": "Austin, TX"
       },
       {
         "dates": "2024 to Present",
-        "company": "xfnl.studio (formerly Carbonrain Media)",
+        "company": "xfnl Studio (formerly Carbonrain Media)",
         "role": "Founder and Principal · Commercial video production and AI workflow systems. Producer, Ben Windle Shoots His Shot.",
         "location": "Austin, TX"
       },
@@ -161,12 +161,12 @@
       {
         "dates": "2024 to 2025",
         "company": "CreatorIQ",
-        "role": "Commercial Video Producer (Contract) · Commercial video production and post-production.",
+        "role": "Commercial Video Producer and Post-Production Lead (Contract) · Scoped, negotiated, and delivered commercial video and motion-graphics engagements for enterprise B2B launches, from creative briefing and SOW through multi-camera direction, editing, and motion design. Built repeatable post-production templates and review workflows.",
         "location": "Remote"
       },
       {
         "dates": "2017 to 2023",
-        "company": "BigCommerce",
+        "company": "BigCommerce (now part of Commerce)",
         "role": "Marketing Project Manager (2023) · Video Producer (2018 to 2023) · Tech Support (2017 to 2018)",
         "location": "Austin, TX"
       }

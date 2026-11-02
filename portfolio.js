@@ -133,7 +133,10 @@
     }
   }
 
+  var frameCount = 0;
   function tick(){
+    frameCount++;
+    if (window.innerWidth < 768 && frameCount % 2 === 1 && !document.hidden && !(reduceMotion && reduceMotion.matches)) { requestAnimationFrame(tick); return; }
     syncCanvasSize();
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     ctx.clearRect(0, 0, cssW, cssH);
