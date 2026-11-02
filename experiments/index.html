@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Experiments: Local AI &amp; Post-Production Pipelines · Justin Jackson</title>
-  <meta name="description" content="Local AI systems and an automated multi-camera post-production pipeline, built to stay current with frontier AI.">
+  <meta name="description" content="Local AI systems, an automated post-production pipeline, a vision-model photo curator, and an LLM-as-judge triage harness, built to stay current with frontier AI.">
   <meta name="author" content="Justin Jackson">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://xfnl.studio/experiments/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="xfnl Studio">
   <meta property="og:title" content="Experiments: Local AI &amp; Post-Production Pipelines · Justin Jackson">
-  <meta property="og:description" content="Local AI systems and an automated multi-camera post-production pipeline, built to stay current with frontier AI.">
+  <meta property="og:description" content="Local AI systems, an automated post-production pipeline, a vision-model photo curator, and an LLM-as-judge triage harness, built to stay current with frontier AI.">
   <meta property="og:url" content="https://xfnl.studio/experiments/">
   <meta property="og:image" content="https://xfnl.studio/img/og-default.png">
   <meta property="og:image:width" content="1200">
@@ -19,7 +19,7 @@
   <meta property="og:image:alt" content="Justin Jackson: I sit where art meets technology.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Experiments: Local AI &amp; Post-Production Pipelines · Justin Jackson">
-  <meta name="twitter:description" content="Local AI systems and an automated multi-camera post-production pipeline, built to stay current with frontier AI.">
+  <meta name="twitter:description" content="Local AI systems, an automated post-production pipeline, a vision-model photo curator, and an LLM-as-judge triage harness, built to stay current with frontier AI.">
   <meta name="twitter:image" content="https://xfnl.studio/img/og-default.png">
   <link rel="icon" href="/favicon.svg?v=20261102b" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=20261102b">
@@ -190,12 +190,13 @@
         <div>
           <h2 class="case-title">APPA</h2>
           <p class="case-body"><strong>In plain English:</strong> Software that turns raw multi-camera footage into editable timelines for Premiere Pro and DaVinci Resolve. I built it as producer of <a href="https://www.youtube.com/@BenWindleShootsHisShot" target="_blank" rel="noopener noreferrer">Ben Windle Shoots His Shot</a> to replace roughly 15 to 20 hours a week of manual logging and rough cutting. Time saved now: measuring.</p>
+          <p class="case-body"><strong>The Showrunner:</strong> before APPA assembles a rough cut, a Showrunner pass compares a new shoot with the pacing of my best-performing shorts: how fast the cuts come, how soon the hook lands, and which story beats carry the joke. It acts as a developmental editor before I open Premiere or Resolve.</p>
           <p class="case-body"><strong>Built with:</strong> WhisperX, PySceneDetect, OpenTimelineIO, and FCPXML.</p>
           <div class="dg-block">
             <figure class="dg" data-dg>
-              <svg viewBox="0 0 360 560" role="img" aria-labelledby="dg-appa-t dg-appa-d" focusable="false">
+              <svg viewBox="0 0 360 636" role="img" aria-labelledby="dg-appa-t dg-appa-d" focusable="false">
                 <title id="dg-appa-t">How APPA turns raw footage into editable timelines</title>
-                <desc id="dg-appa-d">APPA ingests multi-camera footage, transcribes it, splits scenes, grades shots with a vision model, drafts the story with a reasoning model, compiles 24 frames per second timelines and a review proxy, and hands them to Premiere Pro or DaVinci Resolve.</desc>
+                <desc id="dg-appa-d">APPA ingests multi-camera footage, transcribes it, splits scenes, grades shots with a vision model, drafts the story with a reasoning model, checks the pacing against my best shorts, compiles 24 frames per second timelines and a review proxy, and hands them to Premiere Pro or DaVinci Resolve.</desc>
                 <rect class="nd glow g0" x="30" y="20" width="300" height="56" rx="12"/>
                 <text class="t-sans t-md f-fg ta-mid" x="180" y="45">Raw footage</text>
                 <text class="t-sans t-xs f-muted ta-mid" x="180" y="62">Multi-camera field shoots</text>
@@ -221,20 +222,127 @@
                 <text class="t-sans t-xs f-muted ta-mid" x="180" y="366">Reasoning lane drafts the spine</text>
                 <line class="ln flow" x1="180" y1="380" x2="180" y2="400"/>
                 <polygon class="ar" points="175,393 185,393 180,400"/>
-                <rect class="nd-accent glow-accent g5" x="30" y="400" width="300" height="64" rx="12"/>
-                <text class="t-sans t-md f-fg ta-mid" x="180" y="421">Compile</text>
-                <text class="t-sans t-xs f-muted ta-mid" x="180" y="438">24fps .fcpxml and .otio timelines,</text>
-                <text class="t-sans t-xs f-muted ta-mid" x="180" y="454">plus a review proxy</text>
-                <line class="ln flow" x1="180" y1="464" x2="180" y2="484"/>
-                <polygon class="ar" points="175,477 185,477 180,484"/>
-                <rect class="nd glow g6" x="30" y="484" width="300" height="56" rx="12"/>
-                <text class="t-sans t-md f-fg ta-mid" x="180" y="509">Premiere Pro or DaVinci Resolve</text>
-                <text class="t-sans t-xs f-muted ta-mid" x="180" y="526">Ready for the editor</text>
+                <rect class="nd glow g5" x="30" y="400" width="300" height="56" rx="12"/>
+                <text class="t-sans t-md f-fg ta-mid" x="180" y="425">Check the pacing</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="180" y="442">Showrunner compares with my best shorts</text>
+                <line class="ln flow" x1="180" y1="456" x2="180" y2="476"/>
+                <polygon class="ar" points="175,469 185,469 180,476"/>
+                <rect class="nd-accent glow-accent g6" x="30" y="476" width="300" height="64" rx="12"/>
+                <text class="t-sans t-md f-fg ta-mid" x="180" y="497">Compile</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="180" y="514">24fps .fcpxml and .otio timelines,</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="180" y="530">plus a review proxy</text>
+                <line class="ln flow" x1="180" y1="540" x2="180" y2="560"/>
+                <polygon class="ar" points="175,553 185,553 180,560"/>
+                <rect class="nd glow g7" x="30" y="560" width="300" height="56" rx="12"/>
+                <text class="t-sans t-md f-fg ta-mid" x="180" y="585">Premiere Pro or DaVinci Resolve</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="180" y="602">Ready for the editor</text>
               </svg>
               <figcaption class="dg-cap"><span>APPA runs across all four Waves lanes.</span><button type="button" class="dg-pause" aria-pressed="false">Pause animation</button></figcaption>
             </figure>
           </div>
           <!-- TODO (Justin): add an APPA timeline screenshot here when it is ready (two video tracks, one audio track, no private footage). -->
+        </div>
+      </article>
+    </section>
+
+    <section class="sec">
+      <article id="curator" class="case-block">
+        <div class="case-meta"><span>04 / Pipeline</span><span>A vision model as a quality gate</span><span>Runs on Waves</span></div>
+        <div>
+          <h2 class="case-title">The photo curator</h2>
+          <p class="case-body"><strong>In plain English:</strong> A four-step pipeline that picks real photographs for my daily digest instead of generating plastic stock art. A reasoning model writes a visual brief, the system searches my own photo library with a cooldown so nothing repeats, a local vision model grades the candidates for composition, sharpness, and crop, and I keep a veto.</p>
+          <p class="case-body"><strong>Why it matters:</strong> most teams are drowning in AI slop. Here a vision model works as a quality gate over real photography, rejecting screenshots, blank walls, and blurry frames before a person ever sees them.</p>
+          <p class="case-body"><strong>Built with:</strong> a reasoning model, a vision model, and a self-hosted photo library.</p>
+          <!-- CONFIRM (Justin): check that the four steps match the code. Exact numbers (cooldown length, how many candidates are graded) were left out on purpose. Add them only if you want them public. -->
+          <div class="dg-block">
+            <figure class="dg" data-dg>
+              <svg viewBox="0 0 360 352" role="img" aria-labelledby="dg-curator-t dg-curator-d" focusable="false">
+                <title id="dg-curator-t">How the photo curator picks real photographs</title>
+                <desc id="dg-curator-d">A reasoning model writes a visual brief, the system searches a personal photo library with a cooldown so nothing repeats, a vision model grades the candidates for composition, sharpness, and crop, and a person keeps the final veto.</desc>
+                <rect class="nd glow g0" x="30" y="20" width="300" height="56" rx="12"/>
+                <text class="t-sans t-md f-fg ta-mid" x="180" y="45">Write the brief</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="180" y="62">Reasoning model sets the shot</text>
+                <line class="ln flow" x1="180" y1="76" x2="180" y2="100"/>
+                <polygon class="ar" points="175,93 185,93 180,100"/>
+                <rect class="nd glow g1" x="30" y="100" width="300" height="56" rx="12"/>
+                <text class="t-sans t-md f-fg ta-mid" x="180" y="125">Search my photo library</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="180" y="142">With a cooldown so nothing repeats</text>
+                <line class="ln flow" x1="180" y1="156" x2="180" y2="180"/>
+                <polygon class="ar" points="175,173 185,173 180,180"/>
+                <rect class="nd-accent glow-accent g2" x="30" y="180" width="300" height="64" rx="12"/>
+                <text class="t-sans t-md f-fg ta-mid" x="180" y="201">Grade the candidates</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="180" y="218">Vision model scores composition,</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="180" y="234">sharpness, and crop</text>
+                <line class="ln flow" x1="180" y1="244" x2="180" y2="268"/>
+                <polygon class="ar" points="175,261 185,261 180,268"/>
+                <rect class="nd glow g3" x="30" y="268" width="300" height="64" rx="12"/>
+                <text class="t-sans t-md f-fg ta-mid" x="180" y="289">Pick, with a human veto</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="180" y="306">Screenshots, walls, and blur are out.</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="180" y="322">I keep the final say</text>
+              </svg>
+              <figcaption class="dg-cap"><span>A vision model as a quality gate over real photography.</span><button type="button" class="dg-pause" aria-pressed="false">Pause animation</button></figcaption>
+            </figure>
+          </div>
+        </div>
+      </article>
+      <article id="judge" class="case-block">
+        <div class="case-meta"><span>05 / Evaluation</span><span>Three judges, one gate</span><span>Runs on Waves</span></div>
+        <div>
+          <h2 class="case-title">The triage judge</h2>
+          <p class="case-body"><strong>In plain English:</strong> I turned my job search into a small evaluation harness. An incoming posting is scored by three independent judges: a skeptical recruiter, an optimistic builder, and a local reasoning model. A hard fit floor stops weak matches before they reach my board.</p>
+          <p class="case-body"><strong>How it works:</strong> the floor is a gate, not an average, and the probability estimate is designed to be calibrated against real outcomes as they come in. It is the same pattern I would use for creative intake: independent reviewers, a gate, and a feedback loop.</p>
+          <p class="case-body"><strong>Built with:</strong> three independent scoring lenses and a local reasoning model.</p>
+          <!-- CONFIRM (Justin): this one shows a systematic job search to anyone who reads it, including Commerce colleagues. Keep it only if you are comfortable with that. -->
+          <div class="dg-block">
+            <figure class="dg" data-dg>
+              <svg viewBox="0 0 360 456" role="img" aria-labelledby="dg-judge-t dg-judge-d" focusable="false">
+                <title id="dg-judge-t">How the triage judge scores an incoming posting</title>
+                <desc id="dg-judge-d">An incoming posting is scored by three independent judges: a skeptical recruiter lens, an optimistic builder lens, and a local reasoning model. A hard fit floor acts as a gate. What clears it gets a probability estimate that is designed to be calibrated against real outcomes, then lands on the board.</desc>
+                <line class="ln flow" x1="180" y1="76" x2="180" y2="92"/>
+                <path class="ln flow" d="M74 92 H286"/>
+                <line class="ln flow" x1="74" y1="92" x2="74" y2="108"/>
+                <polygon class="ar" points="69,101 79,101 74,108"/>
+                <line class="ln flow" x1="180" y1="92" x2="180" y2="108"/>
+                <polygon class="ar" points="175,101 185,101 180,108"/>
+                <line class="ln flow" x1="286" y1="92" x2="286" y2="108"/>
+                <polygon class="ar" points="281,101 291,101 286,108"/>
+                <rect class="nd glow g0" x="30" y="20" width="300" height="56" rx="12"/>
+                <text class="t-sans t-md f-fg ta-mid" x="180" y="45">Posting arrives</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="180" y="62">An incoming job posting</text>
+                <rect class="nd glow g1" x="30" y="108" width="92" height="64" rx="12"/>
+                <text class="t-sans t-sm f-fg ta-mid" x="76" y="137">Skeptic</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="76" y="154">Recruiter lens</text>
+                <rect class="nd glow g1" x="134" y="108" width="92" height="64" rx="12"/>
+                <text class="t-sans t-sm f-fg ta-mid" x="180" y="137">Builder</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="180" y="154">Optimist lens</text>
+                <rect class="nd glow g1" x="238" y="108" width="92" height="64" rx="12"/>
+                <text class="t-sans t-sm f-fg ta-mid" x="284" y="137">Local model</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="284" y="154">Own reasoning</text>
+                <line class="ln flow" x1="76" y1="172" x2="76" y2="188"/>
+                <line class="ln flow" x1="180" y1="172" x2="180" y2="188"/>
+                <line class="ln flow" x1="284" y1="172" x2="284" y2="188"/>
+                <path class="ln flow" d="M76 188 H284"/>
+                <line class="ln flow" x1="180" y1="188" x2="180" y2="204"/>
+                <polygon class="ar" points="175,197 185,197 180,204"/>
+                <rect class="nd glow g2" x="30" y="204" width="300" height="64" rx="12"/>
+                <text class="t-sans t-md f-fg ta-mid" x="180" y="225">Hard fit floor</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="180" y="242">A gate, not an average.</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="180" y="258">Weak matches stop here</text>
+                <line class="ln flow" x1="180" y1="268" x2="180" y2="292"/>
+                <polygon class="ar" points="175,285 185,285 180,292"/>
+                <rect class="nd-accent glow-accent g3" x="30" y="292" width="300" height="64" rx="12"/>
+                <text class="t-sans t-md f-fg ta-mid" x="180" y="313">Probability estimate</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="180" y="330">Designed to be calibrated</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="180" y="346">against real outcomes</text>
+                <line class="ln flow" x1="180" y1="356" x2="180" y2="380"/>
+                <polygon class="ar" points="175,373 185,373 180,380"/>
+                <rect class="nd glow g4" x="30" y="380" width="300" height="56" rx="12"/>
+                <text class="t-sans t-md f-fg ta-mid" x="180" y="405">Lands on my board</text>
+                <text class="t-sans t-xs f-muted ta-mid" x="180" y="422">Only what clears the floor</text>
+              </svg>
+              <figcaption class="dg-cap"><span>Independent judges, a gate, and a feedback loop.</span><button type="button" class="dg-pause" aria-pressed="false">Pause animation</button></figcaption>
+            </figure>
+          </div>
         </div>
       </article>
     </section>
@@ -275,6 +383,7 @@
             <div><dt>What broke</dt><dd>I got generic AI slop, screenshots, and photos of doorframes.</dd></div>
             <div><dt>What I do now</dt><dd>A four-step editorial hierarchy, a vision model that grades candidates, and a human veto.</dd></div>
           </dl>
+          <a class="sec-link" href="#curator">See the full system →</a>
         </article>
       </div>
     </section>
