@@ -21,15 +21,15 @@
   <meta name="twitter:title" content="Experiments: Local AI &amp; Post-Production Pipelines · Justin Jackson">
   <meta name="twitter:description" content="Local AI systems, an automated post-production pipeline, a vision-model photo curator, and an LLM-as-judge triage harness, built to stay current with frontier AI.">
   <meta name="twitter:image" content="https://xfnl.studio/img/og-default.png">
-  <link rel="icon" href="/favicon.svg?v=20261102e" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=20261102e">
+  <link rel="icon" href="/favicon.svg?v=20261103f" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=20261103f">
   <link rel="preload" href="/fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/instrument-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/obsession.css?v=1793558083">
-  <link rel="stylesheet" href="/css/xfnl-v2.css?v=20261102e">
+  <link rel="stylesheet" href="/css/xfnl-v2.css?v=20261103f">
   
-  <script src="/portfolio.js?v=20261102e" defer></script>
-  <script src="/js/xfnl-v2.js?v=20261102e" defer></script>
+  <script src="/portfolio.js?v=20261103f" defer></script>
+  <script src="/js/xfnl-v2.js?v=20261103f" defer></script>
 </head>
 <body data-page="experiments">
   <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -67,40 +67,40 @@
     <!-- Static by design: this page embeds diagrams, so it is not hydrated from content.json. -->
     <section class="sec">
       <article id="waves" class="case-block">
-        <div class="case-meta"><span>01 / System</span><span>Runs on Local Hardware</span><span>No Per-Token Fees</span></div>
+        <div class="case-meta"><span data-cms="top-of-page.tag1">01 / System</span><span data-cms="top-of-page.tag2">Runs on Local Hardware</span><span data-cms="top-of-page.tag3">No Per-Token Fees</span></div>
         <div>
-          <h2 class="case-title">Waves</h2>
-          <p class="case-body"><strong>In plain English:</strong> Waves is a local LLM inference stack I designed and built with AI-assisted development (vibe coding). Three machines, four lanes, specialized models, and no cloud dependency, with a searchable index over my own notes and files.</p>
-          <p class="case-body"><strong>Why the name:</strong> Sound waves, brain waves, energy, motion, and carrying the whole team. When the models focus together, that's clarity.</p>
-          <p class="case-body"><strong>How it fits:</strong> small collectors watch for changes, rules react instantly, a filter drops anything unchanged, and then the models focus together as Waves: they cross-check each other and one writes the summary.</p>
-          <p class="case-body taught"><strong>What it taught me:</strong> treat AI like infrastructure, with owners, fallbacks, and cost limits.</p>
-          <p class="case-body"><strong>Built with:</strong> a 27B reasoning model, a 9B vision model, MCP servers, and Meilisearch.</p>
+          <h2 class="case-title" data-cms="waves.heading1">Waves</h2>
+          <p class="case-body" data-cms="waves.paragraph1"><strong>In plain English:</strong> Waves is a local LLM inference stack I designed and built with AI-assisted development (vibe coding). Three machines, four lanes, specialized models, and no cloud dependency, with a searchable index over my own notes and files.</p>
+          <p class="case-body" data-cms="waves.paragraph2"><strong>Why the name:</strong> Sound waves, brain waves, energy, motion, and carrying the whole team. When the models focus together, that's clarity.</p>
+          <p class="case-body" data-cms="waves.paragraph3"><strong>How it fits:</strong> small collectors watch for changes, rules react instantly, a filter drops anything unchanged, and then the models focus together as Waves: they cross-check each other and one writes the summary.</p>
+          <p class="case-body taught" data-cms="waves.paragraph4"><strong>What it taught me:</strong> treat AI like infrastructure, with owners, fallbacks, and cost limits.</p>
+          <p class="case-body" data-cms="waves.paragraph5"><strong>Built with:</strong> a 27B reasoning model, a 9B vision model, MCP servers, and Meilisearch.</p>
           
-          <div class="tech"><h3 class="tech-head">Technical Details</h3>
-            <p>A 27B reasoning model on a 24 GB GPU, a 9B vision model on a 12 GB GPU, prefix KV-cache pinning for fast first responses, custom MCP servers, and Meilisearch for search, and nomic embed on the Dell OptiPlex for embeddings. Three machines, four lanes.</p>
+          <div class="tech"><h3 class="tech-head" data-cms="waves.card-title1">Technical Details</h3>
+            <p data-cms="waves.paragraph6">A 27B reasoning model on a 24 GB GPU, a 9B vision model on a 12 GB GPU, prefix KV-cache pinning for fast first responses, custom MCP servers, and Meilisearch for search, and nomic embed on the Dell OptiPlex for embeddings. Three machines, four lanes.</p>
           </div>
         </div>
               <div class="dg-block wide">
             <figure class="flow-dg waves-fig" data-dg>
             <ol class="flow-steps flow-4" aria-label="How the Waves system is layered">
-              <li class="step g0"><strong>Neurons</strong><span>Small collectors that watch for changes. No model needed.</span></li>
-              <li class="step g1"><strong>Reflexes</strong><span>Instant rules, like stepping aside when I open my video editor.</span></li>
-              <li class="step g2"><strong>Synapse</strong><span>Filters out anything that hasn't changed.</span></li>
-              <li class="step g3"><strong>Cortex</strong><span>Turns what changed into a short brief.</span></li>
+              <li class="step g0"><strong data-cms="waves.title1">Neurons</strong><span data-cms="waves.tag1">Small collectors that watch for changes. No model needed.</span></li>
+              <li class="step g1"><strong data-cms="waves.title2">Reflexes</strong><span data-cms="waves.tag2">Instant rules, like stepping aside when I open my video editor.</span></li>
+              <li class="step g2"><strong data-cms="waves.title3">Synapse</strong><span data-cms="waves.tag3">Filters out anything that hasn't changed.</span></li>
+              <li class="step g3"><strong data-cms="waves.title4">Cortex</strong><span data-cms="waves.tag4">Turns what changed into a short brief.</span></li>
             </ol>
-            <p class="lanes-label">Four lanes feed Waves</p>
+            <p class="lanes-label" data-cms="waves.paragraph7">Four lanes feed Waves</p>
             <ul class="lanes">
-              <li class="lane"><strong>Thinking</strong><span>RTX 3090 Ti</span><span>24 GB GPU</span></li>
-              <li class="lane"><strong>Seeing</strong><span>RTX 5070 eGPU</span><span>12 GB GPU</span></li>
-              <li class="lane"><strong>Remembering</strong><span>Apple M5 laptop</span><span>24 GB shared memory</span></li>
-              <li class="lane"><strong>Embedding</strong><span>Dell OptiPlex, AMD RX 550</span><span>Runs nomic embed</span></li>
+              <li class="lane"><strong data-cms="waves.title5">Thinking</strong><span data-cms="waves.tag5">RTX 3090 Ti</span><span data-cms="waves.tag6">24 GB GPU</span></li>
+              <li class="lane"><strong data-cms="waves.title6">Seeing</strong><span data-cms="waves.tag7">RTX 5070 eGPU</span><span data-cms="waves.tag8">12 GB GPU</span></li>
+              <li class="lane"><strong data-cms="waves.title7">Remembering</strong><span data-cms="waves.tag9">Apple M5 laptop</span><span data-cms="waves.tag10">24 GB shared memory</span></li>
+              <li class="lane"><strong data-cms="waves.title8">Embedding</strong><span data-cms="waves.tag11">Dell OptiPlex, AMD RX 550</span><span data-cms="waves.tag12">Runs nomic embed</span></li>
             </ul>
             <div class="moment" data-waves>
               <div class="moment-head">
                 <svg class="waves-mark" viewBox="0 0 48 24" role="img" aria-label="Waves" focusable="false"><path d="M2 9 q5.5 -7 11 0 t11 0 t11 0 t11 0"/><path d="M2 19 q5.5 -7 11 0 t11 0 t11 0 t11 0"/></svg>
                 <div>
-                  <p class="moment-title">Waves</p>
-                  <p class="moment-sub">All the models, focusing together. That's clarity.</p>
+                  <p class="moment-title" data-cms="waves.paragraph8">Waves</p>
+                  <p class="moment-sub" data-cms="waves.paragraph9">All the models, focusing together. That's clarity.</p>
                 </div>
               </div>
               <div class="wv">
@@ -116,23 +116,23 @@
               </div>
               <p class="wv-cap"><span class="wv-key"><i class="k k-l1"></i>Thinking</span><span class="wv-key"><i class="k k-l2"></i>Seeing</span><span class="wv-key"><i class="k k-l3"></i>Remembering</span><span class="wv-key"><i class="k k-l4"></i>Embedding</span><span class="wv-key"><i class="k k-both"></i>Waves</span></p>
             </div>
-            <figcaption class="dg-cap"><span>Waves, layer by layer, on three machines and four lanes.</span></figcaption>
+            <figcaption class="dg-cap" data-cms="waves.caption1"><span>Waves, layer by layer, on three machines and four lanes.</span></figcaption>
           </figure>
           </div>
       </article>
       <article id="clarity" class="case-block">
-        <div class="case-meta"><span>02 / Agent</span><span>Runs on Waves</span><span>Swappable Model Underneath</span></div>
+        <div class="case-meta"><span data-cms="waves.tag13">02 / Agent</span><span data-cms="waves.tag14">Runs on Waves</span><span data-cms="waves.tag15">Swappable Model Underneath</span></div>
         <div>
-          <h2 class="case-title">Clarity</h2>
-          <p class="case-body"><strong>In plain English:</strong> Clarity is the friendly, curious agent on top of Waves. She asks good questions before she gives answers, and she runs on whichever local model I've swapped in. Her shape is a small cousin of the studio mark: a little web that turns to look at whoever is talking. Move your cursor, or tap, and she'll find you.</p>
-          <p class="case-body"><strong>Talk to her:</strong> I can talk to Clarity from my phone through Siri, and she can kick off automations, including Home Assistant ones. A voice front door on top of Waves.</p>
-          <p class="case-body taught"><strong>What it taught me:</strong> good questions beat fast answers, in AI and in intake.</p>
+          <h2 class="case-title" data-cms="clarity.heading1">Clarity</h2>
+          <p class="case-body" data-cms="clarity.paragraph1"><strong>In plain English:</strong> Clarity is the friendly, curious agent on top of Waves. She asks good questions before she gives answers, and she runs on whichever local model I've swapped in. Her shape is a small cousin of the studio mark: a little web that turns to look at whoever is talking. Move your cursor, or tap, and she'll find you.</p>
+          <p class="case-body" data-cms="clarity.paragraph2"><strong>Talk to her:</strong> I can talk to Clarity from my phone through Siri, and she can kick off automations, including Home Assistant ones. A voice front door on top of Waves.</p>
+          <p class="case-body taught" data-cms="clarity.paragraph3"><strong>What it taught me:</strong> good questions beat fast answers, in AI and in intake.</p>
           
           <div class="cl-hero">
             <svg class="cl-rig " data-state="idle" viewBox="0 0 200 200" role="img" aria-label="Clarity, the same icosahedron as the site background, turning to look at you" focusable="false"><g class="cl-tilt"><g class="cl-rings"></g><g class="cl-faces"></g><g class="cl-edges"><line class="cl-edge" x1="82.2" y1="144.4" x2="133.4" y2="148.7" stroke-width="1.25" stroke-opacity="0.68"/><line class="cl-edge" x1="82.2" y1="144.4" x2="122.6" y2="114.2" stroke-width="1.25" stroke-opacity="0.83"/><line class="cl-edge" x1="82.2" y1="144.4" x2="79.7" y2="150.6" stroke-width="1.25" stroke-opacity="0.58"/><line class="cl-edge" x1="82.2" y1="144.4" x2="43.3" y2="110.9" stroke-width="1.25" stroke-opacity="0.68"/><line class="cl-edge" x1="82.2" y1="144.4" x2="75.3" y2="94.4" stroke-width="1.25" stroke-opacity="0.83"/><line class="cl-edge" x1="133.4" y1="148.7" x2="122.6" y2="114.2" stroke-width="1.25" stroke-opacity="0.74"/><line class="cl-edge" x1="133.4" y1="148.7" x2="79.7" y2="150.6" stroke-width="1.25" stroke-opacity="0.49"/><line class="cl-edge" x1="133.4" y1="148.7" x2="134.7" y2="112.7" stroke-width="1.25" stroke-opacity="0.45"/><line class="cl-edge" x1="133.4" y1="148.7" x2="156.0" y2="93.2" stroke-width="1.25" stroke-opacity="0.60"/><line class="cl-edge" x1="67.0" y1="55.9" x2="121.5" y2="50.8" stroke-width="1.25" stroke-opacity="0.52"/><line class="cl-edge" x1="67.0" y1="55.9" x2="116.1" y2="63.4" stroke-width="1.25" stroke-opacity="0.71"/><line class="cl-edge" x1="67.0" y1="55.9" x2="68.1" y2="84.8" stroke-width="1.25" stroke-opacity="0.46"/><line class="cl-edge" x1="67.0" y1="55.9" x2="43.3" y2="110.9" stroke-width="1.25" stroke-opacity="0.60"/><line class="cl-edge" x1="67.0" y1="55.9" x2="75.3" y2="94.4" stroke-width="1.25" stroke-opacity="0.75"/><line class="cl-edge" x1="121.5" y1="50.8" x2="116.1" y2="63.4" stroke-width="1.25" stroke-opacity="0.62"/><line class="cl-edge" x1="121.5" y1="50.8" x2="68.1" y2="84.8" stroke-width="1.25" stroke-opacity="0.37"/><line class="cl-edge" x1="121.5" y1="50.8" x2="134.7" y2="112.7" stroke-width="1.25" stroke-opacity="0.37"/><line class="cl-edge" x1="121.5" y1="50.8" x2="156.0" y2="93.2" stroke-width="1.25" stroke-opacity="0.52"/><line class="cl-edge" x1="116.1" y1="63.4" x2="122.6" y2="114.2" stroke-width="1.25" stroke-opacity="0.85"/><line class="cl-edge" x1="116.1" y1="63.4" x2="156.0" y2="93.2" stroke-width="1.25" stroke-opacity="0.71"/><line class="cl-edge" x1="116.1" y1="63.4" x2="75.3" y2="94.4" stroke-width="1.25" stroke-opacity="0.85"/><line class="cl-edge" x1="122.6" y1="114.2" x2="156.0" y2="93.2" stroke-width="1.25" stroke-opacity="0.75"/><line class="cl-edge" x1="122.6" y1="114.2" x2="75.3" y2="94.4" stroke-width="1.25" stroke-opacity="0.90"/><line class="cl-edge" x1="68.1" y1="84.8" x2="79.7" y2="150.6" stroke-width="1.25" stroke-opacity="0.35"/><line class="cl-edge" x1="68.1" y1="84.8" x2="134.7" y2="112.7" stroke-width="1.25" stroke-opacity="0.30"/><line class="cl-edge" x1="68.1" y1="84.8" x2="43.3" y2="110.9" stroke-width="1.25" stroke-opacity="0.45"/><line class="cl-edge" x1="79.7" y1="150.6" x2="134.7" y2="112.7" stroke-width="1.25" stroke-opacity="0.35"/><line class="cl-edge" x1="79.7" y1="150.6" x2="43.3" y2="110.9" stroke-width="1.25" stroke-opacity="0.49"/><line class="cl-edge" x1="134.7" y1="112.7" x2="156.0" y2="93.2" stroke-width="1.25" stroke-opacity="0.46"/><line class="cl-edge" x1="43.3" y1="110.9" x2="75.3" y2="94.4" stroke-width="1.25" stroke-opacity="0.74"/></g><g class="cl-nodes"><circle class="cl-node" cx="82.2" cy="144.4" r="2.3" fill-opacity="0.84"/><circle class="cl-node" cx="133.4" cy="148.7" r="2.3" fill-opacity="0.69"/><circle class="cl-node" cx="67.0" cy="55.9" r="2.3" fill-opacity="0.71"/><circle class="cl-node" cx="121.5" cy="50.8" r="2.3" fill-opacity="0.56"/><circle class="cl-node" cx="116.1" cy="63.4" r="2.3" fill-opacity="0.87"/><circle class="cl-node" cx="122.6" cy="114.2" r="2.3" fill-opacity="0.96"/><circle class="cl-node" cx="68.1" cy="84.8" r="2.3" fill-opacity="0.44"/><circle class="cl-node" cx="79.7" cy="150.6" r="2.3" fill-opacity="0.53"/><circle class="cl-node" cx="134.7" cy="112.7" r="2.3" fill-opacity="0.45"/><circle class="cl-node" cx="156.0" cy="93.2" r="2.3" fill-opacity="0.71"/><circle class="cl-node" cx="43.3" cy="110.9" r="2.3" fill-opacity="0.69"/><circle class="cl-node" cx="75.3" cy="94.4" r="2.3" fill-opacity="0.95"/></g></g></svg>
           </div>
-          <div class="tech"><h3 class="tech-head">Technical Details</h3>
-            <p>Reasoning on a 27B local model, speech with Kokoro, search with Meilisearch, served with FastAPI. First words arrive in about 180 ms on my hardware with a warm cache.</p>
+          <div class="tech"><h3 class="tech-head" data-cms="clarity.card-title1">Technical Details</h3>
+            <p data-cms="clarity.paragraph4">Reasoning on a 27B local model, speech with Kokoro, search with Meilisearch, served with FastAPI. First words arrive in about 180 ms on my hardware with a warm cache.</p>
           </div>
         </div>
       </article>
@@ -142,7 +142,7 @@
       <a class="cl-skip" href="#credits">Skip the demo</a>
       <div class="cl-demo-track">
         <div class="cl-demo-stage">
-          <h3 id="cl-demo-title" class="case-title">Clarity, Co-Producing a Short</h3>
+          <h3 id="cl-demo-title" class="case-title" data-cms="clarity.card-title2">Clarity, Co-Producing a Short</h3>
           <div class="cl-demo-grid">
             <div class="cl-rigwrap">
               <svg class="cl-rig " data-state="idle" viewBox="0 0 200 200" role="img" aria-label="Clarity, the same icosahedron as the site background, turning to look at you" focusable="false"><g class="cl-tilt"><g class="cl-rings"></g><g class="cl-faces"></g><g class="cl-edges"><line class="cl-edge" x1="82.2" y1="144.4" x2="133.4" y2="148.7" stroke-width="1.25" stroke-opacity="0.68"/><line class="cl-edge" x1="82.2" y1="144.4" x2="122.6" y2="114.2" stroke-width="1.25" stroke-opacity="0.83"/><line class="cl-edge" x1="82.2" y1="144.4" x2="79.7" y2="150.6" stroke-width="1.25" stroke-opacity="0.58"/><line class="cl-edge" x1="82.2" y1="144.4" x2="43.3" y2="110.9" stroke-width="1.25" stroke-opacity="0.68"/><line class="cl-edge" x1="82.2" y1="144.4" x2="75.3" y2="94.4" stroke-width="1.25" stroke-opacity="0.83"/><line class="cl-edge" x1="133.4" y1="148.7" x2="122.6" y2="114.2" stroke-width="1.25" stroke-opacity="0.74"/><line class="cl-edge" x1="133.4" y1="148.7" x2="79.7" y2="150.6" stroke-width="1.25" stroke-opacity="0.49"/><line class="cl-edge" x1="133.4" y1="148.7" x2="134.7" y2="112.7" stroke-width="1.25" stroke-opacity="0.45"/><line class="cl-edge" x1="133.4" y1="148.7" x2="156.0" y2="93.2" stroke-width="1.25" stroke-opacity="0.60"/><line class="cl-edge" x1="67.0" y1="55.9" x2="121.5" y2="50.8" stroke-width="1.25" stroke-opacity="0.52"/><line class="cl-edge" x1="67.0" y1="55.9" x2="116.1" y2="63.4" stroke-width="1.25" stroke-opacity="0.71"/><line class="cl-edge" x1="67.0" y1="55.9" x2="68.1" y2="84.8" stroke-width="1.25" stroke-opacity="0.46"/><line class="cl-edge" x1="67.0" y1="55.9" x2="43.3" y2="110.9" stroke-width="1.25" stroke-opacity="0.60"/><line class="cl-edge" x1="67.0" y1="55.9" x2="75.3" y2="94.4" stroke-width="1.25" stroke-opacity="0.75"/><line class="cl-edge" x1="121.5" y1="50.8" x2="116.1" y2="63.4" stroke-width="1.25" stroke-opacity="0.62"/><line class="cl-edge" x1="121.5" y1="50.8" x2="68.1" y2="84.8" stroke-width="1.25" stroke-opacity="0.37"/><line class="cl-edge" x1="121.5" y1="50.8" x2="134.7" y2="112.7" stroke-width="1.25" stroke-opacity="0.37"/><line class="cl-edge" x1="121.5" y1="50.8" x2="156.0" y2="93.2" stroke-width="1.25" stroke-opacity="0.52"/><line class="cl-edge" x1="116.1" y1="63.4" x2="122.6" y2="114.2" stroke-width="1.25" stroke-opacity="0.85"/><line class="cl-edge" x1="116.1" y1="63.4" x2="156.0" y2="93.2" stroke-width="1.25" stroke-opacity="0.71"/><line class="cl-edge" x1="116.1" y1="63.4" x2="75.3" y2="94.4" stroke-width="1.25" stroke-opacity="0.85"/><line class="cl-edge" x1="122.6" y1="114.2" x2="156.0" y2="93.2" stroke-width="1.25" stroke-opacity="0.75"/><line class="cl-edge" x1="122.6" y1="114.2" x2="75.3" y2="94.4" stroke-width="1.25" stroke-opacity="0.90"/><line class="cl-edge" x1="68.1" y1="84.8" x2="79.7" y2="150.6" stroke-width="1.25" stroke-opacity="0.35"/><line class="cl-edge" x1="68.1" y1="84.8" x2="134.7" y2="112.7" stroke-width="1.25" stroke-opacity="0.30"/><line class="cl-edge" x1="68.1" y1="84.8" x2="43.3" y2="110.9" stroke-width="1.25" stroke-opacity="0.45"/><line class="cl-edge" x1="79.7" y1="150.6" x2="134.7" y2="112.7" stroke-width="1.25" stroke-opacity="0.35"/><line class="cl-edge" x1="79.7" y1="150.6" x2="43.3" y2="110.9" stroke-width="1.25" stroke-opacity="0.49"/><line class="cl-edge" x1="134.7" y1="112.7" x2="156.0" y2="93.2" stroke-width="1.25" stroke-opacity="0.46"/><line class="cl-edge" x1="43.3" y1="110.9" x2="75.3" y2="94.4" stroke-width="1.25" stroke-opacity="0.74"/></g><g class="cl-nodes"><circle class="cl-node" cx="82.2" cy="144.4" r="2.3" fill-opacity="0.84"/><circle class="cl-node" cx="133.4" cy="148.7" r="2.3" fill-opacity="0.69"/><circle class="cl-node" cx="67.0" cy="55.9" r="2.3" fill-opacity="0.71"/><circle class="cl-node" cx="121.5" cy="50.8" r="2.3" fill-opacity="0.56"/><circle class="cl-node" cx="116.1" cy="63.4" r="2.3" fill-opacity="0.87"/><circle class="cl-node" cx="122.6" cy="114.2" r="2.3" fill-opacity="0.96"/><circle class="cl-node" cx="68.1" cy="84.8" r="2.3" fill-opacity="0.44"/><circle class="cl-node" cx="79.7" cy="150.6" r="2.3" fill-opacity="0.53"/><circle class="cl-node" cx="134.7" cy="112.7" r="2.3" fill-opacity="0.45"/><circle class="cl-node" cx="156.0" cy="93.2" r="2.3" fill-opacity="0.71"/><circle class="cl-node" cx="43.3" cy="110.9" r="2.3" fill-opacity="0.69"/><circle class="cl-node" cx="75.3" cy="94.4" r="2.3" fill-opacity="0.95"/></g></g></svg>
@@ -158,43 +158,43 @@
               </ol>
               <div class="cl-lanes" aria-label="APPA stages"><span class="cl-lane" data-step="1">Transcribe</span><span class="cl-lane" data-step="2">Grade Shots</span><span class="cl-lane" data-step="4">Build the Story</span><span class="cl-lane" data-step="6">Compile</span></div>
               <div class="cl-cta">
-                <p class="cl-cta-title">What Would You Automate First?</p>
+                <p class="cl-cta-title" data-cms="clarity.paragraph5">What Would You Automate First?</p>
                 <div class="cta-row">
-                  <a class="btn-primary" href="mailto:justin@xfnl.studio?subject=What%20I%27d%20automate%20first">Email Me Your Answer</a>
-                  <a class="btn-secondary" href="#appa">See How APPA Works</a>
+                  <a class="btn-primary" href="mailto:justin@xfnl.studio?subject=What%20I%27d%20automate%20first" data-cms="clarity.button1">Email Me Your Answer</a>
+                  <a class="btn-secondary" href="#appa" data-cms="clarity.button2">See How APPA Works</a>
                 </div>
               </div>
             </div>
           </div>
-          <p class="cl-demo-note">A condensed example of how I work with Clarity. Details are simplified for the page.</p>
+          <p class="cl-demo-note" data-cms="clarity.paragraph6">A condensed example of how I work with Clarity. Details are simplified for the page.</p>
         </div>
       </div>
     </section>
 
     <section class="sec">
       <article id="appa" class="case-block">
-        <div class="case-meta"><span>03 / Pipeline</span><span>a Function of Waves</span><span>Runs Across All Four Lanes</span></div>
+        <div class="case-meta"><span data-cms="clarity.tag1">03 / Pipeline</span><span data-cms="clarity.tag2">a Function of Waves</span><span data-cms="clarity.tag3">Runs Across All Four Lanes</span></div>
         <div>
-          <h2 class="case-title">APPA</h2>
-          <p class="case-body"><strong>In plain English:</strong> APPA is software that turns raw multi-camera footage into editable timelines for Premiere Pro and DaVinci Resolve. I built it as producer of <a href="https://www.youtube.com/@BenWindleShootsHisShot" target="_blank" rel="noopener noreferrer">Ben Windle Shoots His Shot</a> to replace roughly 15 to 20 hours a week of manual logging and rough cutting. Time saved now: measuring.</p>
-          <p class="case-body"><strong>The Showrunner:</strong> before APPA assembles a rough cut, a Showrunner pass compares a new shoot with the pacing of my best-performing shorts: how fast the cuts come, how soon the hook lands, and which story beats carry the joke. It acts as a developmental editor before I open Premiere or Resolve.</p>
-          <p class="case-body taught"><strong>What it taught me:</strong> the hours leak in logging and rough cuts, not in creativity.</p>
-          <p class="case-body"><strong>Built with:</strong> WhisperX, PySceneDetect, OpenTimelineIO, and FCPXML.</p>
+          <h2 class="case-title" data-cms="appa.heading1">APPA</h2>
+          <p class="case-body" data-cms="appa.paragraph1"><strong>In plain English:</strong> APPA is software that turns raw multi-camera footage into editable timelines for Premiere Pro and DaVinci Resolve. I built it as producer of <a href="https://www.youtube.com/@BenWindleShootsHisShot" target="_blank" rel="noopener noreferrer">Ben Windle Shoots His Shot</a> to replace roughly 15 to 20 hours a week of manual logging and rough cutting. Time saved now: measuring.</p>
+          <p class="case-body" data-cms="appa.paragraph2"><strong>The Showrunner:</strong> before APPA assembles a rough cut, a Showrunner pass compares a new shoot with the pacing of my best-performing shorts: how fast the cuts come, how soon the hook lands, and which story beats carry the joke. It acts as a developmental editor before I open Premiere or Resolve.</p>
+          <p class="case-body taught" data-cms="appa.paragraph3"><strong>What it taught me:</strong> the hours leak in logging and rough cuts, not in creativity.</p>
+          <p class="case-body" data-cms="appa.paragraph4"><strong>Built with:</strong> WhisperX, PySceneDetect, OpenTimelineIO, and FCPXML.</p>
           
         </div>
               <div class="dg-block wide">
             <figure class="flow-dg" data-dg>
     <ol class="flow-steps flow-4" aria-label="How APPA turns raw footage into editable timelines">
-      <li class="step g0"><strong>Raw Footage</strong><span>Multi-camera field shoots</span></li>
-      <li class="step g1"><strong>Transcribe</strong><span>WhisperX, speaker-verified</span></li>
-      <li class="step g2"><strong>Find Scenes</strong><span>PySceneDetect splits the shoot</span></li>
-      <li class="step g3"><strong>Grade Shots</strong><span>Seeing lane picks the best candidates</span></li>
-      <li class="step g4"><strong>Build the Story</strong><span>Thinking lane drafts the spine</span></li>
-      <li class="step g5"><strong>Check the Pacing</strong><span>Showrunner compares with my best shorts</span></li>
-      <li class="step g6 step-accent"><strong>Compile</strong><span>24fps .fcpxml and .otio timelines, plus a review proxy</span></li>
-      <li class="step g7"><strong>Premiere Pro or DaVinci Resolve</strong><span>Ready for the editor</span></li>
+      <li class="step g0"><strong data-cms="appa.title1">Raw Footage</strong><span data-cms="appa.tag1">Multi-camera field shoots</span></li>
+      <li class="step g1"><strong data-cms="appa.title2">Transcribe</strong><span data-cms="appa.tag2">WhisperX, speaker-verified</span></li>
+      <li class="step g2"><strong data-cms="appa.title3">Find Scenes</strong><span data-cms="appa.tag3">PySceneDetect splits the shoot</span></li>
+      <li class="step g3"><strong data-cms="appa.title4">Grade Shots</strong><span data-cms="appa.tag4">Seeing lane picks the best candidates</span></li>
+      <li class="step g4"><strong data-cms="appa.title5">Build the Story</strong><span data-cms="appa.tag5">Thinking lane drafts the spine</span></li>
+      <li class="step g5"><strong data-cms="appa.title6">Check the Pacing</strong><span data-cms="appa.tag6">Showrunner compares with my best shorts</span></li>
+      <li class="step g6 step-accent"><strong data-cms="appa.title7">Compile</strong><span data-cms="appa.tag7">24fps .fcpxml and .otio timelines, plus a review proxy</span></li>
+      <li class="step g7"><strong data-cms="appa.title8">Premiere Pro or DaVinci Resolve</strong><span data-cms="appa.tag8">Ready for the editor</span></li>
     </ol>
-    <figcaption class="dg-cap"><span>APPA runs across all four Waves lanes.</span></figcaption>
+    <figcaption class="dg-cap" data-cms="appa.caption1"><span>APPA runs across all four Waves lanes.</span></figcaption>
   </figure>
           </div>
       </article>
@@ -207,42 +207,42 @@
 
     <section id="credits" class="sec">
       <span class="kicker-small">Lab Notes</span>
-      <h2 class="display-head">Credits Burned, Lessons Learned</h2>
-      <p class="sec-intro">I break things on my own time so I can be careful on yours.</p>
-      <p class="sec-intro taught"><strong>What it taught me:</strong> scope AI work like any project, with small steps and a stop rule.</p>
+      <h2 class="display-head" data-cms="appa.heading2">Credits Burned, Lessons Learned</h2>
+      <p class="sec-intro" data-cms="appa.paragraph5">I break things on my own time so I can be careful on yours.</p>
+      <p class="sec-intro taught" data-cms="appa.paragraph6"><strong>What it taught me:</strong> scope AI work like any project, with small steps and a stop rule.</p>
       <div class="credits-grid">
         <article class="credit-card">
-          <h3 class="credit-title">The Agents That Flooded My To-Do List</h3>
+          <h3 class="credit-title" data-cms="appa.card-title1">The Agents That Flooded My To-Do List</h3>
           <dl>
-            <div><dt>What I Tried</dt><dd>I wired automation and overnight scripts straight into my personal task board.</dd></div>
-            <div><dt>What Broke</dt><dd>They created well over a hundred tickets, most of everything on the board, and a reminder loop nagged me for hours.</dd></div>
-            <div><dt>What I Do Now</dt><dd>Agents get their own queue. Humans own the board.</dd></div>
+            <div><dt data-cms="appa.label1">What I Tried</dt><dd data-cms="appa.detail1">I wired automation and overnight scripts straight into my personal task board.</dd></div>
+            <div><dt data-cms="appa.label2">What Broke</dt><dd data-cms="appa.detail2">They created well over a hundred tickets, most of everything on the board, and a reminder loop nagged me for hours.</dd></div>
+            <div><dt data-cms="appa.label3">What I Do Now</dt><dd data-cms="appa.detail3">Agents get their own queue. Humans own the board.</dd></div>
           </dl>
         </article>
         <article class="credit-card">
-          <h3 class="credit-title">The Parallax Pile-Up</h3>
+          <h3 class="credit-title" data-cms="appa.card-title2">The Parallax Pile-Up</h3>
           <dl>
-            <div><dt>What I Tried</dt><dd>I added scroll effects on top of one giant navigation script instead of refactoring it.</dd></div>
-            <div><dt>What Broke</dt><dd>Several effects fought each other, the browser froze, headers duplicated inside frames, and I broke my own live layouts.</dd></div>
-            <div><dt>What I Do Now</dt><dd>Refactor first, run one engine, and set a performance budget before adding motion.</dd></div>
+            <div><dt data-cms="appa.label4">What I Tried</dt><dd data-cms="appa.detail4">I added scroll effects on top of one giant navigation script instead of refactoring it.</dd></div>
+            <div><dt data-cms="appa.label5">What Broke</dt><dd data-cms="appa.detail5">Several effects fought each other, the browser froze, headers duplicated inside frames, and I broke my own live layouts.</dd></div>
+            <div><dt data-cms="appa.label6">What I Do Now</dt><dd data-cms="appa.detail6">Refactor first, run one engine, and set a performance budget before adding motion.</dd></div>
           </dl>
         </article>
         <article class="credit-card">
-          <h3 class="credit-title">Regex Surgery on Live HTML</h3>
+          <h3 class="credit-title" data-cms="appa.card-title3">Regex Surgery on Live HTML</h3>
           <dl>
-            <div><dt>What I Tried</dt><dd>I edited my site's HTML with blind find-and-replace scripts.</dd></div>
-            <div><dt>What Broke</dt><dd>Tags broke, text doubled, and CSS vanished.</dd></div>
-            <div><dt>What I Do Now</dt><dd>Content lives in a CMS, and a scrub check runs before every commit.</dd></div>
+            <div><dt data-cms="appa.label7">What I Tried</dt><dd data-cms="appa.detail7">I edited my site's HTML with blind find-and-replace scripts.</dd></div>
+            <div><dt data-cms="appa.label8">What Broke</dt><dd data-cms="appa.detail8">Tags broke, text doubled, and CSS vanished.</dd></div>
+            <div><dt data-cms="appa.label9">What I Do Now</dt><dd data-cms="appa.detail9">Content lives in a CMS, and a scrub check runs before every commit.</dd></div>
           </dl>
         </article>
         <article class="credit-card">
-          <h3 class="credit-title">Image Slop</h3>
+          <h3 class="credit-title" data-cms="appa.card-title4">Image Slop</h3>
           <dl>
-            <div><dt>What I Tried</dt><dd>I let an image model and unranked photo queries pick the hero art for a daily digest.</dd></div>
-            <div><dt>What Broke</dt><dd>I got generic AI slop, screenshots, and photos of doorframes.</dd></div>
-            <div><dt>What I Do Now</dt><dd>A four-step editorial hierarchy, a vision model that grades candidates, and a human veto.</dd></div>
+            <div><dt data-cms="appa.label10">What I Tried</dt><dd data-cms="appa.detail10">I let an image model and unranked photo queries pick the hero art for a daily digest.</dd></div>
+            <div><dt data-cms="appa.label11">What Broke</dt><dd data-cms="appa.detail11">I got generic AI slop, screenshots, and photos of doorframes.</dd></div>
+            <div><dt data-cms="appa.label12">What I Do Now</dt><dd data-cms="appa.detail12">A four-step editorial hierarchy, a vision model that grades candidates, and a human veto.</dd></div>
           </dl>
-          <a class="sec-link" href="#curator">See the full system →</a>
+          <a class="sec-link" href="#curator" data-cms="appa.button1">See the full system →</a>
         </article>
       </div>
     </section>
@@ -250,21 +250,21 @@
     <footer id="contact" class="footer">
       <div class="footer-hello">
         <img class="avatar" src="/img/memoji-avatar-400.webp" width="56" height="56" alt="" loading="lazy">
-        <span>Austin, TX · Hybrid or remote</span>
+        <span data-cms="footer.tag1">Austin, TX · Hybrid or remote</span>
       </div>
-      <h2 class="footer-title">Let's Ship <em>Something.</em></h2>
-      <p class="footer-sub">Open to cross-functional program management, marketing systems, and AI workflow opportunities, in Austin (hybrid) or remote. Or just say hello, I'm friendly!</p>
+      <h2 class="footer-title" data-cms="footer.heading1">Let's Ship <em>Something.</em></h2>
+      <p class="footer-sub" data-cms="footer.paragraph1">Open to cross-functional program management, marketing systems, and AI workflow opportunities, in Austin (hybrid) or remote. Or just say hello, I'm friendly!</p>
       <div class="cta-row">
-        <a href="mailto:justin@xfnl.studio" class="btn-primary">Email Me</a>
-        <a href="https://www.linkedin.com/in/justin-jackson-pm/" target="_blank" rel="noopener noreferrer" class="btn-secondary">LinkedIn ↗</a>
-        <a href="/Justin-Jackson-Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-secondary">Resume</a>
-        <a href="https://www.youtube.com/@BenWindleShootsHisShot" target="_blank" rel="noopener noreferrer" class="btn-secondary">YouTube ↗</a>
-        <a href="https://vimeo.com/user222444720" target="_blank" rel="noopener noreferrer" class="btn-secondary">Vimeo ↗</a>
+        <a href="mailto:justin@xfnl.studio" class="btn-primary" data-cms="footer.button1">Email Me</a>
+        <a href="https://www.linkedin.com/in/justin-jackson-pm/" target="_blank" rel="noopener noreferrer" class="btn-secondary" data-cms="footer.button2">LinkedIn ↗</a>
+        <a href="/Justin-Jackson-Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-secondary" data-cms="footer.button3">Resume</a>
+        <a href="https://www.youtube.com/@BenWindleShootsHisShot" target="_blank" rel="noopener noreferrer" class="btn-secondary" data-cms="footer.button4">YouTube ↗</a>
+        <a href="https://vimeo.com/user222444720" target="_blank" rel="noopener noreferrer" class="btn-secondary" data-cms="footer.button5">Vimeo ↗</a>
       </div>
       <div class="footer-meta">
-        <span>© 2026 Justin Jackson · Austin, TX</span>
+        <span data-cms="footer-meta.tag1">© 2026 Justin Jackson · Austin, TX</span>
         <span class="aq" title="Aquarius, if you were wondering"><svg viewBox="0 0 40 20" role="img" aria-label="Aquarius glyph: two waves" focusable="false"><path d="M2 7 q4 -5 8 0 t8 0 t8 0 t8 0"/><path d="M2 15 q4 -5 8 0 t8 0 t8 0 t8 0"/></svg></span>
-        <a href="/about/">Next: About →</a>
+        <a href="/about/" data-cms="footer-meta.button1">Next: About →</a>
       </div>
     </footer>
   </main>

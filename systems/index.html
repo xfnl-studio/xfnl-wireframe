@@ -21,15 +21,15 @@
   <meta name="twitter:title" content="Case Studies: Marketing Programs &amp; Workflow Automation · Justin Jackson">
   <meta name="twitter:description" content="How I build intake, automate handoffs, and launch under tight timelines.">
   <meta name="twitter:image" content="https://xfnl.studio/img/og-default.png">
-  <link rel="icon" href="/favicon.svg?v=20261102e" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=20261102e">
+  <link rel="icon" href="/favicon.svg?v=20261103f" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=20261103f">
   <link rel="preload" href="/fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/instrument-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/obsession.css?v=1793558083">
-  <link rel="stylesheet" href="/css/xfnl-v2.css?v=20261102e">
+  <link rel="stylesheet" href="/css/xfnl-v2.css?v=20261103f">
   
-  <script src="/portfolio.js?v=20261102e" defer></script>
-  <script src="/js/xfnl-v2.js?v=20261102e" defer></script>
+  <script src="/portfolio.js?v=20261103f" defer></script>
+  <script src="/js/xfnl-v2.js?v=20261103f" defer></script>
 </head>
 <body data-page="systems">
   <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -66,67 +66,67 @@
 
     <section class="sec">
       <div class="sec-head">
-        <h2 class="sec-kicker">The Shape of It</h2>
+        <h2 class="sec-kicker" data-cms="the-shape-of-it.heading1">The Shape of It</h2>
       </div>
-      <p class="sec-intro">The shape of the system behind the first case study: a request comes in, work splits across teams, and final assets follow the work so nothing gets lost.</p>
+      <p class="sec-intro" data-cms="the-shape-of-it.paragraph1">The shape of the system behind the first case study: a request comes in, work splits across teams, and final assets follow the work so nothing gets lost.</p>
       <figure class="flow-dg" data-dg>
     <ol class="flow-steps flow-3" aria-label="How intake and handoffs flow">
-      <li class="step g0"><strong>Request Arrives</strong><span>From any team, any channel</span></li>
-      <li class="step g1"><strong>Intake and Routing</strong><span>Brief checked, owner assigned</span></li>
-      <li class="step g2"><strong>Work Splits</strong><span>Design, copy, and web move in parallel</span><em class="chips"><b class="chip">Design</b><b class="chip">Copy</b><b class="chip">Web</b></em></li>
-      <li class="step g3 step-accent"><strong>Final Assets Follow the Work</strong><span>Design link, copy doc, and images sync across related tasks</span></li>
-      <li class="step g4"><strong>Blocked Work Gets Flagged</strong><span>So nothing stalls quietly</span></li>
-      <li class="step g5"><strong>Delivered</strong><span>Launch ready, on a visible timeline</span></li>
+      <li class="step g0"><strong data-cms="the-shape-of-it.title1">Request Arrives</strong><span data-cms="the-shape-of-it.tag1">From any team, any channel</span></li>
+      <li class="step g1"><strong data-cms="the-shape-of-it.title2">Intake and Routing</strong><span data-cms="the-shape-of-it.tag2">Brief checked, owner assigned</span></li>
+      <li class="step g2"><strong data-cms="the-shape-of-it.title3">Work Splits</strong><span data-cms="the-shape-of-it.tag3">Design, copy, and web move in parallel</span><em class="chips"><b class="chip" data-cms="the-shape-of-it.chip1">Design</b><b class="chip" data-cms="the-shape-of-it.chip2">Copy</b><b class="chip" data-cms="the-shape-of-it.chip3">Web</b></em></li>
+      <li class="step g3 step-accent"><strong data-cms="the-shape-of-it.title4">Final Assets Follow the Work</strong><span data-cms="the-shape-of-it.tag4">Design link, copy doc, and images sync across related tasks</span></li>
+      <li class="step g4"><strong data-cms="the-shape-of-it.title5">Blocked Work Gets Flagged</strong><span data-cms="the-shape-of-it.tag5">So nothing stalls quietly</span></li>
+      <li class="step g5"><strong data-cms="the-shape-of-it.title6">Delivered</strong><span data-cms="the-shape-of-it.tag6">Launch ready, on a visible timeline</span></li>
     </ol>
-    <figcaption class="dg-cap"><span>Intake, handoffs, and the automation that keeps assets from getting lost.</span></figcaption>
+    <figcaption class="dg-cap" data-cms="the-shape-of-it.caption1"><span>Intake, handoffs, and the automation that keeps assets from getting lost.</span></figcaption>
   </figure>
 
     </section>
 
     <section id="cms-systems-cases" class="sec">
       <article id="intake-handoffs" class="case-block">
-        <div class="case-meta"><span>01 / Intake and Automation</span><span>Role: Program Manager and Builder</span><span>Tools: Asana, Asana Node.js SDK, Claude Code</span></div>
+        <div class="case-meta"><span data-cms="the-shape-of-it.tag7">01 / Intake and Automation</span><span data-cms="the-shape-of-it.tag8">Role: Program Manager and Builder</span><span data-cms="the-shape-of-it.tag9">Tools: Asana, Asana Node.js SDK, Claude Code</span></div>
         <div>
-          <h2 class="case-title">Intake and Handoffs, Automated</h2>
-          <p class="case-body"><strong>Problem.</strong> Creative requests arrived by too many routes, and final assets (design links, copy docs, images) got lost as work moved between related tasks. Native syncing across task levels wasn't available in our setup.</p>
-          <p class="case-body"><strong>What I did.</strong> I co-designed and co-built our Asana implementation for marketing requests from scratch, with the team that runs intake, and I handled the technical build. Before writing any automation code, I had Claude Code interview me and test whether the platform could support the idea. Then I built Asana Tasks Family Sync: a rule that carries final assets between related tasks, is safe to re-run, copies cleanly to other projects, and is documented. I paired it with team training so it stuck. <strong>Result.</strong> Final assets, including design links, copy docs, and video, now follow the work automatically, so nobody has to hunt for the latest file.</p>
-          <div class="pill-row"><span class="pill">Asana</span><span class="pill">Asana Node.js SDK</span><span class="pill">Claude Code</span><span class="pill">Automation</span></div>
+          <h2 class="case-title" data-cms="intake-and-handoffs-automated.heading1">Intake and Handoffs, Automated</h2>
+          <p class="case-body" data-cms="intake-and-handoffs-automated.paragraph1"><strong>Problem.</strong> Creative requests arrived by too many routes, and final assets (design links, copy docs, images) got lost as work moved between related tasks. Native syncing across task levels wasn't available in our setup.</p>
+          <p class="case-body" data-cms="intake-and-handoffs-automated.paragraph2"><strong>What I did.</strong> I co-designed and co-built our Asana implementation for marketing requests from scratch, with the team that runs intake, and I handled the technical build. Before writing any automation code, I had Claude Code interview me and test whether the platform could support the idea. Then I built Asana Tasks Family Sync: a rule that carries final assets between related tasks, is safe to re-run, copies cleanly to other projects, and is documented. I paired it with team training so it stuck. <strong>Result.</strong> Final assets, including design links, copy docs, and video, now follow the work automatically, so nobody has to hunt for the latest file.</p>
+          <div class="pill-row"><span class="pill" data-cms="intake-and-handoffs-automated.tag1">Asana</span><span class="pill" data-cms="intake-and-handoffs-automated.tag2">Asana Node.js SDK</span><span class="pill" data-cms="intake-and-handoffs-automated.tag3">Claude Code</span><span class="pill" data-cms="intake-and-handoffs-automated.tag4">Automation</span></div>
         </div>
       </article>
       <article id="analyst-reports" class="case-block">
-        <div class="case-meta"><span>02 / Launches</span><span>Role: Program Manager</span><span>Tools: Asana, Claude</span></div>
+        <div class="case-meta"><span data-cms="intake-and-handoffs-automated.tag5">02 / Launches</span><span data-cms="intake-and-handoffs-automated.tag6">Role: Program Manager</span><span data-cms="intake-and-handoffs-automated.tag7">Tools: Asana, Claude</span></div>
         <div>
-          <h2 class="case-title">Analyst Report Programs, Ready Before the Report Lands</h2>
-          <p class="case-body"><strong>Problem.</strong> An analyst firm published its report earlier than expected.</p>
-          <p class="case-body"><strong>What I did.</strong> I'd prepared a contingency plan in advance, with AI help, so we weren't starting from zero. <strong>Result.</strong> An executive landing page went live within 3 days, against a 14-day plan. I also coordinated marketing for the BigCommerce Payments launch.</p>
-          <div class="pill-row"><span class="pill">Analyst Report Programs</span><span class="pill">BigCommerce Payments</span></div>
+          <h2 class="case-title" data-cms="analyst-report-programs-ready-before-the-report-lands.heading1">Analyst Report Programs, Ready Before the Report Lands</h2>
+          <p class="case-body" data-cms="analyst-report-programs-ready-before-the-report-lands.paragraph1"><strong>Problem.</strong> An analyst firm published its report earlier than expected.</p>
+          <p class="case-body" data-cms="analyst-report-programs-ready-before-the-report-lands.paragraph2"><strong>What I did.</strong> I'd prepared a contingency plan in advance, with AI help, so we weren't starting from zero. <strong>Result.</strong> An executive landing page went live within 3 days, against a 14-day plan. I also coordinated marketing for the BigCommerce Payments launch.</p>
+          <div class="pill-row"><span class="pill" data-cms="analyst-report-programs-ready-before-the-report-lands.tag1">Analyst Report Programs</span><span class="pill" data-cms="analyst-report-programs-ready-before-the-report-lands.tag2">BigCommerce Payments</span></div>
         </div>
       </article>
       <article id="campaign-builder" class="case-block">
-        <div class="case-meta"><span>03 / AI Tooling</span><span>Role: Program Manager and Builder</span><span>Tools: Asana, Asana Node.js SDK, Claude Code</span></div>
+        <div class="case-meta"><span data-cms="analyst-report-programs-ready-before-the-report-lands.tag3">03 / AI Tooling</span><span data-cms="analyst-report-programs-ready-before-the-report-lands.tag4">Role: Program Manager and Builder</span><span data-cms="analyst-report-programs-ready-before-the-report-lands.tag5">Tools: Asana, Asana Node.js SDK, Claude Code</span></div>
         <div>
-          <h2 class="case-title">Campaign Builder</h2>
-          <p class="case-body"><strong>Problem.</strong> Setting up a campaign meant rebuilding the same task structure by hand, and the brief and the tasks drifted apart.</p>
-          <p class="case-body"><strong>What I did.</strong> I built and piloted a brief-to-project automation in Asana that turns a campaign brief into tasks and dependencies. A pilot run generated a full parent task and its subtasks straight from a brief. I paused the broader rollout until the underlying request data was ready. <strong>Result.</strong> A working pattern for turning one brief into a complete, routed project, ready to extend.</p>
-          <div class="pill-row"><span class="pill">Asana</span><span class="pill">Asana Node.js SDK</span><span class="pill">Claude Code</span><span class="pill">Automation</span></div>
+          <h2 class="case-title" data-cms="campaign-builder.heading1">Campaign Builder</h2>
+          <p class="case-body" data-cms="campaign-builder.paragraph1"><strong>Problem.</strong> Setting up a campaign meant rebuilding the same task structure by hand, and the brief and the tasks drifted apart.</p>
+          <p class="case-body" data-cms="campaign-builder.paragraph2"><strong>What I did.</strong> I built and piloted a brief-to-project automation in Asana that turns a campaign brief into tasks and dependencies. A pilot run generated a full parent task and its subtasks straight from a brief. I paused the broader rollout until the underlying request data was ready. <strong>Result.</strong> A working pattern for turning one brief into a complete, routed project, ready to extend.</p>
+          <div class="pill-row"><span class="pill" data-cms="campaign-builder.tag1">Asana</span><span class="pill" data-cms="campaign-builder.tag2">Asana Node.js SDK</span><span class="pill" data-cms="campaign-builder.tag3">Claude Code</span><span class="pill" data-cms="campaign-builder.tag4">Automation</span></div>
         </div>
       </article>
       <article id="ai-tooling" class="case-block">
-        <div class="case-meta"><span>04 / AI Tooling</span><span>Role: Program Manager and Builder</span><span>Tools: Asana, Claude</span></div>
+        <div class="case-meta"><span data-cms="campaign-builder.tag5">04 / AI Tooling</span><span data-cms="campaign-builder.tag6">Role: Program Manager and Builder</span><span data-cms="campaign-builder.tag7">Tools: Asana, Claude</span></div>
         <div>
-          <h2 class="case-title">AI Tooling at Work</h2>
-          <p class="case-body"><strong>Problem.</strong> A marketing work system lives in a lot of people's heads, and incomplete requests turn into rework.</p>
-          <p class="case-body"><strong>What I'm building.</strong> Four AI initiatives, all on tools we already own.<br><strong>Brief to Campaign:</strong> one campaign brief becomes a complete, routed Asana project (built and piloted).<br><strong>Claude Asana Project:</strong> a living operating manual for marketing's work system, in a Claude knowledge base that updates when the rules change (in progress).<br><strong>AI Intake Triage:</strong> catching incomplete requests at the door, before they become rework (in progress).<br><strong>Automated Status Updates:</strong> stakeholders get status without asking, starting with blocked-work alerts (early stage).</p>
-          <div class="pill-row"><span class="pill">Asana</span><span class="pill">Claude</span><span class="pill">Automation</span><span class="pill">Workflow Design</span></div>
+          <h2 class="case-title" data-cms="ai-tooling-at-work.heading1">AI Tooling at Work</h2>
+          <p class="case-body" data-cms="ai-tooling-at-work.paragraph1"><strong>Problem.</strong> A marketing work system lives in a lot of people's heads, and incomplete requests turn into rework.</p>
+          <p class="case-body" data-cms="ai-tooling-at-work.paragraph2"><strong>What I'm building.</strong> Four AI initiatives, all on tools we already own.<br><strong>Brief to Campaign:</strong> one campaign brief becomes a complete, routed Asana project (built and piloted).<br><strong>Claude Asana Project:</strong> a living operating manual for marketing's work system, in a Claude knowledge base that updates when the rules change (in progress).<br><strong>AI Intake Triage:</strong> catching incomplete requests at the door, before they become rework (in progress).<br><strong>Automated Status Updates:</strong> stakeholders get status without asking, starting with blocked-work alerts (early stage).</p>
+          <div class="pill-row"><span class="pill" data-cms="ai-tooling-at-work.tag1">Asana</span><span class="pill" data-cms="ai-tooling-at-work.tag2">Claude</span><span class="pill" data-cms="ai-tooling-at-work.tag3">Automation</span><span class="pill" data-cms="ai-tooling-at-work.tag4">Workflow Design</span></div>
         </div>
       </article>
       <article id="apple-creatoriq" class="case-block">
-        <div class="case-meta"><span>05 / Media</span><span>Roles: Creative Operations Contractor, Commercial Video Producer</span><span>Through: TEKsystems, xfnl Studio</span></div>
+        <div class="case-meta"><span data-cms="ai-tooling-at-work.tag5">05 / Media</span><span data-cms="ai-tooling-at-work.tag6">Roles: Creative Operations Contractor, Commercial Video Producer</span><span data-cms="ai-tooling-at-work.tag7">Through: TEKsystems, xfnl Studio</span></div>
         <div>
-          <h2 class="case-title">Apple Music and CreatorIQ</h2>
-          <p class="case-body">At <strong>Apple Music</strong>, through TEKsystems, I ran high-volume creative publishing and release QA.</p>
-          <p class="case-body">Through my studio, I produced commercial video for <strong>CreatorIQ</strong>.</p>
-          <div class="pill-row"><span class="pill">Apple Music</span><span class="pill">CreatorIQ</span><span class="pill">Commercial Video</span></div>
+          <h2 class="case-title" data-cms="apple-music-and-creatoriq.heading1">Apple Music and CreatorIQ</h2>
+          <p class="case-body" data-cms="apple-music-and-creatoriq.paragraph1">At <strong>Apple Music</strong>, through TEKsystems, I ran high-volume creative publishing and release QA.</p>
+          <p class="case-body" data-cms="apple-music-and-creatoriq.paragraph2">Through my studio, I produced commercial video for <strong>CreatorIQ</strong>.</p>
+          <div class="pill-row"><span class="pill" data-cms="apple-music-and-creatoriq.tag1">Apple Music</span><span class="pill" data-cms="apple-music-and-creatoriq.tag2">CreatorIQ</span><span class="pill" data-cms="apple-music-and-creatoriq.tag3">Commercial Video</span></div>
         </div>
       </article>
     </section>
@@ -134,21 +134,21 @@
     <footer id="contact" class="footer">
       <div class="footer-hello">
         <img class="avatar" src="/img/memoji-avatar-400.webp" width="56" height="56" alt="" loading="lazy">
-        <span>Austin, TX · Hybrid or remote</span>
+        <span data-cms="footer.tag1">Austin, TX · Hybrid or remote</span>
       </div>
-      <h2 class="footer-title">Let's Ship <em>Something.</em></h2>
-      <p class="footer-sub">Open to cross-functional program management, marketing systems, and AI workflow opportunities, in Austin (hybrid) or remote. Or just say hello, I'm friendly!</p>
+      <h2 class="footer-title" data-cms="footer.heading1">Let's Ship <em>Something.</em></h2>
+      <p class="footer-sub" data-cms="footer.paragraph1">Open to cross-functional program management, marketing systems, and AI workflow opportunities, in Austin (hybrid) or remote. Or just say hello, I'm friendly!</p>
       <div class="cta-row">
-        <a href="mailto:justin@xfnl.studio" class="btn-primary">Email Me</a>
-        <a href="https://www.linkedin.com/in/justin-jackson-pm/" target="_blank" rel="noopener noreferrer" class="btn-secondary">LinkedIn ↗</a>
-        <a href="/Justin-Jackson-Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-secondary">Resume</a>
-        <a href="https://www.youtube.com/@BenWindleShootsHisShot" target="_blank" rel="noopener noreferrer" class="btn-secondary">YouTube ↗</a>
-        <a href="https://vimeo.com/user222444720" target="_blank" rel="noopener noreferrer" class="btn-secondary">Vimeo ↗</a>
+        <a href="mailto:justin@xfnl.studio" class="btn-primary" data-cms="footer.button1">Email Me</a>
+        <a href="https://www.linkedin.com/in/justin-jackson-pm/" target="_blank" rel="noopener noreferrer" class="btn-secondary" data-cms="footer.button2">LinkedIn ↗</a>
+        <a href="/Justin-Jackson-Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-secondary" data-cms="footer.button3">Resume</a>
+        <a href="https://www.youtube.com/@BenWindleShootsHisShot" target="_blank" rel="noopener noreferrer" class="btn-secondary" data-cms="footer.button4">YouTube ↗</a>
+        <a href="https://vimeo.com/user222444720" target="_blank" rel="noopener noreferrer" class="btn-secondary" data-cms="footer.button5">Vimeo ↗</a>
       </div>
       <div class="footer-meta">
-        <span>© 2026 Justin Jackson · Austin, TX</span>
+        <span data-cms="footer-meta.tag1">© 2026 Justin Jackson · Austin, TX</span>
         <span class="aq" title="Aquarius, if you were wondering"><svg viewBox="0 0 40 20" role="img" aria-label="Aquarius glyph: two waves" focusable="false"><path d="M2 7 q4 -5 8 0 t8 0 t8 0 t8 0"/><path d="M2 15 q4 -5 8 0 t8 0 t8 0 t8 0"/></svg></span>
-        <a href="/experiments/">Next: Experiments →</a>
+        <a href="/experiments/" data-cms="footer-meta.button1">Next: Experiments →</a>
       </div>
     </footer>
   </main>
