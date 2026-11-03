@@ -304,7 +304,7 @@
     var el = root.querySelector('.tk-verb');
     var btn = root.querySelector('.tk-pause');
     if (!verbs.length || !el) { return; }
-    var i = 0, timer = null, userPaused = false, hover = false, visible = !hasIO;
+    var i = 0, timer = null, userPaused = false, hover = false, visible = !hasIO, done = false;
 
     function show() {
       el.classList.remove('tk-in');
@@ -314,8 +314,8 @@
     }
     function stop() { if (timer) { clearInterval(timer); timer = null; } }
     function sync() {
-      var run = !userPaused && !hover && visible && !document.hidden;
-      if (run && !timer) { timer = setInterval(function () { i = (i + 1) % verbs.length; show(); }, 1200); }
+      var run = !userPaused && !hover && visible && !document.hidden && !done;
+      if (run && !timer) { timer = setInterval(function () { if (i >= verbs.length - 1) { done = true; stop(); return; } i += 1; show(); }, 1200); }
       if (!run) { stop(); }
     }
     root.classList.add('is-live');
@@ -361,6 +361,7 @@
         var e = String(1 - clamp(p / 0.8));
         Array.prototype.forEach.call(early, function (el) { el.setAttribute('stroke-dashoffset', e); });
         late.setAttribute('stroke-dashoffset', String(1 - clamp((p - 0.64) / 0.36)));
+        fig.classList.toggle('wv-marked', p > 0.55);
       }
       function queue() { if (!queued) { queued = true; window.requestAnimationFrame(paint); } }
       window.addEventListener('scroll', queue, { passive: true });
@@ -370,6 +371,7 @@
           document.body.classList.toggle('wv-focus', en[0].isIntersecting);
         }, { threshold: 0.25 }).observe(fig);
       }
+      fig.classList.add('js-marks');
       paint();
     });
   })();
@@ -389,14 +391,19 @@
     return '<span class="vrow"><span>' + label + '</span><span class="vtrack"><span class="vbar ' + cls + ' ' + wcls + '"></span></span></span>';
   }
   function build(idx) {
-    // Order is fixed by the content: deliverables, speed, days, years.
-    if (idx === 0) { return row('1x', '', 'vw33') + row('3x', 'vbar-a', 'vw100'); }
-    if (idx === 1) { return row('Before', '', 'vw100') + row('After', 'vbar-a', 'vw75'); }
-    if (idx === 2) { return '<span class="vdots"><span class="vdot"></span><span class="vdot"></span><span class="vdot"></span><span>Days 1 to 3</span></span>'; }
+    if (idx === 0) {
+      return '<span class="vflow"><span class="vstep">Request</span><span class="vline"></span><span class="vstep">Route</span><span class="vline"></span><span class="vstep">Ship</span></span>';
+    }
+    if (idx === 1) {
+      return '<span class="vchips"><b>Gartner</b><b>IDC</b><b>Spotlight AR</b></span>';
+    }
+    if (idx === 2) {
+      var dots = '';
+      for (var n = 0; n < 14; n += 1) { dots += '<span class="vd' + (n < 3 ? ' on' : '') + '"></span>'; }
+      return '<span class="vgrid14">' + dots + '</span><span class="vcap">3 of 14 days</span>';
+    }
     if (idx === 3) {
-      return '<svg class="vwave" viewBox="0 0 160 28" focusable="false" aria-hidden="true">' +
-        '<path pathLength="1" d="M0 14 C 10 0, 20 0, 30 14 S 50 28, 60 14 S 80 0, 90 14 S 110 28, 120 14 S 140 4, 160 14"/>' +
-        '<path pathLength="1" d="M0 14 C 10 28, 20 28, 30 14 S 50 0, 60 14 S 80 28, 90 14 S 110 0, 120 14 S 140 4, 160 14"/></svg>';
+      return '<svg class="vrise" viewBox="0 0 200 44" focusable="false" aria-hidden="true"><path pathLength="1" d="M8 38 L68 28 L132 18 L192 6"/><circle cx="8" cy="38" r="4"/><circle cx="68" cy="28" r="4"/><circle cx="132" cy="18" r="4"/><circle cx="192" cy="6" r="4"/></svg><span class="vlabels vlabels4"><span>Support</span><span>How-To</span><span>Video</span><span>Programs</span></span>';
     }
     return '';
   }

@@ -3,33 +3,33 @@
     "brand_text": "xfnl Studio",
     "email": "justin@xfnl.studio",
     "linkedin": "https://www.linkedin.com/in/justin-jackson-pm/",
-    "footer_heading": "Let's Make Something That Ships.",
-    "footer_sub": "Open to creative program management and AI workflow opportunities, in Austin (hybrid) or remote. Or just say hello. I'm friendly.",
+    "footer_heading": "Let's Ship Something.",
+    "footer_sub": "Open to cross-functional program management, marketing systems, and AI workflow opportunities, in Austin (hybrid) or remote. Or just say hello, I'm friendly!",
     "copyright": "© 2026 Justin Jackson · Austin, TX"
   },
   "home": {
-    "eyebrow": "Marketing Program Manager · Technologist · Creative",
-    "title": "I was trained end to end. Every role since has been a pipeline.",
-    "title_html": "I was trained end to end. <em>Every role since has been a pipeline.</em>",
-    "lead_html": "I run marketing programs at <strong>Commerce</strong> (BigCommerce, Feedonomics, Makeswift) and build the automation that helps creative teams ship. I speak creative because I am one, and I automate so creative work can flow uninterrupted.",
+    "eyebrow": "Marketing Program Manager · Workflow Nerd",
+    "title": "I was trained in end-to-end production. Every role since has been a pipeline.",
+    "title_html": "I was trained in end-to-end production. <em>Every role since has been a pipeline.</em>",
+    "lead_html": "I run marketing programs at <strong>Commerce</strong> and build the workflows that keep cross-functional teams unblocked. I've sat on both sides of the request, so I know where handoffs break.",
     "cta_primary": "How I Run Programs",
     "cta_secondary": "What I Build",
     "results": [
       {
-        "metric": "~3× Deliverables",
-        "detail": "Quarterly marketing deliverables after I built and ran intake in Asana (internal measure)"
+        "metric": "Built from Scratch",
+        "detail": "I co-designed and co-built the Asana system that routes marketing requests, with the team that runs intake. I did the technical side, from custom automation to documentation."
       },
       {
-        "metric": "~25% Faster",
-        "detail": "Median request-to-delivery time (internal measure)"
+        "metric": "3 Analyst Report Programs",
+        "detail": "Analyst report programs I've run for marketing, from submission to launch."
       },
       {
         "metric": "3 Days",
-        "detail": "From an early analyst-report release to a live executive landing page"
+        "detail": "From an early analyst-report release to a live executive landing page, against a 14-day plan."
       },
       {
-        "metric": "Since 2017",
-        "detail": "Across support, video production, and marketing program management"
+        "metric": "Support to Programs",
+        "detail": "Tech support, then how-to videos, then marketing videos, then marketing programs, all at BigCommerce."
       }
     ],
     "featured_systems": [
@@ -41,9 +41,15 @@
       },
       {
         "tag": "Case Study",
-        "title": "A Magic Quadrant Launch in 3 Days",
+        "title": "Analyst Report Programs, Ready Before the Report Lands",
         "subtitle": "Preparing in advance so an early release became a calm week",
-        "href": "/systems/#mq-launch"
+        "href": "/systems/#analyst-reports"
+      },
+      {
+        "tag": "Case Study",
+        "title": "AI Tooling at Work",
+        "subtitle": "Brief-to-campaign automation, a living Claude playbook, and smarter intake",
+        "href": "/systems/#ai-tooling"
       },
       {
         "tag": "Case Study",
@@ -56,19 +62,19 @@
       {
         "name": "Waves",
         "badge": "System",
-        "description": "A local LLM inference stack I designed and built with AI-assisted development (vibe coding). Three machines, four lanes, no cloud dependency.",
+        "description": "A local LLM inference stack I designed and built with AI-assisted development (vibe coding). Three machines, four compute lanes (Thinking, Seeing, Remembering, and Embedding), and no cloud dependency.",
         "href": "/experiments/#waves"
       },
       {
         "name": "Clarity",
         "badge": "Agent",
-        "description": "A curious, Socratic agent who asks good questions before she gives answers.",
+        "description": "My proactive personal agent. She ties the three-machine, four-lane setup together, routes tasks to Asana, and kicks off post-production jobs from a single Siri voice prompt.",
         "href": "/experiments/#clarity"
       },
       {
         "name": "APPA",
         "badge": "Pipeline",
-        "description": "Turns raw multi-camera shoots into editable timelines for Premiere Pro and DaVinci Resolve.",
+        "description": "An AI junior-editor pipeline I designed and vibe-coded. It transcribes, grades, and assembles multi-camera shoots into Premiere Pro and DaVinci Resolve timelines, taking about 15 hours a week (estimate) off my plate.",
         "href": "/experiments/#appa"
       }
     ]
@@ -87,7 +93,7 @@
         ],
         "title": "Intake and Handoffs, Automated",
         "p1_html": "<strong>Problem.</strong> Creative requests arrived by too many routes, and final assets (design links, copy docs, images) got lost as work moved between related tasks. Native syncing across task levels wasn't available in our setup.",
-        "p2_html": "<strong>What I did.</strong> I built and run marketing intake and routing in Asana. Before writing any automation code, I had Claude Code interview me and test whether the platform could support the idea. Then I built Family Sync: a rule that carries final assets between related tasks, is safe to re-run, copies cleanly to other projects, and is documented. I paired it with team training so it stuck. <strong>Result.</strong> Quarterly deliverables rose roughly threefold, and median request-to-delivery time dropped by about a quarter (internal measures).",
+        "p2_html": "<strong>What I did.</strong> I co-designed and co-built our Asana implementation for marketing requests from scratch, with the team that runs intake, and I handled the technical build. Before writing any automation code, I had Claude Code interview me and test whether the platform could support the idea. Then I built Asana Tasks Family Sync: a rule that carries final assets between related tasks, is safe to re-run, copies cleanly to other projects, and is documented. I paired it with team training so it stuck. <strong>Result.</strong> Final assets, including design links, copy docs, and video, now follow the work automatically, so nobody has to hunt for the latest file.",
         "pills": [
           "Asana",
           "Asana Node.js SDK",
@@ -96,25 +102,58 @@
         ]
       },
       {
-        "id": "mq-launch",
+        "id": "analyst-reports",
         "meta": [
           "02 / Launches",
           "Role: Program Manager",
           "Tools: Asana, Claude"
         ],
-        "title": "A Magic Quadrant Launch in 3 Days",
-        "p1_html": "<strong>Problem.</strong> An analyst firm published its Magic Quadrant earlier than expected.",
-        "p2_html": "<strong>What I did.</strong> I had prepared a contingency plan in advance, with AI help, so we were not starting from zero. <strong>Result.</strong> An executive landing page went live within 3 days. I also coordinated regional marketing for the BigCommerce Payments launch and helped grow Commerce Awards entries roughly 30% year over year.",
+        "title": "Analyst Report Programs, Ready Before the Report Lands",
+        "p1_html": "<strong>Problem.</strong> An analyst firm published its report earlier than expected.",
+        "p2_html": "<strong>What I did.</strong> I'd prepared a contingency plan in advance, with AI help, so we weren't starting from zero. <strong>Result.</strong> An executive landing page went live within 3 days, against a 14-day plan. I also coordinated marketing for the BigCommerce Payments launch.",
         "pills": [
-          "Gartner Magic Quadrant",
-          "BigCommerce Payments",
-          "Commerce Awards"
+          "Analyst Report Programs",
+          "BigCommerce Payments"
+        ]
+      },
+      {
+        "id": "campaign-builder",
+        "meta": [
+          "03 / AI Tooling",
+          "Role: Program Manager and Builder",
+          "Tools: Asana, Asana Node.js SDK, Claude Code"
+        ],
+        "title": "Campaign Builder",
+        "p1_html": "<strong>Problem.</strong> Setting up a campaign meant rebuilding the same task structure by hand, and the brief and the tasks drifted apart.",
+        "p2_html": "<strong>What I did.</strong> I built and piloted a brief-to-project automation in Asana that turns a campaign brief into tasks and dependencies. A pilot run generated a full parent task and its subtasks straight from a brief. I paused the broader rollout until the underlying request data was ready. <strong>Result.</strong> A working pattern for turning one brief into a complete, routed project, ready to extend.",
+        "pills": [
+          "Asana",
+          "Asana Node.js SDK",
+          "Claude Code",
+          "Automation"
+        ]
+      },
+      {
+        "id": "ai-tooling",
+        "meta": [
+          "04 / AI Tooling",
+          "Role: Program Manager and Builder",
+          "Tools: Asana, Claude"
+        ],
+        "title": "AI Tooling at Work",
+        "p1_html": "<strong>Problem.</strong> A marketing work system lives in a lot of people's heads, and incomplete requests turn into rework.",
+        "p2_html": "<strong>What I'm building.</strong> Four AI initiatives, all on tools we already own.<br><strong>Brief to Campaign:</strong> one campaign brief becomes a complete, routed Asana project (built and piloted).<br><strong>Claude Asana Project:</strong> a living operating manual for marketing's work system, in a Claude knowledge base that updates when the rules change (in progress).<br><strong>AI Intake Triage:</strong> catching incomplete requests at the door, before they become rework (in progress).<br><strong>Automated Status Updates:</strong> stakeholders get status without asking, starting with blocked-work alerts (early stage).",
+        "pills": [
+          "Asana",
+          "Claude",
+          "Automation",
+          "Workflow Design"
         ]
       },
       {
         "id": "apple-creatoriq",
         "meta": [
-          "03 / Media",
+          "05 / Media",
           "Roles: Creative Operations Contractor, Commercial Video Producer",
           "Through: TEKsystems, xfnl Studio"
         ],
@@ -137,13 +176,13 @@
   },
   "about_page": {
     "eyebrow": "About",
-    "title_html": "Technologist and Creative, <em>On Purpose.</em>",
-    "lead": "I have always lived in two worlds at once. I am a technologist: I have tested software, run IT for a retreat center in Vermont, and answered support tickets, and I still cannot leave a repetitive task alone. I am also a creative: I write and play music, make video, and at CreatorIQ I wrote, designed, animated, recorded, and mixed the work myself. The two have run side by side the whole way. When they line up, I build things like an intake system that keeps creative work from getting lost, or a pipeline that cuts footage while I am with my family. When they do not, I am the one in the room who speaks both languages.",
+    "title_html": "Cross-Functional by Nature, <em>Nerd by Choice.</em>",
+    "lead": "I've always lived in two worlds at once. I'm the nerd who ran IT for a retreat center in Vermont, tested software, and answered support tickets, and I still can't leave a repetitive task alone. I'm also a maker: I write and play music, I've produced video for years, and I love a good pipeline. The two have run side by side the whole way. When they line up, I build things like an Asana setup that keeps creative work from getting lost, or a pipeline that cuts footage while I'm at the park with my family. When they don't, I'm the one in the room who speaks both languages.",
     "roles": [
       {
         "dates": "2025 to Present",
         "company": "Commerce (BigCommerce · Feedonomics · Makeswift)",
-        "role": "Marketing Project Manager · Program-level work across three brands: marketing intake and routing, launches, and workflow automation.",
+        "role": "Marketing Project Manager · Program-level work across three brands: launches, the Asana setup behind marketing requests, and workflow automation.",
         "location": "Austin, TX"
       },
       {
@@ -161,13 +200,13 @@
       {
         "dates": "2024 to 2025",
         "company": "CreatorIQ",
-        "role": "Commercial Video Producer and Post-Production Lead (Contract) · Scoped, negotiated, and delivered commercial video and motion-graphics engagements for enterprise B2B launches, from creative briefing and SOW through multi-camera direction, editing, and motion design. Built repeatable post-production templates and review workflows.",
+        "role": "Commercial Video Producer and Post-Production Lead (Contract) · Pitched, scoped, and delivered commercial video and motion-graphics engagements for enterprise B2B launches, from creative briefing and SOW through editing, sound, and motion design. Built repeatable post-production templates and review workflows.",
         "location": "Remote"
       },
       {
         "dates": "2017 to 2023",
         "company": "BigCommerce (Now Part of Commerce)",
-        "role": "Marketing Project Manager (2023) · Video Producer (2018 to 2023) · Web Content Publishing Specialist (2018 to 2019) · Tech Support (2017 to 2018)",
+        "role": "Marketing Project Manager (2023) · Video Producer & Marketing Liaison (2018 to 2023) · Web Content Publishing Specialist (2018 to 2019) · Tech Support (2017 to 2018)",
         "location": "Austin, TX"
       }
     ]
