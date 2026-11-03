@@ -1,88 +1,189 @@
+# Sveltia CMS for xfnl.studio. Hosted on Vercel, so sign-in uses our own GitHub OAuth routes (api/auth.js and api/callback.js), not Netlify.
 backend:
   name: github
   repo: xfnl-studio/xfnl-wireframe
   branch: main
-media_folder: "img"
-public_folder: "/img"
+  base_url: https://xfnl.studio
+  auth_endpoint: api/auth
+
+site_url: https://xfnl.studio
+display_url: https://xfnl.studio
+media_folder: img
+public_folder: /img
+locale: en
+
 collections:
-  - name: "portfolio"
-    label: "Portfolio Content"
+  - name: content
+    label: Site content
+    editor:
+      preview: false
     files:
-      - label: "Site Content (Home, Systems, About)"
-        name: "content"
-        file: "content.json"
+      - name: content
+        label: All content
+        file: content.json
+        format: json
         fields:
-          - label: "Site Settings"
-            name: "site"
-            widget: "object"
+          - name: site
+            label: "Site"
+            widget: object
+            collapsed: true
             fields:
-              - { label: "Brand Text", name: "brand_text", widget: "string" }
-              - { label: "Email", name: "email", widget: "string" }
-              - { label: "LinkedIn", name: "linkedin", widget: "string" }
-              - { label: "Footer Heading", name: "footer_heading", widget: "string" }
-              - { label: "Footer Subtitle", name: "footer_sub", widget: "text" }
-              - { label: "Copyright", name: "copyright", widget: "string" }
-          - label: "Homepage"
-            name: "home"
-            widget: "object"
+              - {name: brand_text, label: "Brand text", widget: string, required: false}
+              - {name: email, label: "Email", widget: string, required: false}
+              - {name: linkedin, label: "Linkedin", widget: string, required: false}
+              - {name: copyright, label: "Copyright", widget: string, required: false}
+          - name: home
+            label: "Home"
+            widget: object
+            collapsed: true
             fields:
-              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Title HTML (with em)", name: "title_html", widget: "string" }
-              - { label: "Lead Paragraph (HTML allowed)", name: "lead_html", widget: "text" }
-              - { label: "Primary CTA", name: "cta_primary", widget: "string" }
-              - { label: "Secondary CTA", name: "cta_secondary", widget: "string" }
-              - label: "Proof Cards"
-                name: "results"
-                widget: "list"
+              - {name: eyebrow, label: "Eyebrow", widget: string, required: false}
+              - {name: title, label: "Title", widget: string, required: false}
+              - {name: title_html, label: "Title html", widget: text, required: false}
+              - {name: lead_html, label: "Lead html", widget: text, required: false}
+              - {name: cta_primary, label: "Cta primary", widget: string, required: false}
+              - {name: cta_secondary, label: "Cta secondary", widget: string, required: false}
+              - name: results
+                label: "Results"
+                widget: list
+                collapsed: true
+                summary: "{{fields.metric}}"
                 fields:
-                  - { label: "Metric", name: "metric", widget: "string" }
-                  - { label: "Detail", name: "detail", widget: "string" }
-              - label: "Featured Work Rows"
-                name: "featured_systems"
-                widget: "list"
+                  - {name: metric, label: "Metric", widget: string, required: false}
+                  - {name: detail, label: "Detail", widget: text, required: false}
+              - name: featured_systems
+                label: "Featured systems"
+                widget: list
+                collapsed: true
+                summary: "{{fields.tag}}"
                 fields:
-                  - { label: "Tag", name: "tag", widget: "string" }
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Subtitle", name: "subtitle", widget: "string" }
-                  - { label: "Link Path", name: "href", widget: "string" }
-              - label: "Experiments Cards"
-                name: "experiments"
-                widget: "list"
+                  - {name: tag, label: "Tag", widget: string, required: false}
+                  - {name: title, label: "Title", widget: string, required: false}
+                  - {name: subtitle, label: "Subtitle", widget: string, required: false}
+                  - {name: href, label: "Href", widget: string, required: false}
+              - name: experiments
+                label: "Experiments"
+                widget: list
+                collapsed: true
+                summary: "{{fields.name}}"
                 fields:
-                  - { label: "Name", name: "name", widget: "string" }
-                  - { label: "Badge", name: "badge", widget: "string" }
-                  - { label: "Description", name: "description", widget: "text" }
-                  - { label: "Link Path", name: "href", widget: "string" }
-          - label: "Systems Page (/systems/)"
-            name: "systems_page"
-            widget: "object"
+                  - {name: name, label: "Name", widget: string, required: false}
+                  - {name: badge, label: "Badge", widget: string, required: false}
+                  - {name: description, label: "Description", widget: text, required: false}
+                  - {name: href, label: "Href", widget: string, required: false}
+          - name: systems_page
+            label: "Systems page"
+            widget: object
+            collapsed: true
             fields:
-              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
-              - { label: "Hero Title (HTML allowed)", name: "title_html", widget: "string" }
-              - { label: "Hero Lead", name: "lead", widget: "text" }
-              - label: "Case Studies"
-                name: "cases"
-                widget: "list"
+              - {name: eyebrow, label: "Eyebrow", widget: string, required: false}
+              - {name: title_html, label: "Title html", widget: text, required: false}
+              - {name: lead, label: "Lead", widget: text, required: false}
+              - name: cases
+                label: "Cases"
+                widget: list
+                collapsed: true
+                summary: "{{fields.id}}"
                 fields:
-                  - { label: "Anchor ID", name: "id", widget: "string" }
-                  - { label: "Left Meta Lines", name: "meta", widget: "list" }
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Paragraph 1 (HTML allowed)", name: "p1_html", widget: "text" }
-                  - { label: "Paragraph 2 (HTML allowed)", name: "p2_html", widget: "text", required: false }
-                  - { label: "Tech Pills", name: "pills", widget: "list" }
-          - label: "About Page (/about/)"
-            name: "about_page"
-            widget: "object"
+                  - {name: id, label: "Id", widget: string, required: false}
+                  - name: meta
+                    label: "Meta"
+                    widget: list
+                    field: {name: item, label: Item, widget: string}
+                  - {name: title, label: "Title", widget: string, required: false}
+                  - {name: p1_html, label: "P1 html", widget: text, required: false}
+                  - {name: p2_html, label: "P2 html", widget: text, required: false}
+                  - name: pills
+                    label: "Pills"
+                    widget: list
+                    field: {name: item, label: Item, widget: string}
+          - name: experiments_page
+            label: "Experiments page"
+            widget: object
+            collapsed: true
             fields:
-              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
-              - { label: "Hero Title (HTML allowed)", name: "title_html", widget: "string" }
-              - { label: "Hero Lead", name: "lead", widget: "text" }
-              - label: "Timeline Roles"
-                name: "roles"
-                widget: "list"
+              - {name: eyebrow, label: "Eyebrow", widget: string, required: false}
+              - {name: title_html, label: "Title html", widget: text, required: false}
+              - {name: lead, label: "Lead", widget: text, required: false}
+              - name: items
+                label: "Items"
+                widget: list
+                allow_add: false
+                field: {name: item, label: Item, widget: string, required: false}
+          - name: about_page
+            label: "About page"
+            widget: object
+            collapsed: true
+            fields:
+              - {name: eyebrow, label: "Eyebrow", widget: string, required: false}
+              - {name: title_html, label: "Title html", widget: text, required: false}
+              - {name: lead, label: "Lead", widget: text, required: false}
+              - name: roles
+                label: "Roles"
+                widget: list
+                collapsed: true
+                summary: "{{fields.dates}}"
                 fields:
-                  - { label: "Dates", name: "dates", widget: "string" }
-                  - { label: "Company", name: "company", widget: "string" }
-                  - { label: "Role and Summary", name: "role", widget: "text" }
-                  - { label: "Location", name: "location", widget: "string" }
+                  - {name: dates, label: "Dates", widget: string, required: false}
+                  - {name: company, label: "Company", widget: string, required: false}
+                  - {name: role, label: "Role", widget: text, required: false}
+                  - {name: location, label: "Location", widget: string, required: false}
+          - name: copy
+            label: "All page copy (every line of text)"
+            widget: object
+            collapsed: true
+            fields:
+              - name: site
+                label: "Site wide (footer)"
+                widget: list
+                collapsed: true
+                summary: "{{fields.where}}: {{fields.text}}"
+                fields:
+                  - {name: id, label: ID, widget: hidden}
+                  - {name: where, label: Where it appears, widget: string, required: false, hint: "Don't edit. Shows where this text lives."}
+                  - {name: text, label: Text, widget: text, hint: "Simple tags like strong, em, and a are allowed. Keep any tags you see."}
+              - name: home
+                label: "Home page"
+                widget: list
+                collapsed: true
+                summary: "{{fields.where}}: {{fields.text}}"
+                fields:
+                  - {name: id, label: ID, widget: hidden}
+                  - {name: where, label: Where it appears, widget: string, required: false, hint: "Don't edit. Shows where this text lives."}
+                  - {name: text, label: Text, widget: text, hint: "Simple tags like strong, em, and a are allowed. Keep any tags you see."}
+              - name: about
+                label: "About page"
+                widget: list
+                collapsed: true
+                summary: "{{fields.where}}: {{fields.text}}"
+                fields:
+                  - {name: id, label: ID, widget: hidden}
+                  - {name: where, label: Where it appears, widget: string, required: false, hint: "Don't edit. Shows where this text lives."}
+                  - {name: text, label: Text, widget: text, hint: "Simple tags like strong, em, and a are allowed. Keep any tags you see."}
+              - name: work
+                label: "Work page"
+                widget: list
+                collapsed: true
+                summary: "{{fields.where}}: {{fields.text}}"
+                fields:
+                  - {name: id, label: ID, widget: hidden}
+                  - {name: where, label: Where it appears, widget: string, required: false, hint: "Don't edit. Shows where this text lives."}
+                  - {name: text, label: Text, widget: text, hint: "Simple tags like strong, em, and a are allowed. Keep any tags you see."}
+              - name: systems
+                label: "Systems page"
+                widget: list
+                collapsed: true
+                summary: "{{fields.where}}: {{fields.text}}"
+                fields:
+                  - {name: id, label: ID, widget: hidden}
+                  - {name: where, label: Where it appears, widget: string, required: false, hint: "Don't edit. Shows where this text lives."}
+                  - {name: text, label: Text, widget: text, hint: "Simple tags like strong, em, and a are allowed. Keep any tags you see."}
+              - name: experiments
+                label: "Experiments page"
+                widget: list
+                collapsed: true
+                summary: "{{fields.where}}: {{fields.text}}"
+                fields:
+                  - {name: id, label: ID, widget: hidden}
+                  - {name: where, label: Where it appears, widget: string, required: false, hint: "Don't edit. Shows where this text lives."}
+                  - {name: text, label: Text, widget: text, hint: "Simple tags like strong, em, and a are allowed. Keep any tags you see."}

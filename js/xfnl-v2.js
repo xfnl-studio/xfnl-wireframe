@@ -300,7 +300,17 @@
   (function () {
     var root = document.querySelector('[data-ticker]');
     if (!root || reduced.matches) { return; }
-    var verbs = (root.getAttribute('data-verbs') || '').split(',').filter(Boolean);
+    function parseVerbs() {
+      var st = root.querySelector('.ticker-static');
+      var src = st ? st.textContent : '';
+      return src.split('.').map(function (x) { return x.trim().replace(/\s+it$/i, '').toLowerCase(); }).filter(Boolean);
+    }
+    var verbs = parseVerbs();
+    if (!verbs.length) { verbs = (root.getAttribute('data-verbs') || '').split(',').filter(Boolean); }
+    document.addEventListener('cms:ready', function () {
+      var v = parseVerbs();
+      if (v.length && v.join('|') !== verbs.join('|')) { verbs.length = 0; Array.prototype.push.apply(verbs, v); i = 0; show(); }
+    });
     var el = root.querySelector('.tk-verb');
     var btn = root.querySelector('.tk-pause');
     if (!verbs.length || !el) { return; }
@@ -427,4 +437,28 @@
   }
   decorate();
   if ('MutationObserver' in window) { new MutationObserver(decorate).observe(root, { childList: true }); }
+})();
+
+
+/* ---------- v2.9.1: copy hydration. Every [data-cms] element takes its text from content.json (copy.<page> and copy.site).
+   The static HTML already holds the same words, so this is invisible until someone edits content.json in /admin/. ---------- */
+(function () {
+  'use strict';
+  var seg = (location.pathname.replace(/^\/+|\/+$/g, '').split('/')[0] || 'home');
+  var page = seg === 'index.html' ? 'home' : seg;
+  var els = document.querySelectorAll('[data-cms]');
+  if (!els.length || !window.fetch) { return; }
+  fetch('/content.json', { cache: 'no-cache' }).then(function (r) { return r.ok ? r.json() : null; }).then(function (d) {
+    if (!d || !d.copy) { return; }
+    var map = {};
+    (d.copy.site || []).concat(d.copy[page] || []).forEach(function (it) { map[it.id] = it.text; });
+    var probe = document.createElement('div');
+    Array.prototype.forEach.call(els, function (el) {
+      var id = el.getAttribute('data-cms');
+      if (!Object.prototype.hasOwnProperty.call(map, id)) { return; }
+      probe.innerHTML = map[id];
+      if (probe.innerHTML !== el.innerHTML) { el.innerHTML = map[id]; }
+    });
+    document.dispatchEvent(new Event('cms:ready'));
+  }).catch(function () { /* static copy stays */ });
 })();
