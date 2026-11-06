@@ -206,12 +206,6 @@
         "company": "BigCommerce (Now Part of Commerce)",
         "role": "Marketing Project Manager (2023) · Video Producer & Marketing Liaison (2018 to 2023) · Web Content Publishing Specialist (2018 to 2019) · Tech Support (2017 to 2018)",
         "location": "Austin, TX"
-      },
-      {
-        "dates": "The Incubator",
-        "company": "The Art Institute of Philadelphia",
-        "role": "B.S., Digital Filmmaking and Video Production · Where the creative and technical waves started: end-to-end production, non-linear editing timelines, motion design, and studio pipelines under the hood.",
-        "location": "Philadelphia, PA"
       }
     ]
   },
@@ -1728,7 +1722,7 @@
         "text": "What I Do Now"
       },
       {
-        "id": "appa.detail12",
+        "id": "appa.label12_detail",
         "where": "APPA / detail 12",
         "text": "A four-step editorial hierarchy, a vision model that grades candidates, and a human veto."
       },
