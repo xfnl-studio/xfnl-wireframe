@@ -206,6 +206,12 @@
         "company": "BigCommerce (Now Part of Commerce)",
         "role": "Marketing Project Manager (2023) · Video Producer & Marketing Liaison (2018 to 2023) · Web Content Publishing Specialist (2018 to 2019) · Tech Support (2017 to 2018)",
         "location": "Austin, TX"
+      },
+      {
+        "dates": "The Incubator",
+        "company": "The Art Institute of Philadelphia",
+        "role": "B.S., Digital Filmmaking and Video Production · Where the creative and technical waves started: end-to-end production, non-linear editing timelines, motion design, and studio pipelines under the hood.",
+        "location": "Philadelphia, PA"
       }
     ]
   },
@@ -548,7 +554,7 @@
       {
         "id": "at-a-glance.detail5",
         "where": "At a Glance / detail 5",
-        "text": "B.S., Digital Filmmaking and Video Production, Art Institute of Philadelphia"
+        "text": "B.S., Digital Filmmaking and Video Production, The Art Institute of Philadelphia"
       },
       {
         "id": "at-a-glance.label6",
@@ -573,22 +579,22 @@
       {
         "id": "two-waves.card-title1",
         "where": "Two Waves / card title 1",
-        "text": "<span class=\"beat-n\" aria-hidden=\"true\">1</span>Support Meets Craft"
+        "text": "<span class=\"beat-n\" aria-hidden=\"true\">1</span>The Incubator Meets Support"
       },
       {
         "id": "two-waves.paragraph2",
         "where": "Two Waves / paragraph 2",
-        "text": "<span class=\"tag tag-tech\">Technical</span> Tech support, with a 99% CSAT."
+        "text": "<span class=\"tag tag-tech\">Technical</span> Tech support at BigCommerce, with a 99% CSAT."
       },
       {
         "id": "two-waves.paragraph3",
         "where": "Two Waves / paragraph 3",
-        "text": "<span class=\"tag tag-cre\">Creative</span> My creative background."
+        "text": "<span class=\"tag tag-cre\">Creative</span> Trained in end-to-end production at The Art Institute of Philadelphia (B.S., Digital Filmmaking and Video Production)."
       },
       {
         "id": "two-waves.paragraph4",
         "where": "Two Waves / paragraph 4",
-        "text": "<span class=\"tag tag-tech\">Together</span> They landed me a how-to video role, and the first time the two waves crossed."
+        "text": "<span class=\"tag tag-tech\">Together</span> Those two waves crossed for the first time and landed me a how-to video role."
       },
       {
         "id": "two-waves.card-title2",
@@ -653,12 +659,12 @@
       {
         "id": "education.card-title1",
         "where": "Education / card title 1",
-        "text": "Art Institute of Philadelphia"
+        "text": "The Art Institute of Philadelphia"
       },
       {
         "id": "education.paragraph1",
         "where": "Education / paragraph 1",
-        "text": "B.S., Digital Filmmaking and Video Production (school now closed)"
+        "text": "B.S., Digital Filmmaking and Video Production · The incubator where the creative and technical waves started."
       },
       {
         "id": "kind-words.heading1",
